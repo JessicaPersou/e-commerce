@@ -1,0 +1,11 @@
+{
+  "name": "yourbeer",
+  "version": "1.0.0",
+  "description": "creation for study front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jessica Sousa",
+  "license": "ISC"
+}
