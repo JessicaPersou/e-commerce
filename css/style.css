@@ -1,4 +1,57 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --font-color:#ececec;
+    --background-color: rgb(15, 15, 15);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--background-color);
+    height: 10vh;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:var(--font-color);
+    text-decoration: none;
+}
+.nav-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.nav-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+.banner img{
+    width: 100%;
+    max-width: 100%;
 }
