@@ -51,7 +51,57 @@ a{
     padding: 10px;
 }
 
+section{
+    display: flex;
+}
 .banner img{
     width: 100%;
     max-width: 100%;
+}
+
+.ofertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.ofertas h1{
+    font-size: 50px;
+    font-weight: 400;
+    padding: 50px;
+    color: var(--font-color);
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product img{
+    width: 200px;
+}
+
+.list-ofertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.list-ofertas li{
+    color: var(--font-color);
+}
+
+.list-ofertas p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
