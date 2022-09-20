@@ -9,13 +9,20 @@
     --background-color: rgb(15, 15, 15);
 }
 
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    padding: 10px;
+    padding: 10px 0;
 
     text-decoration: none;
     list-style: none;
