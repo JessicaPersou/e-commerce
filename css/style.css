@@ -16,7 +16,7 @@
     width: 100%;
 }
 
-.navbar {
+.navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,7 +39,7 @@ a{
     color:var(--font-color);
     text-decoration: none;
 }
-.nav-icon {
+.nav-icon{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,7 +49,7 @@ a{
 }
 
 
-.nav-login {
+.nav-login{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,12 +58,23 @@ a{
     padding: 10px;
 }
 
-section{
-    display: flex;
+main{
+display: flex;
+flex-direction: column;
 }
-.banner img{
+
+.banner{
+    background: url("../images/elevate-jNkdYswZ61o-unsplash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.5s;
+    height: 100vh;
     width: 100%;
-    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .ofertas{
