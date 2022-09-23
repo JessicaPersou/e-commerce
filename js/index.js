@@ -1,29 +1,23 @@
-// const express = require('express');
-// const app = express();
+/*############################## ALTERA O BACKGROUND ##############################*/
 
-// app.get("/home", function(req,res){
-//     res.send("Estamos na página Home.")
-// })
+// let cont = 0;
 
-// app.listen(3000, () => console.log("Servidor executado com sucesso!"));
+// const backgroundImages = [
+//   'url("images/josh-olalde-RdePFz33RIA-unsplash.png")',
+//   'url("images/alexander-cifuentes-46vZtdZhWAs-unsplash.png")'
+// ]
 
-let cont = 0;
+// setInterval(()=>{
+//     const banner = document.querySelector(".banner");
 
-const backgroundImages = [
-  'url("images/josh-olalde-RdePFz33RIA-unsplash.png")',
-  'url("images/alexander-cifuentes-46vZtdZhWAs-unsplash.png")'
-]
+//     banner.style.background = backgroundImages[cont];
+//     banner.style.backgroundPosition = "center";
+//     banner.style.backgroundRepeat = "no-repeat";
+//     banner.style.backgroundSize = "cover";
 
+//     if (cont == 3) {
+//         cont = 0;
+//       } else cont++;
+// }, 5000);
 
-setInterval(()=>{
-    const banner = document.querySelector(".banner");
-
-    banner.style.background = backgroundImages[cont];
-    banner.style.backgroundPosition = "center";
-    banner.style.backgroundRepeat = "no-repeat";
-    banner.style.backgroundSize = "cover";
-
-    if (cont == 3) {
-        cont = 0;
-      } else cont++;
-}, 5000);
+/*############################## ALTERA O BACKGROUND ##############################*/

@@ -26,6 +26,7 @@
 
     text-decoration: none;
     list-style: none;
+    font-weight: 200;
     background-color: var(--background-color);
     height: 10vh;
 
@@ -59,8 +60,8 @@ a{
 }
 
 main{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .banner{
@@ -103,6 +104,7 @@ flex-direction: column;
 
 .product img{
     width: 200px;
+    border-radius: 5px;
 }
 
 .list-ofertas{
@@ -122,4 +124,51 @@ flex-direction: column;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px 110px;
+}
+
+.info p{
+    width: 450px;
+    text-align: justify;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 400;
+}
+.card-2{
+    height: 700px;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: 200;
 }
