@@ -4,7 +4,7 @@ import Beer from "../../assets/cup-beer.jpeg";
 export function Card() {
   return (
     <section className="card">
-      <h2>PRINCIAPAIS ESTILOS DE CERVEJA ARTESANAL</h2>
+      <h2>PRINCIPAIS ESTILOS DE CERVEJA ARTESANAL</h2>
       <div className="craft-style">
         <div className="box-style">
           <img src={Beer} alt="cup of beer" />
@@ -15,7 +15,7 @@ export function Card() {
             sabor acentuados pelo lúpulo, além da cor dourada. Seu teor
             alcoólico varia entre 4,6% e 5% em média. As mais famosas são a
             cerveja de origem Pilsner Urquell
-            <strong> primeira Pilsen produzida</strong> e a German Pilsner.
+            <i> primeira Pilsen produzida</i> e a German Pilsner.
           </p>
         </div>
         <div className="box-style">

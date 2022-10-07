@@ -1,9 +1,10 @@
-import "../../styles/main.css";
-import Banner from "../../assets/craft-beer.jpg"; //image banner
-import About from "../../assets/beer.png"; //image woman beer
-import BackgroundAbout from "../../assets/pexels-photo.jpeg"; // image background main
+import "../styles/main.css";
+import Banner from "../assets/craft-beer.jpg"; //image banner
+import About from "../assets/beer.png"; //image woman beer
+import BackgroundAbout from "../assets/pexels-photo.jpeg"; // image background main
+import { Card } from "../components/Cards/Card";
 
-export function Main() {
+export default function Index() {
   return (
     <main>
       <section className="banner">
@@ -55,6 +56,7 @@ export function Main() {
           </p>
         </div>
       </section>
+      <Card />
     </main>
   );
 }

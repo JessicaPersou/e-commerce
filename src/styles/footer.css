@@ -1,0 +1,22 @@
+.footer{
+  background-color: #2f2721;
+  color: azure;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.me{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  color: tomato;
+}
