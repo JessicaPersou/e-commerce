@@ -1,0 +1,41 @@
+.card{
+  display: flex;
+  flex-direction: column;
+}
+
+.craft-style{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-style{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
+.box-style{
+  width: 300px;
+  cursor: pointer;
+}
+
+.box-style:hover{
+  background-color: grey;
+}
+
+.box-style img{
+  width: 250px;
+}
+
+.box-style > p{
+  text-align: justify;
+}

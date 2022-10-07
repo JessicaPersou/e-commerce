@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2{
+  text-align: center;
+  padding: 40px;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+h3{
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
