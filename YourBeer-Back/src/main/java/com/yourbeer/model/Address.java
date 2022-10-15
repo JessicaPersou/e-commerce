@@ -1,4 +1,5 @@
 package com.yourbeer.model;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -6,8 +7,8 @@ import javax.persistence.*;
 
 @Data // Here Getter Setter and HashCode
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Entity
-public class AddressModel {
+@Entity(name = "tb_user_address")
+public class Address {
 
     @EqualsAndHashCode.Include
     @Id
@@ -32,7 +33,9 @@ public class AddressModel {
     @Column(name = "address_state", length = 20)
     private String state;
 
-    @Column(name = "user_id")
-    private long user_id;
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "user_id")//specify foreign key
+    private User user;
 
 }
