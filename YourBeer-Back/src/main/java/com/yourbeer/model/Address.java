@@ -13,7 +13,7 @@ public class Address {
     @EqualsAndHashCode.Include
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long address_id;
+    private long id;
 
     @Column(name = "address_cep", length = 10)
     private String cep;
@@ -33,9 +33,9 @@ public class Address {
     @Column(name = "address_state", length = 20)
     private String state;
 
-    @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "user_id")//specify foreign key
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
+
 
 }

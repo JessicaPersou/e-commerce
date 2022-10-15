@@ -1,9 +1,11 @@
 package com.yourbeer.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -36,7 +38,10 @@ public class User {
     @Column(name = "user_password")
     private String password;
 
-    @OneToMany(mappedBy = "address_id") //one User can have many address
-    private List<Address> address; //a user can have a list of address, to delivery, work address or main address for exemple.
+    @JsonIgnore
+    @OneToMany(mappedBy = "id") //one User can have many address
+    private List<Address> address = new ArrayList<>(); //a user can have a list of address, to delivery, work address or main address for exemple.
+
+
 
 }
