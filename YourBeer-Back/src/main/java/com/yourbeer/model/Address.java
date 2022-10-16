@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Data // Here Getter Setter and HashCode
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Entity(name = "tb_user_address")
+@Entity(name = "user_address")
 public class Address {
 
     @EqualsAndHashCode.Include

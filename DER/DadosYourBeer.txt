@@ -1,0 +1,11 @@
+insert into tb_user (user_full_name,user_document, user_birthdate,user_phone, user_email, user_password) values ('Matheus Sousa','40040041123','2023-10-03','11988886666','matheus@gmail.com','123456');
+insert into user (user_full_name,user_document, user_birthdate,user_phone, user_email, user_password) values ('Mariana Smith','40040040098','1987-09-11','11988885555','smith.m@gmail.com','123456');
+insert into user (user_full_name,user_document, user_birthdate,user_phone, user_email, user_password) values ('José Bonifácio','40040040043','1973-10-02','11988884444','jb@gmail.com','123456');
+insert into user (user_full_name,user_document, user_birthdate,user_phone, user_email, user_password) values ('Kakashi Silvestre','40040041040','1975-05-21','11988883333','kakashi@gmail.com','123456');
+insert into user (user_full_name,user_document, user_birthdate,user_phone, user_email, user_password) values ('Rocky Balboa','40040040041','1997-07-12','11988882222','rocky@gmail.com','123456');
+
+insert into user_address (address_cep, address_street, address_number, address_district, address_city, address_state, user_id) values ('0101037','Rua Paulistana','128','Bela Cidade','São Paulo','São Paulo',1);
+insert into user_address (address_cep, address_street, address_number, address_district, address_city, address_state, user_id) values ('0203500','Rua Oliveiras','56','Vila Mariana','São Paulo','São Paulo',2);
+insert into user_address (address_cep, address_street, address_number, address_district, address_city, address_state, user_id) values ('0198099','Rua Campos','558','Monumento','São Paulo','São Paulo',3);
+insert into user_address (address_cep, address_street, address_number, address_district, address_city, address_state, user_id) values ('0145670','Rua Silveira','1030','Ipiranga','São Paulo','São Paulo',4);
+insert into user_address (address_cep, address_street, address_number, address_district, address_city, address_state, user_id) values ('0230490','Rua Norte','890','Aclimação','São Paulo','São Paulo',5);

@@ -4,14 +4,14 @@ package com.yourbeer.controller;
 import com.yourbeer.model.Address;
 import com.yourbeer.repository.AddressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/{usuarios}/endereco")
+@RequestMapping("/usuarios/endereco")
 public class AddressController {
 
     @Autowired
@@ -22,5 +22,12 @@ public class AddressController {
         return addressRepository.findAll();
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity findById(@PathVariable long id){
+        return addressRepository.findById(id)
+                .map(save -> ResponseEntity.ok().body(save))
+                .orElse(ResponseEntity.notFound().build());
+    }
 
 }
+
