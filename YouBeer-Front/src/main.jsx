@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from '../src/Pages/Home'
+import { User } from "../src/components/User/Index";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/usuarios" element={User} />
+    </Routes>
+  </BrowserRouter>
 )
