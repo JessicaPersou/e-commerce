@@ -3,7 +3,7 @@ import axios from "axios";
 import moment from "moment";
 
 export function User() {
-  const [list, setList] = useState < IUser > [];
+  const [list, setList] = useState < User > [];
 
   useEffect(() => {
     onLoad();
@@ -11,7 +11,7 @@ export function User() {
 
   async function onLoad() {
     try {
-      const response = await axios("http://localhost:8080/usuarios");
+      const response = await axios("http://localhost:8080/user");
       setList(response.data);
     } catch (e) {
       console.error(e);
@@ -38,7 +38,7 @@ export function User() {
               <td>{item.user_full_name}</td>
               <td>{item.user_document}</td>
               <td>
-                {item.user_birthdaten &&
+                {item.user_birthdate &&
                   moment(item.birthdate).format("DD/MM/YYYY")}
               </td>
               <td>{item.user_phone}</td>

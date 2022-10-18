@@ -1,7 +1,7 @@
 import "../Footer/footer.css";
-import instagram from "../../assets/instagram.svg";
-import Facebook from "../../assets/facebook.svg";
-import WhatsApp from "../../assets/whastapp.svg";
+import insta from "../../assets/instagram.svg";
+import face from "../../assets/facebook.svg";
+import whats from "../../assets/whatsapp.svg";
 
 export function Footer() {
   return (
@@ -19,17 +19,17 @@ export function Footer() {
       <div className="social-media">
         <p>
           <a href="">
-            <img src={Facebook} alt="facebook" />
+            <img src={face} alt="facebook" />
           </a>
         </p>
         <p>
           <a href="">
-            <img src={instagram} alt="instagram" />
+            <img src={insta} alt="instagram" />
           </a>
         </p>
         <p>
           <a href="">
-            <img src={WhatsApp} alt="whatsapp" />
+            <img src={whats} alt="whatsapp" />
           </a>
         </p>
       </div>
