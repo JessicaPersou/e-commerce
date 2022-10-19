@@ -1,4 +1,4 @@
-import "../../styles/card.css";
+import "../Card/card.css";
 import Beer from "../../assets/cup-beer.jpeg";
 
 export function Card() {

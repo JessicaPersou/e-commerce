@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
 
-export function User() {
+export function GetUser() {
   const [list, setList] = useState < User > [];
 
   useEffect(() => {

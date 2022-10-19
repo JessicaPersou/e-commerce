@@ -1,5 +1,6 @@
 import { Header } from "../components/Header";
 import { Main } from "../components/Main";
+import { Card } from "../components/Card";
 import { Footer } from "../components/Footer";
 
 
@@ -8,6 +9,7 @@ function Home() {
     <div>
       < Header/>
       < Main />
+      < Card />
       < Footer />
     </div>
   );

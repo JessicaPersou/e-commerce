@@ -20,22 +20,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "user_full_name")
     private String full_name;
 
-    @Column(name = "user_document")
     private String document;
 
-    @Column(name = "user_birthdate")
     private Date birthdate;
 
-    @Column(name = "user_phone")
     private String phone;
 
-    @Column(name = "user_email", nullable = false)
     private String email;
 
-    @Column(name = "user_password")
     private String password;
 
     @JsonIgnore

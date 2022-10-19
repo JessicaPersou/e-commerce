@@ -1,0 +1,87 @@
+.form-register {
+  background-color: #2f2721;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+.register {
+  height: 70%;
+  width: 50%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: rgba(250, 235, 215, 0.295);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.step1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.step2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  border-style: none;
+  border-radius: 5px;
+}
+
+label,
+span {
+  font-size: small;
+}
+
+.send{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+
+.btn-send:hover {
+  background-color: rgba(255, 99, 71, 0.678);
+}
+
+a:hover {
+  color: rgba(255, 99, 71, 0.678);
+}
+
+span {
+  font-size: small;
+}

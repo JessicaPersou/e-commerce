@@ -12,7 +12,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/usuarios/endereco")
+@RequestMapping("/user/address")
 public class AddressController {
 
     @Autowired
@@ -28,6 +28,11 @@ public class AddressController {
         return addressRepository.findById(id)
                 .map(save -> ResponseEntity.ok().body(save))
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public ResponseEntity<Address> create(@RequestBody Address address){
+        return ResponseEntity.status(HttpStatus.CREATED).body(address);
     }
 
 }

@@ -11,7 +11,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity findById(@PathVariable long id) {
+    public ResponseEntity<User> findById(@PathVariable long id) {
         return userRepository.findById(id)
                 .map(save -> ResponseEntity.ok().body(save))
                 .orElse(ResponseEntity.notFound().build());
@@ -32,6 +32,36 @@ public class UserController {
     @PostMapping
     public ResponseEntity<User> create(@RequestBody User user) {
         return ResponseEntity.status(HttpStatus.CREATED).body(userRepository.save(user));
+    }
+
+
+    @PutMapping("/{id}")
+    public ResponseEntity<User> update(@PathVariable long id, @RequestBody User user){
+        return userRepository.findById(id)
+                .map( save -> {
+
+                    save.setFull_name(user.getFull_name());
+                    save.setBirthdate(user.getBirthdate());
+                    save.setDocument(user.getDocument());
+                    save.setEmail(user.getEmail());
+                    save.setPhone(user.getPhone());
+                    save.setPassword(user.getPassword());
+
+                    User update = userRepository.save(save);
+                    return ResponseEntity.ok().body(update);
+
+                }).orElse(ResponseEntity.notFound().build());
+
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteById(@PathVariable long id){
+        return userRepository.findById(id)
+                .map(save -> {
+                    userRepository.deleteById(id);
+                    return ResponseEntity.ok().build();
+                }).orElse(ResponseEntity.notFound().build());
+
     }
 
 }

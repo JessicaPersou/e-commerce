@@ -2,17 +2,27 @@ import "../Login/login.css";
 
 export function LoginUser() {
   return (
-    <body className="form-login">
+    <div className="form-login">
+      <h2>Faça seu Login</h2>
       <div className="login">
-        <h1>Faça seu Login</h1>
-        <input type="text" placeholder="E-mail" />
-        <input type="text" placeholder="Senha"/>
-        <span><a  href="#">Esqueci minha senha</a></span>
-        <input className="btn" type="button" value="Entrar" />
+        <div className="label">
+          <label htmlFor="">E-mail</label>
+          <input type="text" />
+        </div>
+        <div className="label">
+          <label htmlFor="">Senha</label>
+          <input type="text" />
+        </div>
         <span>
-          Você ainda não tem Login? <a href="#"> Registre-se</a>{" "}
+          <a href="#">Esqueci minha senha</a>
         </span>
       </div>
-    </body>
+      <div className="btn">
+        <input className="btn-send" type="button" value="Entrar" />
+      </div>
+      <span>
+        Você ainda não tem Login? <a href="/login/register"> Registre-se Aqui.</a>
+      </span>
+    </div>
   );
 }
