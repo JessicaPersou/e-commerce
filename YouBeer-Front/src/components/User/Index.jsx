@@ -1,28 +1,29 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
+import "../User/user.css";
 
-export function GetUser() {
-  const [list, setList] = useState < User > [];
+export function User() {
+  const [list, setList] = useState([]);
 
-  useEffect(() => {
-    onLoad();
-  }, []);
-
-  async function onLoad() {
-    try {
-      const response = await axios("http://localhost:8080/user");
-      setList(response.data);
-    } catch (e) {
-      console.error(e);
-    }
+  async function getUsers() {
+    const { data } = await axios.get("http://localhost:8080/user");
+    console.log(data);
+    setList(data);
   }
 
+  useEffect(() => {
+    getUsers();
+  }, []);
+
   return (
-    <div>
-      <table>
+    <div className="table">
+      <table className="table-users">
+        <col className="col-style">
+        <col className="col-style">
+        <col className="col-style">
         <thead>
-          <tr>
+          <tr className="table-head">
             <th>ID</th>
             <th>NOME</th>
             <th>DOCUMENTO</th>
@@ -33,16 +34,15 @@ export function GetUser() {
         </thead>
         <tbody>
           {list.map((item) => (
-            <tr key={item.id}>
+            <tr key={item.id} className="table-body">
               <td>{item.id}</td>
-              <td>{item.user_full_name}</td>
-              <td>{item.user_document}</td>
+              <td>{item.full_name}</td>
+              <td>{item.document}</td>
               <td>
-                {item.user_birthdate &&
-                  moment(item.birthdate).format("DD/MM/YYYY")}
+                {item.birthdate && moment(item.birthdate).format("DD/MM/YYYY")}
               </td>
-              <td>{item.user_phone}</td>
-              <td>{item.user_email}</td>
+              <td>{item.phone}</td>
+              <td>{item.email}</td>
             </tr>
           ))}
         </tbody>

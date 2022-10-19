@@ -21,7 +21,8 @@ export function LoginUser() {
         <input className="btn-send" type="button" value="Entrar" />
       </div>
       <span>
-        Você ainda não tem Login? <a href="/login/register"> Registre-se Aqui.</a>
+        Você ainda não tem Login?{" "}
+        <a href="/login/register"> Registre-se Aqui.</a>
       </span>
     </div>
   );
