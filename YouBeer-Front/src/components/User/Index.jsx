@@ -19,9 +19,6 @@ export function User() {
   return (
     <div className="table">
       <table className="table-users">
-        <col className="col-style">
-        <col className="col-style">
-        <col className="col-style">
         <thead>
           <tr className="table-head">
             <th>ID</th>
