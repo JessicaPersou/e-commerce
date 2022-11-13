@@ -1,0 +1,43 @@
+.infosFooter{
+  padding: 20px;
+  background-color: #2f2721;
+  color: azure;
+
+  height: 400px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer{
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ justify-content: center;
+ gap: 20px;
+}
+
+.payments{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ width: 30px;
+}
+
+.socialMedia{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+.app{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+

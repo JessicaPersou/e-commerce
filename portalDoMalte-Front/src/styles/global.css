@@ -6,6 +6,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+:root{
+  background-color: rgb(20,15,11);
+  color: white;
+}
+
 h2 {
   text-align: center;
   padding: 40px;

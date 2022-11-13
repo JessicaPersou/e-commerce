@@ -1,15 +1,15 @@
-import "../Card/card.css";
+import styles from "./card.module.css";
 import Beer from "../../assets/cup-beer.jpeg";
 
 export function Card() {
   return (
-    <section className="card">
+    <div >
       <h2>PRINCIPAIS ESTILOS DE CERVEJA ARTESANAL</h2>
-      <div className="craft-style">
-        <div className="box-style">
-          <img src={Beer} alt="cup of beer" />
+      <div>
+        <div>
+          <img src={Beer} alt="" />
           <h3>PILSEN</h3>
-          <p>{/* Description */}
+          <p>
             O estilo de cerveja artesanal Pilsen ou Pilsner surgiu na República
             Tcheca. Como características marcantes, a bebida apresenta aroma e
             sabor acentuados pelo lúpulo, além da cor dourada. Seu teor
@@ -18,7 +18,7 @@ export function Card() {
             <i> primeira Pilsen produzida</i> e a German Pilsner.
           </p>
         </div>
-        <div className="box-style">
+        {/* <div>
           <img src={Beer} alt="cup of beer" />
           <h3>LAGER</h3>
           <p>
@@ -85,8 +85,8 @@ export function Card() {
             sabor e aroma frutados, lembrando banana e cravo. A bebida é
             refrescante, com teor alcóolico moderado (em torno de 5% a 6%).
           </p>
-        </div>
+        </div> */}
       </div>
-    </section>
+    </div>
   );
 }
