@@ -8,9 +8,9 @@ function Home() {
   return (
     <div>
       < Header/>
-      < Main />
+      {/* < Main />
       < Card />
-      < Footer />
+      < Footer /> */}
     </div>
   );
 }
