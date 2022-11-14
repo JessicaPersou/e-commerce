@@ -8,38 +8,37 @@ import Pix from "../../assets/payments/pix.svg";
 import Boleto from "../../assets/payments/icon-fast-boleto.svg";
 import Android from "../../assets/payments/android.png";
 import Apple from "../../assets/payments/apple.png";
-import Selos from "../../assets/payments/img_1928.png";
 
 export function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.infosFooter}>
         <div className={styles.info}>
-          <h4>Sobre nós</h4>
-          <p>Primeira Compra</p>
-          <p>Troca e Devolução</p>
-          <p>Termos e condições de venda</p>
-          <p>Trabalhe conosco</p>
-          <p>Fale Conosco</p>
-          <p>Política de privacidade</p>
+          <h4>SOBRE NÓS</h4>
+          <p className={styles.font}>Primeira Compra</p>
+          <p className={styles.font}>Troca e Devolução</p>
+          <p className={styles.font}>Termos e condições de venda</p>
+          <p className={styles.font}>Trabalhe conosco</p>
+          <p className={styles.font}>Fale Conosco</p>
+          <p className={styles.font}>Política de privacidade</p>
         </div>
         <div className={styles.info}>
-          <h4>Nossas Redes</h4>
-          <img src={face} alt="facebook" />
-          <img src={insta} alt="instagram" />
-          <img src={whats} alt="whatsapp" />
+          <h4>NOSSAS REDES</h4>
+          <img className={styles.icon30} src={face} alt="facebook" />
+          <img className={styles.icon30} src={insta} alt="instagram" />
+          <img className={styles.icon30} src={whats} alt="whatsapp" />
         </div>
         <div className={styles.info}>
-          <h4>Formas de Pagamento</h4>
-          <img src={Visa} alt="" />
-          <img src={Master} alt="" />
-          <img src={Pix} alt="" />
-          <img src={Boleto} alt="" />
+          <h4>FORMAS DE PAGAMENTO</h4>
+          <img className={styles.icon30} src={Visa} alt="" />
+          <img className={styles.icon30} src={Master} alt="" />
+          <img className={styles.icon30} src={Pix} alt="" />
+          <img className={styles.icon30} src={Boleto} alt="" />
         </div>
         <div className={styles.info}>
-          <h4>Baixe o App</h4>
-          <img src={Android} alt="" />
-          <img src={Apple} alt="" />
+          <h4>BAIXE O APP</h4>
+          <img className={styles.icon50} src={Android} alt="" />
+          <img className={styles.icon50} src={Apple} alt="" />
         </div>
       </div>
       <hr />

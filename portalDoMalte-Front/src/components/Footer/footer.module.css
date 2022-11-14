@@ -1,6 +1,6 @@
 .footer {
-  background-color: rgb(20,15,11);
-  color: rgb(241, 241, 241);
+  background-color: var(--yellow);
+  color: var(--black);
 }
 
 .infosFooter {
@@ -22,13 +22,17 @@
   padding: 20px;
 }
 
+.font{
+  font-size: 0.75rem;
+}
+
 .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.info > img {
+.icon30 {
   height: 30px;
 }
 
@@ -38,4 +42,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.icon50{
+  height: 50px;
 }

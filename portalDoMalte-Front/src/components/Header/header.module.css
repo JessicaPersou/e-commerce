@@ -1,5 +1,6 @@
 .header {
-  background-color: rgb(20, 15, 11);
+  background-color: var(--yellow);
+  color: var(--black);
   height: 80px;
   width: 100%;
 
@@ -13,24 +14,22 @@
 .logo {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 
-.logo img {
-
-  width: 200px;
-}
 
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 20px;
-  color: white;
+  gap: 80px;
+  color: var(--black);
 }
 
 .font {
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .icons {
@@ -40,7 +39,7 @@
   gap: 20px;
 }
 
-.icons img {
-  width: 30px;
-  height: 30px;
+.img {
+  width: 20px;
+  height: 20px;
 }

@@ -6,21 +6,40 @@
   -webkit-font-smoothing: antialiased;
 }
 
-:root{
-  background-color: rgb(20,15,11);
+:root {
+  --white: #fffafa;
+ 
+  --background: #fcf8ec;
+  --yellow: #daa520;
+  --orange-dark: #8b4513;
+  --brown: #472815;
+  --brown-dark: #261616;
+  --black: #131212;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 h2 {
   text-align: center;
   padding: 40px;
   font-size: 3rem;
-  font-weight: 200;
 }
 
-h3,h4 {
+h3,
+h4 {
   text-align: center;
   padding: 10px;
   font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
   font-weight: 400;
 }
 

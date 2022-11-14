@@ -16,7 +16,11 @@ export function Main() {
           alt=""
         />
       </div>
-      <h2>BREVE HISTÓRIA DA CERVEJA ARTESANAL</h2>
+      <div className={styles.msg}>
+          <h2>
+            VALORIZE O VERDADEIRO SABOR, E NUNCA DEIXE APRECIAR UMA BOA CERVEJA!
+          </h2>
+        </div>
       <div className={styles.history}>
         <div className={styles.section}>
           <div>
@@ -24,6 +28,7 @@ export function Main() {
           </div>
           <div className={styles.txt}>
             <h3 className={styles.title}>CERVEJA ARTESANAL NO MUNDO</h3>
+            <br />
             <p>
               Para entender um pouco mais sobre essa bebida, que já foi
               considerada sagrada, e cativa as pessoas há tanto tempo. Os
@@ -40,7 +45,9 @@ export function Main() {
               cultuada no meio do seu povo. O “Hino a Ninkasi” descreve um pouco
               sobre o processo de fabricação e início da história da cerveja.
             </p>
-            <h3>Curiosidade</h3>
+            <br />
+            <h3>CURIOSIDADES</h3>
+            <br />
             <p>
               Uma informação curiosa sobre a história da cerveja é que, na
               antiguidade, era muito mais seguro consumir cerveja do que água. A
@@ -62,15 +69,13 @@ export function Main() {
         </div>
         <div className={styles.msg}>
           <h2>
-            A variedade de estilos, sabores e amargor, proporcionam uma
-            infinidade de sabores, cores e aromas para todos os estilos de
-            paladar. Valorize o verdadeiro sabor, e nunca deixe de beber uma boa
-            cerveja.
+            VARIEDADE DE ESTILOS, INFINIDADE DE SABORES!
           </h2>
         </div>
         <div className={styles.section}>
           <div className={styles.txt}>
             <h3 className={styles.title}>A CHEGADA NO BRASIL</h3>
+            <br />
             <p>
               De acordo com relatos históricos, a cerveja chegou no Brasil na
               época da colonização, mas devido a influência portuguesa, o vinho
@@ -116,6 +121,7 @@ export function Main() {
           </div>
           <div className={styles.txt}>
             <h3 className={styles.title}>SOBRE A PRODUÇÃO</h3>
+            <br />
             <p>
               Os produtores de cerveja artesanal da antiguidade Durante a época
               do Império Romano e dentro dos limites do Império, a bebida mais

@@ -1,5 +1,5 @@
 .main {
-  background-color: rgb(212, 210, 209);
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,11 +24,11 @@
 }
 
 .section{
+  color: var(--white);
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  padding: 40px 0;
 }
 
 .txt{
@@ -42,8 +42,9 @@
 }
 
 .msg{
+  color: var(--yellow);
   width: 100%;
-  
+  font-weight: 600;
 }
 
 /* .section {
