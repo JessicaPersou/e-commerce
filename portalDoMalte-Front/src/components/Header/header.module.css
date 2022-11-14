@@ -1,22 +1,26 @@
-.header{
-  background-color: rgb(20,15,11);
-  height: 100px;
+.header {
+  background-color: rgb(20, 15, 11);
+  height: 80px;
   width: 100%;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  gap: 20px;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.logo img{
-  height: 100px;
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+
   width: 200px;
 }
 
-.menu{
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -24,8 +28,9 @@
   color: white;
 }
 
-.font{
+.font {
   font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .icons {
@@ -33,32 +38,9 @@
   flex-direction: row;
   justify-content: space-around;
   gap: 20px;
-  
 }
 
-.icons img{
+.icons img {
   width: 30px;
   height: 30px;
 }
-/* .style-header{
-  font-size: 1.2rem;
-  font-weight: 400;
-  transition: 0.3s;
-  text-decoration: none;
-  color: azure;
-}
-.style-header p:hover {
-  color: rgb(20, 11, 5);
-  cursor: pointer;
-}
-
-.nav-bar1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-bar2 {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-} */

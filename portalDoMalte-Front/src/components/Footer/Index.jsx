@@ -12,64 +12,37 @@ import Selos from "../../assets/payments/img_1928.png";
 
 export function Footer() {
   return (
-    <div className={styles.infosFooter}>
-      <div className={styles.footer}>
-        <div className={styles.about}>
-          <a href="">
-            <p>Sobre nós</p>
-          </a>
-          <a href="">
-            <p>Primeira Compra</p>
-          </a>
-          <a href="">
-            <p>Troca e Devolução</p>
-          </a>
-          <a href="">
-            <p>Termos e condições de venda</p>
-          </a>
-          <a href="">
-            <p>Trabalhe conosco</p>
-          </a>
-          <a href="">
-            <p>Fale Conosco</p>
-          </a>
-          <a href="">
-            <p>Política de privacidade</p>
-          </a>
+    <div className={styles.footer}>
+      <div className={styles.infosFooter}>
+        <div className={styles.info}>
+          <h4>Sobre nós</h4>
+          <p>Primeira Compra</p>
+          <p>Troca e Devolução</p>
+          <p>Termos e condições de venda</p>
+          <p>Trabalhe conosco</p>
+          <p>Fale Conosco</p>
+          <p>Política de privacidade</p>
         </div>
-        <div className={styles.socialMedia}>
-          <p>Nossas Redes</p>
-          <a href="">
-            <img src={face} alt="facebook" />
-          </a>
-          <a href="">
-            <img src={insta} alt="instagram" />
-          </a>
-          <a href="">
-            <img src={whats} alt="whatsapp" />
-          </a>
+        <div className={styles.info}>
+          <h4>Nossas Redes</h4>
+          <img src={face} alt="facebook" />
+          <img src={insta} alt="instagram" />
+          <img src={whats} alt="whatsapp" />
         </div>
-        <div>
-          <p className={styles.payments}>Formas de Pagamento</p>
+        <div className={styles.info}>
+          <h4>Formas de Pagamento</h4>
           <img src={Visa} alt="" />
           <img src={Master} alt="" />
           <img src={Pix} alt="" />
           <img src={Boleto} alt="" />
         </div>
-        <div>
-          <span className={styles.app}>Baixe o App</span>
-          <a href="">
-            <img src={Android} alt="" />
-          </a>
-          <a href="">
-            <img heigth="50px" src={Apple} alt="" />
-          </a>
-        </div>
-        <div>
-          <span className={styles.security}>Selos de Segurança</span>
-          <img src={Selos} alt="" />
+        <div className={styles.info}>
+          <h4>Baixe o App</h4>
+          <img src={Android} alt="" />
+          <img src={Apple} alt="" />
         </div>
       </div>
+      <hr />
       {/* <p>Made by &#x1F9E1; Jessi</p> */}
       <div className={styles.infoShop}>
         <p>Portal do Malte S. A. CNPJ: 12.594.529/0001-60</p>

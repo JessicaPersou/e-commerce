@@ -18,41 +18,31 @@ export function Main() {
       </div>
       <h2>BREVE HISTÓRIA DA CERVEJA ARTESANAL</h2>
       <div className={styles.history}>
-        <div className={styles.firstSection}>
+        <div className={styles.section}>
           <div>
             <img className={styles.bannerTxt} src={About} alt="" />
           </div>
           <div className={styles.txt}>
             <h3 className={styles.title}>CERVEJA ARTESANAL NO MUNDO</h3>
             <p>
-              Você conhece mesmo? Que a cerveja é produzida a partir da
-              fermentação de cereais, como a cevada e o malte, isso você já
-              sabe! Assim como sabe que ela é a preferência nacional e a bebida
-              alcóolica mais consumida no mundo. Mas será que você sabe mesmo a
-              verdadeira história da cerveja e suas curiosidades? Não estamos
-              falando de IBU e ABV de uma cerveja artesanal, estamos falando de
-              história mesmo.
+              Para entender um pouco mais sobre essa bebida, que já foi
+              considerada sagrada, e cativa as pessoas há tanto tempo. Os
+              primeiros registros sobre a fabricação da cerveja artesanal A
+              civilização Suméria que habitava a região da Mesopotâmia, hoje
+              arredores de Irã, Iraque, Kuwait, Síria, Jordânia; foi responsável
+              por enormes descobertas, entre elas a escrita cuneiforme, a roda,
+              a domesticação animal e também a cerveja! Os registros datam de
+              6.000 a.c e seu conhecimento impacta até hoje na nossa vida,
+              inclusive na cervejeira! Os arqueólogos encontraram registros de
+              que a bebida era tão importante e valorizada que Ninkasi, que
+              significa “a senhora que enche a boca”, se tornou a deusa da
+              fabricação da cerveja e da própria cerveja, sendo sua imagem
+              cultuada no meio do seu povo. O “Hino a Ninkasi” descreve um pouco
+              sobre o processo de fabricação e início da história da cerveja.
             </p>
+            <h3>Curiosidade</h3>
             <p>
-              Continue lendo esse texto para entender um pouco mais sobre essa
-              bebida, que já foi considerada sagrada, e cativa as pessoas há
-              tanto tempo. Os primeiros registros sobre a fabricação da cerveja
-              artesanal A civilização Suméria que habitava a região da
-              Mesopotâmia, hoje arredores de Irã, Iraque, Kuwait, Síria,
-              Jordânia; foi responsável por enormes descobertas, entre elas a
-              escrita cuneiforme, a roda, a domesticação animal e também a
-              cerveja! Os registros datam de 6.000 a.c e seu conhecimento
-              impacta até hoje na nossa vida, inclusive na cervejeira! Os
-              arqueólogos encontraram registros de que a bebida era tão
-              importante e valorizada que Ninkasi, que significa “a senhora que
-              enche a boca”, se tornou a deusa da fabricação da cerveja e da
-              própria cerveja, sendo sua imagem cultuada no meio do seu povo. O
-              “Hino a Ninkasi” descreve um pouco sobre o processo de fabricação
-              e início da história da cerveja.
-            </p>
-            <p>
-              Por que fazer cerveja artesanal era melhor do que beber água? Uma
-              informação curiosa sobre a história da cerveja é que, na
+              Uma informação curiosa sobre a história da cerveja é que, na
               antiguidade, era muito mais seguro consumir cerveja do que água. A
               água não era tratada e sua qualidade nada confiável. Já a cerveja,
               por causa do álcool que inibia muitas de suas impurezas, era bem
@@ -61,17 +51,24 @@ export function Main() {
               valorizada que poderia servir como forma de pagamento.
             </p>
             <p>
-              Pagamento feito em cerveja na época do faraó É isso mesmo! A
-              importância da cerveja era tanta, que dentro da história da
+              A importância da cerveja era tanta, que dentro da história da
               cerveja há relatos de pagamento aos arrendatários de escravos que
               trabalharam na construção das grandes pirâmides sob forma de
               cerveja! E que o Faraó Ramsés III ficou conhecido como o Faraó
               Cervejeiro, pois chegou a doar um milhão de litros de cerveja a um
-              grupo de sacerdotes. Boa essa forma de pagamento, não é mesmo?
+              grupo de sacerdotes.
             </p>
           </div>
         </div>
-        <div className={styles.secondSection}>
+        <div className={styles.msg}>
+          <h2>
+            A variedade de estilos, sabores e amargor, proporcionam uma
+            infinidade de sabores, cores e aromas para todos os estilos de
+            paladar. Valorize o verdadeiro sabor, e nunca deixe de beber uma boa
+            cerveja.
+          </h2>
+        </div>
+        <div className={styles.section}>
           <div className={styles.txt}>
             <h3 className={styles.title}>A CHEGADA NO BRASIL</h3>
             <p>
@@ -88,12 +85,11 @@ export function Main() {
             <p>
               A produção de cerveja artesanal no Brasil começou tímida. Em 1830
               os imigrantes começaram a produzir cerveja artesanal, mas apenas
-              para o consumo da família.
-              A cerveja artesanal no Brasil ganhou força no final do século XIX,
-              quando o aumento dos impostos inviabilizou a importação da bebida.
-              A partir de então, a bebida bastante consumida no país, passou a
-              ser produzida em proporções maiores, empregando funcionários e
-              crescendo cada vez mais.
+              para o consumo da família. A cerveja artesanal no Brasil ganhou
+              força no final do século XIX, quando o aumento dos impostos
+              inviabilizou a importação da bebida. A partir de então, a bebida
+              bastante consumida no país, passou a ser produzida em proporções
+              maiores, empregando funcionários e crescendo cada vez mais.
             </p>
             <p>
               A competitividade de mercado e busca do consumidor pelo melhor
@@ -114,7 +110,7 @@ export function Main() {
             <img className={styles.bannerTxt} src={Tasting} alt="" />
           </div>
         </div>
-        <div className={styles.thirdSection}>
+        <div className={styles.section}>
           <div>
             <img className={styles.bannerTxt} src={MyBeer} alt="" />
           </div>
@@ -157,12 +153,6 @@ export function Main() {
               algumas vezes acrescentavam frutos e mel, e foi assim surgiu a
               primeira cerveja. Os processos se modernizaram, e muito se sabe
               sobre todas as etapas da fabricação da cerveja artesanal.
-            </p>
-            <p>
-              A variedade de estilos, sabores e amargor, proporcionam uma
-              infinidade de sabores, cores e aromas para todos os estilos de
-              paladar. Valorize o verdadeiro sabor, e nunca deixe de beber uma
-              boa cerveja. Saúde! NUNCA DEIXE DE BEBER UMA BOA CERVEJA. SAÚDE!
             </p>
           </div>
         </div>

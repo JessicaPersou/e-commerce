@@ -8,7 +8,6 @@
 
 :root{
   background-color: rgb(20,15,11);
-  color: white;
 }
 
 h2 {
@@ -18,9 +17,10 @@ h2 {
   font-weight: 200;
 }
 
-h3 {
+h3,h4 {
   text-align: center;
   padding: 10px;
   font-size: 1.5rem;
   font-weight: 400;
 }
+

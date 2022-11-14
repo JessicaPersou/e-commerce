@@ -9,7 +9,7 @@ function Home() {
     <div>
       < Header/>
       < Main />
-       {/*< Card />*/}
+      {/* < Card />*/}
      < Footer /> 
     </div>
   );

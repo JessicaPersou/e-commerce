@@ -29,7 +29,6 @@ h2{
 
 a{
   text-decoration: none;
-  color:  tomato;
 }
 
 input{
@@ -54,12 +53,6 @@ input{
   background-color: rgba(255, 99, 71, 0.678);
 }
 
-a:hover{
-  color: rgba(255, 99, 71, 0.678);
-}
 
-span{
-  font-size: small;
-}
 
 
