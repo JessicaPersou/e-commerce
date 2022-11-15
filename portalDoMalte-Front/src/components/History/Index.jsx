@@ -1,8 +1,8 @@
 import styles from "./history.module.css";
-import Banner from "../../assets/viking.jpg";
-import About from "../../assets/beer.png";
-import Tasting from "../../assets/tasting.png";
-import MyBeer from "../../assets/barril.jpg";
+import Banner from "../../assets/photoPages/viking.jpg";
+import About from "../../assets/photoPages/beer.png";
+import Tasting from "../../assets/photoPages/tasting.png";
+import MyBeer from "../../assets/photoPages/barril.jpg";
 
 export function History() {
   return (

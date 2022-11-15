@@ -1,13 +1,35 @@
-.component{
-background-color: var(--black);
-}
-
-/* .card{
+.card{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 300px;
+
+  border: 1px solid #dda520;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(221,165,32,0.21);
 }
 
-.craft-style{
+.imgCard{
+  width: 250px;
+}
+
+.title{
+  color: #dda520;
+  font-size: 400;
+}
+
+.description{
+  color: var(--white);
+  line-height: 25px;
+  text-align: justify;
+  font-size: 400;
+}
+
+/*.craft-style{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

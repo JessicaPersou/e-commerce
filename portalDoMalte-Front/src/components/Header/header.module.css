@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  box-shadow: 0px 10px 2px 5px rgba(13,13,13,1);
 }
 
 .logo {

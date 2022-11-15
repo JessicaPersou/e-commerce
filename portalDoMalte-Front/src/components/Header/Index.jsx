@@ -1,8 +1,8 @@
 import styles from "./header.module.css";
-import search from "../../assets/search.svg";
-import cart from "../../assets/cart.svg";
-import login from "../../assets/in.svg";
-import beer from "../../assets/beerblack.svg";
+import search from "../../assets/elements/search.svg";
+import cart from "../../assets/elements/cart.svg";
+import login from "../../assets/elements/in.svg";
+import beer from "../../assets/elements/beerblack.svg";
 
 export function Header() {
   return (
@@ -14,7 +14,7 @@ export function Header() {
       <div className={styles.menu}>
         <a href="/" className={styles.font}><span >HOME</span></a>
         <a href="/history" className={styles.font}><span>HISTÓRIA</span></a>
-        <a href="/" className={styles.font}><span>ESTILOS</span></a>
+        <a href="/styles" className={styles.font}><span>ESTILOS</span></a>
         <a href="/" className={styles.font}><span>BEER STORE</span></a>
       </div>
       <div className={styles.icons}>
