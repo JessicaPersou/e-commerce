@@ -47,3 +47,31 @@
 .icon50{
   height: 50px;
 }
+
+.line1 {
+  border-left: 1px solid #261616;
+  border-radius: 1px;
+  position: absolute;
+  height: 200px;
+  left: 25%;
+}
+
+.line2 {
+  border-left: 1px solid #261616;
+  border-radius: 1px;
+  position: absolute;
+  height: 200px;
+  left: 50%;
+}
+
+.line3 {
+  border-left: 1px solid #261616a1;
+  border-radius: 1px;
+  position: absolute;
+  height: 200px;
+  left: 75%;
+}
+
+.line4 {
+  border: 0.5px solid #261616;
+}

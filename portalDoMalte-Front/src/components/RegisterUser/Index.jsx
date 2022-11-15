@@ -1,4 +1,4 @@
-import "./register.css";
+import styles from "./register.module.css";
 
 export function RegisterUser() {
   return (

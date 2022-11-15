@@ -1,10 +1,10 @@
 import { RegisterUser } from "../components/RegisterUser";
-import "../components/RegisterUser/register.css";
+
 
 function Register() {
   return (
     <div>
-      <RegisterUser />
+      {/* <RegisterUser /> */}
     </div>
   );
 }

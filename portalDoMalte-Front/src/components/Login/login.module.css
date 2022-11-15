@@ -1,28 +1,119 @@
-.form{
+.colorbg {
   background-color: var(--background-black);
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px 0 0 20px;
+}
+
+.form {
   color: var(--white);
-  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.back {
+  display: flex;
+  height: 50px;
+}
+
+.box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  gap: 10px;
+  color: var(--yellow);
 }
 
-.box{
+.box img {
+  height: 70px;
+}
+
+.box h1 {
+  font-size: 5rem;
+}
+
+.box strong {
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+}
+
+.titleLogin{
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--yellow);
+}
+
+.login {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  
+  gap: 2px;
 }
 
-.btn{
+.btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.txt{
-  font-size: 1rem;
+.txt {
+  font-size: 0.8rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.txt a:hover {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.inputMail {
+  /* background-image: url("../../assets/envelope.svg");
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size:contain; */
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+.inputPassword {
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.btnSend {
+  background-color: var(--white);
+  padding: 8px 50px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.btnSend:hover {
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.line {
+  border-left: 2px solid #dda520;
+  border-radius: 1px;
+  height: 600px;
+  left: 70%;
 }

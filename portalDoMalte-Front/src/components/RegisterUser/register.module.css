@@ -8,9 +8,7 @@
   height: 100vh;
 }
 
-h2 {
-  padding-bottom: 30px;
-}
+
 
 .register {
   height: 70%;
@@ -44,7 +42,7 @@ h2 {
   flex-direction: column;
 }
 
-input {
+.input {
   width: 100%;
   border-style: none;
   border-radius: 5px;

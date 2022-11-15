@@ -1,10 +1,16 @@
 import styles from "./card.module.css";
-import Beer from "../../assets/cup-beer.jpeg";
 
-export function Card() {
+export function Card({img, title, description}) {
   return (
-    <div >
-      <h2>PRINCIPAIS ESTILOS DE CERVEJA ARTESANAL</h2>
+    <div className={styles.component}>
+      <div className={styles.card}>
+        <img className={styles.imgCard} src={img} alt="" />
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.description}>{description}</p>
+      </div>
+      
+
+     {/* <h2>PRINCIPAIS ESTILOS DE CERVEJA ARTESANAL</h2>
       <div>
         <div>
           <img src={Beer} alt="" />
@@ -18,7 +24,7 @@ export function Card() {
             <i> primeira Pilsen produzida</i> e a German Pilsner.
           </p>
         </div>
-        {/* <div>
+         <div>
           <img src={Beer} alt="cup of beer" />
           <h3>LAGER</h3>
           <p>
@@ -85,8 +91,8 @@ export function Card() {
             sabor e aroma frutados, lembrando banana e cravo. A bebida é
             refrescante, com teor alcóolico moderado (em torno de 5% a 6%).
           </p>
-        </div> */}
-      </div>
+        </div> 
+      </div>*/}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../src/Pages/Home";
 import Login from "../src/Pages/Login";
 import Register from "../src/Pages/Register";
+import History from "../src/Pages/History";
 import AdminUsers from "../src/Pages/AdminUsers";
 import "./styles/global.css"
 
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/history" element={<History/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/login/register" element={<Register/>} />
         <Route path="/admin/users" element={<AdminUsers/>} />

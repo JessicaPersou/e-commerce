@@ -1,18 +1,16 @@
 import { Header } from "../components/Header";
-import { Card } from "../components/Card";
+import { History } from "../components/History";
 import { Footer } from "../components/Footer";
-import { Main } from "../components/Main/Index";
 
-
-function Home() {
+function HistoryPage() {
   return (
     <div>
       <Header />
-      <Main />
+      <History />
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default HistoryPage;
 

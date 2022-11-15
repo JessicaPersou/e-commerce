@@ -1,4 +1,8 @@
-.card{
+.component{
+background-color: var(--black);
+}
+
+/* .card{
   display: flex;
   flex-direction: column;
 }
@@ -46,4 +50,4 @@
   text-align: justify;
   font-weight: 400;
   font-size: 1rem;
-}
+} */

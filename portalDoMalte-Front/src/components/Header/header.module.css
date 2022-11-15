@@ -30,6 +30,8 @@
 .font {
   font-size: 1rem;
   font-weight: 400;
+  text-decoration: none;
+  color: var(--black);
 }
 
 .icons {

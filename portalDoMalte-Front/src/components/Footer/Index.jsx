@@ -22,26 +22,30 @@ export function Footer() {
           <p className={styles.font}>Fale Conosco</p>
           <p className={styles.font}>Política de privacidade</p>
         </div>
+        <div className={styles.line1}></div>
         <div className={styles.info}>
           <h4>NOSSAS REDES</h4>
-          <img className={styles.icon30} src={face} alt="facebook" />
-          <img className={styles.icon30} src={insta} alt="instagram" />
-          <img className={styles.icon30} src={whats} alt="whatsapp" />
+          <a href="https://www.facebook.com/"><img className={styles.icon30} src={face} alt="facebook" /></a>
+          <a href="https://www.instagram.com/"><img className={styles.icon30} src={insta} alt="instagram" /></a>
+          <a href="https://www.whatsapp.com/?lang=pt_br"><img className={styles.icon30} src={whats} alt="whatsapp" /></a>
         </div>
+        <div className={styles.line2}></div>
         <div className={styles.info}>
           <h4>FORMAS DE PAGAMENTO</h4>
           <img className={styles.icon30} src={Visa} alt="" />
           <img className={styles.icon30} src={Master} alt="" />
           <img className={styles.icon30} src={Pix} alt="" />
           <img className={styles.icon30} src={Boleto} alt="" />
+        <div className={styles.line3}></div>  
         </div>
+        
         <div className={styles.info}>
           <h4>BAIXE O APP</h4>
-          <img className={styles.icon50} src={Android} alt="" />
-          <img className={styles.icon50} src={Apple} alt="" />
+          <a href="https://play.google.com/store/games"><img className={styles.icon50} src={Android} alt="" /></a>
+          <a href="https://www.apple.com/br/app-store/"><img className={styles.icon50} src={Apple} alt="" /></a>
         </div>
       </div>
-      <hr />
+      <hr className={styles.line4}/>
       {/* <p>Made by &#x1F9E1; Jessi</p> */}
       <div className={styles.infoShop}>
         <p>Portal do Malte S. A. CNPJ: 12.594.529/0001-60</p>
