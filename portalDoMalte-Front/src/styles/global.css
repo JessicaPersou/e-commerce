@@ -9,12 +9,12 @@
 :root {
   --white: #fffafa;
  
-  --background: #fcf8ec;
+  --background-white: #fcf8ec;
   --yellow: #daa520;
   --orange-dark: #8b4513;
   --brown: #472815;
   --brown-dark: #261616;
-  --black: #131212;
+  --background-black: #131212;
 }
 
 h1 {

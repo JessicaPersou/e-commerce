@@ -20,7 +20,7 @@ export function Header() {
       <div className={styles.icons}>
         <img className={styles.img}  src={search} alt="" />
         <img className={styles.img}  src={cart} alt="" />
-        <img className={styles.img} src={login} alt="" />
+        <a href="/login"><img className={styles.img} src={login} alt="" /></a>
       </div>
     </div>
   );

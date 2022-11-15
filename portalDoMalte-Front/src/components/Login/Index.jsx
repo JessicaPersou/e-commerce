@@ -1,29 +1,27 @@
-import "../Login/login.css";
+import styles from "./login.module.css";
 
 export function LoginUser() {
   return (
-    <div className="form-login">
-      <h2>Faça seu Login</h2>
-      <div className="login">
-        <div className="label">
-          <label htmlFor="">E-mail</label>
+    <div className={styles.form}>
+      <div className={styles.box}>
+        <h2>LOGIN</h2>
+        <div className={styles.login}>
+          <label className={styles.txt} htmlFor="">E-MAIL</label>
           <input type="text" />
         </div>
-        <div className="label">
-          <label htmlFor="">Senha</label>
-          <input type="text" />
+        <div>
+          <label className={styles.txt} htmlFor="">SENHA</label>
+          <input type="password" />
         </div>
-        <span>
-          <a href="#">Esqueci minha senha</a>
-        </span>
+        <div className={styles.btn}>
+          <a className={styles.txt} href="#">Esqueci minha senha</a>
+          <button type="submit">LOGIN</button>
+          <span className={styles.txt}>
+            Você ainda não tem Login?
+            <a href="/login/register"> Registre-se Aqui.</a>
+          </span>
+        </div>
       </div>
-      <div className="btn">
-        <input className="btn-send" type="button" value="Entrar" />
-      </div>
-      <span>
-        Você ainda não tem Login?{" "}
-        <a href="/login/register"> Registre-se Aqui.</a>
-      </span>
     </div>
   );
 }
