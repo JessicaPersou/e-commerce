@@ -15,7 +15,7 @@ export function Header() {
         <a href="/" className={styles.font}><span >HOME</span></a>
         <a href="/history" className={styles.font}><span>HISTÓRIA</span></a>
         <a href="/styles" className={styles.font}><span>ESTILOS</span></a>
-        <a href="/" className={styles.font}><span>BEER STORE</span></a>
+        <a href="/products" className={styles.font}><span>BEER STORE</span></a>
       </div>
       <div className={styles.icons}>
         <a href=""><img className={styles.img}  src={search} alt="" /></a>
@@ -26,4 +26,4 @@ export function Header() {
   );
 }
 
-//os componentes
+

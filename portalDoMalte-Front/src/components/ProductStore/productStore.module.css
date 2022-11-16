@@ -1,0 +1,39 @@
+.main {
+  background-color: var(--background-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 100px 0;
+}
+
+.banner{
+  width: 900px;
+  padding-bottom: 50px;
+}
+
+.bannerTxt{
+  width: 500px;
+}
+
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 100px;
+}
+
+.msg{
+  background-color: var(--orange-dark);
+  color: var(--black);
+  width: 100%;
+  font-weight: 400;
+}
+
+.msg h1{
+  padding: 10px 0 10px 0;
+  font-size: 5rem;
+  text-align: center;
+}
+

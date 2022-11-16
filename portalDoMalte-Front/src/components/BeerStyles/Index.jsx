@@ -1,5 +1,5 @@
 import styles from "./beerStyles.module.css";
-import Banner from "../../assets/photoPages/craft-beer.jpg";
+import Banner from "../../assets/photoPages/tastingBeer.png";
 import Lager from "../../assets/stylesBeer/lager.png";
 import Pilsen from "../../assets/stylesBeer/pilsen.png";
 import Ipa from "../../assets/stylesBeer/ipa.png";

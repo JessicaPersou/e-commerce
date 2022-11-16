@@ -1,0 +1,19 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 300px;
+
+  border: 1px solid #dda520;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 5px rgba(221,165,32,0.21);
+}
+
+.imgCard{
+  width: 200px;
+  height: 250px;
+}

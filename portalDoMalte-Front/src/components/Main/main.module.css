@@ -22,6 +22,10 @@
   gap: 50px;
 }
 
+:component(.description){
+ color: red;
+}
+
 .msg{
   color: var(--yellow);
   width: 100%;

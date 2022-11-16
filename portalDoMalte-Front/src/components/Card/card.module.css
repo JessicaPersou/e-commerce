@@ -14,7 +14,8 @@
 }
 
 .imgCard{
-  width: 250px;
+  width: 200px;
+  height: 250px;
 }
 
 .title{
@@ -28,48 +29,3 @@
   text-align: justify;
   font-size: 400;
 }
-
-/*.craft-style{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 10px 50px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.box-style{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 25px;
-  padding: 10px;
-  background-color: #fcecec88;
-  border-radius: 5px;
-  line-height: 25px;
-}
-
-.box-style{
-  width: 300px;
-  cursor: pointer;
-}
-
-.box-style:hover{
-  opacity: 1;
-  background-color: rgba(241, 131, 58, 0.507) ;
-  filter: opacity(0.5);
-  color: black;
-}
-
-
-.box-style img{
-  width: 250px;
-}
-
-.box-style > p{
-  text-align: justify;
-  font-weight: 400;
-  font-size: 1rem;
-} */
