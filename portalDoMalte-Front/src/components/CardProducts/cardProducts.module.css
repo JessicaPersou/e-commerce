@@ -8,8 +8,9 @@
   padding: 20px;
   width: 300px;
 
+  box-shadow: 0 0 30px 0.5px rgba(0, 0, 0, 0.466);
   border-radius: 10px;
-  box-shadow: 0 0 5px 5px rgba(221,165,32,0.21);
+  /* box-shadow: 0 0 5px 5px rgba(221,165,32,0.21); */
 }
 
 .imgCard{

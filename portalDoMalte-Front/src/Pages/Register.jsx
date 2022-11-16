@@ -4,7 +4,7 @@ import { RegisterUser } from "../components/RegisterUser";
 function Register() {
   return (
     <div>
-      {/* <RegisterUser /> */}
+       <RegisterUser /> 
     </div>
   );
 }

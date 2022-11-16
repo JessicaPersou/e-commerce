@@ -16,7 +16,6 @@ export function LoginUser() {
           <h1>PORTAL DO MALTE</h1>
           <strong>VARIEDADE DE ESTILOS, INFINIDADE DE SABORES</strong>
         </div>
-        <div className={styles.line}></div>
         <div className={styles.form}>
           <h2 className={styles.titleLogin}>LOGIN</h2>
           <div className={styles.login}>

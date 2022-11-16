@@ -1,13 +1,14 @@
 import styles from "./main.module.css";
-import Banner from "../../assets/products/brands.png";
 import DuffPack from "../../assets/home/duffPack.png";
 import Heineken from "../../assets/home/heinekens.png";
-import BrandsBud from "../../assets/home/brands-bud.png";
 import CoronaExtra from "../../assets/home/coronaPack.png";
-import Modelo from "../../assets/home/modelo.png";
-import Stock from "../../assets/home/stock.png";
 import BeerStore from "../../assets/home/brandsStore.png";
-import Barrel from "../../assets/home/barrel.png";
+import Barrel from "../../assets/home/basket.png";
+
+import Banner from "../../assets/products/brands.png";
+import ChangClassicBeer from "../../assets/products/changClassicBeer.png";
+import MeiselAndFriends from "../../assets/products/meiselFriends.png";
+import KitBeer from "../../assets/products/kit.png";
 
 import Paulaner from "../../assets/brands/paulaner.png";
 import BlueMoon from "../../assets/brands/blue.png";
@@ -38,10 +39,11 @@ export function Main() {
         />
         <img className={styles.arrow} src={Rigth} alt="" />
       </div>
-      <hr className={styles.line} />
+
       <div className={styles.msg}>
         <h1>OFERTAS IMPERDÍVEIS!</h1>
       </div>
+      <hr className={styles.line} />
       <div className={styles.brands}>
         <img className={styles.arrow} src={Left} alt="" />
         <BrandsBeers img={Goose} />
@@ -81,24 +83,28 @@ export function Main() {
       <div className={styles.component}>
         <img className={styles.arrow} src={Left} alt="" />
         <CardProducts
-          img={BrandsBud}
-          title={"Budweiser + Heineken + Corona ( Cada saí à R$ 5,58 ) 350ml "}
-          description={"R$ 27,90"}
+          img={KitBeer}
+          title={"Kit Happy Hour Beer 6 Unidades Marcas Diversas 355ml"}
+          description={"R$ 58,90"}
         />
         <CardProducts
-          img={Modelo}
-          title={"Modelo 5 Unidades Tamanhos Variados"}
+          img={MeiselAndFriends}
+          title={"Meisel And Friends 3 Unidades 600ml"}
           description={"R$ 54,90"}
         />
         <CardProducts
-          img={Stock}
-          title={"kit com 8 Unidades Stock Diversas 350ml"}
-          description={"R$ 59,90"}
+          img={ChangClassicBeer}
+          title={"Chang Classic Beer 6 Unidades 350ml"}
+          description={"R$ 79,90"}
         />
         <img className={styles.arrow} src={Rigth} alt="" />
       </div>
       <div className={styles.txtNews}>
-        <p>Conheça mais sobre o mundo da cerveja, leia nossas histórias!</p>
+        <p>
+          Nas compras acima de <strong>R$ 300,00</strong>
+          <br /> concorra a uma super cesta com <strong>15 itens</strong>{" "}
+          exclusivos!
+        </p>
         <div className={styles.news}>
           <img className={styles.imgNews} src={BeerStore} alt="" />
           <img className={styles.imgNews} src={Barrel} alt="" />
@@ -116,7 +122,11 @@ export function Main() {
           id=""
           placeholder="maria@mail.com"
         />
-        <a href="/register"><button className={styles.btnSend} type="submit">CADASTRAR</button></a>
+        <a href="/register">
+          <button className={styles.btnSend} type="submit">
+            CADASTRAR
+          </button>
+        </a>
       </div>
     </div>
   );

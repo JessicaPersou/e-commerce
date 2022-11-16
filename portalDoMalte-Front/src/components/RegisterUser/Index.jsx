@@ -1,78 +1,71 @@
 import styles from "./register.module.css";
+import Back from "../../assets/elements/undo.svg";
+import Logo from "../../assets/elements/beeramarelo.svg";
 
 export function RegisterUser() {
   return (
-    <div className="form-register">
-      <h2>Cadastre-se</h2>
-      <div className="register">
-        <div className="step1">
-        <span>Dados Pessoais</span>
-          <div className="label">
-            <label htmlFor="">Nome Completo</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Documento</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Data de Nascimento</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Telefone</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">E-mail</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Senha</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Confirmar Senha</label>
-            <input type="text"/>
-          </div>
-        </div>
-        <div className="step2">
-          <span>Endereço da Entrega</span>
-          <div className="label">
-            <label htmlFor="">Tipo</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">CEP</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Logradouro</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Número</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Bairro</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Cidade</label>
-            <input type="text"/>
-          </div>
-          <div className="label">
-            <label htmlFor="">Estado</label>
-            <input type="text"/>
-          </div>
-        </div>
+    <div className={styles.colorbg}>
+      <div className={styles.left}>
+        <a href="/">
+          <img className={styles.back} src={Back} alt="" />
+        </a>
       </div>
-      <div className="send">
-        <input className="btn-send" type="button" value="Cadastrar" />
-        <span>
-          Você já tem Login? <a href="/login">Entre Aqui. </a>
-        </span>
+      <div className={styles.row}>
+        <div className={styles.box}>
+          <img src={Logo} alt="" />
+          <h1>PORTAL DO MALTE</h1>
+          <strong>VARIEDADE DE ESTILOS, INFINIDADE DE SABORES</strong>
+        </div>
+        <div className={styles.form}>
+          <h2 className={styles.title}>CADASTRO</h2>
+          <div className={styles.login}>
+            <label className={styles.txt} htmlFor="">
+              NOME
+            </label>
+            <input className={styles.input} type="text" />
+          </div>
+          <div className={styles.login}>
+            <label className={styles.txt} htmlFor="">
+              CPF
+            </label>
+            <input className={styles.input} type="text" />
+          </div>
+          <div className={styles.login}>
+            <label className={styles.txt} htmlFor="">
+              DATA DE NASCIMENTO
+            </label>
+            <input className={styles.input} type="text" />
+          </div>
+          <div className={styles.login}>
+            <label className={styles.txt} htmlFor="">
+              TELEFONE
+            </label>
+            <input className={styles.input} type="text" />
+          </div>
+          <div className={styles.login}>
+            <label className={styles.txt} htmlFor="">
+              E-MAIL
+            </label>
+            <input className={styles.input} type="text" />
+          </div>
+          <div className={styles.login}>
+            <label className={styles.txt} htmlFor="">
+              SENHA
+            </label>
+            <input className={styles.input} type="text" />
+          </div>
+          <div className={styles.btn}>
+            <button className={styles.btnSend} type="submit">
+              CADASTRAR
+            </button>
+            <span className={styles.txt}>
+              Você já tem Login?{" "}
+              <a className={styles.txt} href="/login">
+                Entre Aqui.{" "}
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );

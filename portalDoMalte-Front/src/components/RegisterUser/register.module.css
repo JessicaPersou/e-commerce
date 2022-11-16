@@ -1,70 +1,115 @@
-.form-register {
-  background-color: #2f2721;
-  color: azure;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
+.colorbg {
+  background-color: var(--background-gray);
+  background-image: url("/src/assets/home/beerEffect.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-
-
-.register {
-  height: 70%;
-  width: 50%;
-  padding: 15px 30px;
-  border-radius: 10px;
-  background-color: rgba(250, 235, 215, 0.295);
+.left {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  padding: 20px  0 0px 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
+  justify-content: space-evenly;
 }
 
-.step1 {
+.back {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  height: 50px;
 }
 
-.step2 {
+.row {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 15px;
-}
-
-
-.label {
-  display: flex;
-  flex-direction: column;
-}
-
-.input {
-  width: 100%;
-  border-style: none;
-  border-radius: 5px;
-}
-
-
-
-.send{
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
+  justify-content: space-evenly;
 }
 
-.btn-send {
+.box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
+  gap: 10px;
+  color: var(--yellow);
 }
 
-.btn-send:hover {
-  background-color: rgba(255, 99, 71, 0.678);
+.box img {
+  height: 50px;
+}
+
+.box h1 {
+  font-size: 3rem;
+}
+
+.box strong {
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+}
+
+.form {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+  padding: 50px 100px;
+  box-shadow: 0 0 30px 0.5px rgba(0, 0, 0, 0.466);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--yellow);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.txt {
+  font-size: 0.8rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.txt a:hover {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.input {
+  padding: 10px 70px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.btnSend {
+  background-color: var(--white);
+  padding: 8px 50px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.btnSend:hover {
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: var(--white);
 }
