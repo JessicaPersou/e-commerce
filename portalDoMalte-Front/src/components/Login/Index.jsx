@@ -1,5 +1,5 @@
 import styles from "./login.module.css";
-import Back from "../../assets/elements/angle-double-left.svg";
+import Back from "../../assets/elements/undo.svg";
 import Logo from "../../assets/elements/beeramarelo.svg";
 
 export function LoginUser() {

@@ -1,16 +1,32 @@
 .main {
-  background-color: var(--background-black);
+  background-color: var(--background-gray);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 100px 0 100px 0;
 }
 
-.banner{
+.arrowBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  padding: 70px;
+  margin: 0 100px;
   width: 900px;
 }
 
-.bannerTxt{
+.line {
+  width: 100%;
+  border: 0.5px solid #181717;
+  box-shadow: 0px 1px 10px 3px rgba(13, 13, 13, 0.445);
+}
+
+.bannerTxt {
   width: 500px;
 }
 
@@ -18,23 +34,108 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+  padding: 50px 0;
 }
 
-:component(.description){
- color: red;
-}
-
-.msg{
+.msg {
   color: var(--yellow);
   width: 100%;
   font-weight: 400;
+  cursor: pointer;
+  /* opacity: 0.5; */
 }
 
-.msg h1{
-  padding: 100px 0 100px 0;
+.msg h1 {
+  padding: 50px 0 50px 0;
   font-size: 5rem;
   text-align: center;
+  
 }
 
+.msg:hover {
+ color: var(--white);
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.arrow {
+  height: 30px;
+  cursor: pointer;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.txtNews {
+  color: var(--yellow);
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 50px 0 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.imgNews {
+  padding: 100px;
+  height: 500px;
+}
+
+.newsLetter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  height: 100px;
+  width: 100%;
+  background-color: var(--background-black);
+}
+
+.newsLetter {
+  border-top: 1px solid #dda520;
+}
+
+.labelNews {
+  color: var(--white);
+  padding: 0 20px;
+}
+
+.inputNews {
+  padding: 8px 50px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.btnSend {
+  background-color: var(--white);
+  padding: 8px 50px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.btnSend:hover {
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.txtNews:hover {
+  color: var(--white);
+ }

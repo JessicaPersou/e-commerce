@@ -21,6 +21,9 @@ import Stella from "../../assets/products/stela.png";
 import Tiger from "../../assets/products/tiger.png";
 import YorkBrewery from "../../assets/products/yorkbrewery.png";
 
+import Left from "../../assets/elements/angle-circle-left.svg";
+import Rigth from "../../assets/elements/angle-circle-right.svg";
+
 import { CardProducts } from "../CardProducts";
 
 export function ProductStore() {
@@ -36,7 +39,7 @@ export function ProductStore() {
         />
       </div>
       <div className={styles.msg}>
-        <h1>CervejaS COM PREÇOS INCRÍVEIS</h1>
+        <h1>Cervejas com preços incríveis</h1>
       </div>
       <div className={styles.component}>
         <CardProducts
@@ -134,6 +137,10 @@ export function ProductStore() {
           title={"Cerveja York Brewery"}
           description={"R$ 15,90"}
         />
+      </div>
+      <div className={styles.productsArrow}>
+        <img className={styles.arrow} src={Left} alt="" />
+        <img className={styles.arrow} src={Rigth} alt="" />
       </div>
     </div>
   );
