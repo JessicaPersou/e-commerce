@@ -79,6 +79,7 @@
   border-style: none;
   border-radius: 5px;
   box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.466);
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .btn:hover {
@@ -86,3 +87,14 @@
   background-color: var(--yellow);
   color: var(--white);
 }
+
+/* @keyframes teste {
+  from { background-color: var(--white)}
+  to{ background-color: var(--background-gray)}
+}
+
+div {
+  animation-name: teste;
+  transition: ease-in;
+  animation-duration: 5s;
+} */

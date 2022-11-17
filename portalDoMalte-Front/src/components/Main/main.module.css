@@ -46,17 +46,18 @@
   font-weight: 400;
   cursor: pointer;
   /* opacity: 0.5; */
+  transition: color 0.3s;
 }
 
 .msg h1 {
   padding: 50px 0 50px 0;
   font-size: 5rem;
   text-align: center;
-  
+  transition: color 0.3s;
 }
 
 .msg:hover {
- color: var(--white);
+  color: var(--white);
 }
 
 .brands {
@@ -89,6 +90,7 @@
   padding: 50px 0 0 0;
   text-align: center;
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .imgNews {
@@ -128,6 +130,7 @@
   padding: 8px 50px;
   border-style: none;
   border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .btnSend:hover {
@@ -138,4 +141,4 @@
 
 .txtNews:hover {
   color: var(--white);
- }
+}
