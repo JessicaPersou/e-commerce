@@ -6,7 +6,13 @@ export function CardProducts({ img, title, description }) {
       <img className={styles.imgCard} src={img} alt="" />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
-      <a href="/product-detail"><button className={styles.btn} type="submit">COMPRAR</button></a>
+      <footer className={styles.footer}>
+        <a href="/product-detail">
+          <button className={styles.btn} type="submit">
+            COMPRAR
+          </button>
+        </a>
+      </footer>
     </div>
   );
 }

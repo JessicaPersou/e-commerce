@@ -41,7 +41,7 @@ export function LoginUser() {
             </button>
             <span className={styles.txt}>
               Você ainda não tem Login?
-              <a className={styles.txt} href="/login/register">
+              <a className={styles.txt} href="/register">
                 {" "}
                 Registre-se Aqui.
               </a>

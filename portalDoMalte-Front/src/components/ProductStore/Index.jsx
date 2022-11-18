@@ -42,7 +42,7 @@ export function ProductStore() {
         <h1>Cervejas com preços incríveis</h1>
       </div>
       <div className={styles.component}>
-        <CardProducts
+        <CardProducts 
           img={AegisBrewing}
           title={"Cerveja Aegis Brewing 350ml"}
           description={"R$ 19,90"}

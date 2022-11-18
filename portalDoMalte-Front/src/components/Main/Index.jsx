@@ -122,7 +122,7 @@ export function Main() {
           id=""
           placeholder="maria@mail.com"
         />
-        <a href="/login/register">
+        <a href="/register">
           <button className={styles.btnSend} type="submit">
             CADASTRAR
           </button>
