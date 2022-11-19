@@ -5,7 +5,7 @@ import { XCircle } from "phosphor-react";
 export function Cart() {
   return (
     <div className={styles.shoppingCart}>
-      <p>CARRINHO DE COMPRAS</p>
+      <h1>CARRINHO DE COMPRAS</h1>
       <hr />
       <div className={styles.infoProduct}>
         <div className={styles.product}>
@@ -22,19 +22,17 @@ export function Cart() {
         </div>
         <div className={styles.product}>
           <p>
-            <XCircle />
+            <XCircle size={40}/>
           </p>
         </div>
       </div>
-      <hr />
-      <p>ENTREGA</p>
-      <hr />
+      <h4>ENTREGA</h4>
       <div className={styles.shipping}>
         <div className={styles.shippingDetails}>
           <p>CALCULAR FRETE</p>
           <div className={styles.infoProduct}>
             <div className={styles.product}>
-              <input type="number" />
+              <input className={styles.inputInfo} type="number" />
             </div>
             <div className={styles.product}>
               <button type="submit">CALCULAR</button>
@@ -43,7 +41,7 @@ export function Cart() {
           <p>CUPOM DE DESCONTO</p>
           <div className={styles.infoProduct}>
             <div className={styles.product}>
-              <input type="number" />
+              <input className={styles.inputInfo} type="number" />
             </div>
             <div className={styles.product}>
               <button type="submit">VERIFICAR</button>
@@ -59,9 +57,8 @@ export function Cart() {
           </div>
         </div>
       </div>
-      <hr />
-      <div className={styles.btnPayments}>
-        <a href="/finished">
+      <div>
+        <a href="/finished" className={styles.btnPayments}>
           <button type="submit">FINALIZAR COMPRA</button>
         </a>
       </div>

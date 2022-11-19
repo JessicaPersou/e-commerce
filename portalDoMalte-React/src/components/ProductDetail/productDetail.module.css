@@ -69,7 +69,6 @@
   padding: 10px;
   border-style: none;
   border-radius: 5px;
-  border-radius: 5px;
   box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.466);
 }
 
@@ -98,3 +97,9 @@ div {
   transition: ease-in;
   animation-duration: 5s;
 } */
+
+.inputInfo {
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
