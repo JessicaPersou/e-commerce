@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--yellow);
-  color: var(--black);
+  background-color: var(--background-black);
+  color: var(--white);
   padding: 50px 0;
 }
 
@@ -23,7 +23,7 @@
   padding: 20px;
 }
 
-.font{
+.font {
   font-size: 0.75rem;
 }
 
@@ -45,7 +45,7 @@
   padding: 20px;
 }
 
-.icon50{
+.icon50 {
   height: 50px;
 }
 

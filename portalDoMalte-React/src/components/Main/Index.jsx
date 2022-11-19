@@ -18,18 +18,15 @@ import Hoegaarden from "../../assets/brands/hoegaarden.png";
 import Tiger from "../../assets/brands/tiger.png";
 import Goose from "../../assets/brands/goose.png";
 
-import Left from "../../assets/elements/angle-circle-left.svg";
-import Rigth from "../../assets/elements/angle-circle-right.svg";
-import Email from "../../assets/elements/envelope-plus.svg";
-
 import { CardProducts } from "../CardProducts";
 import { BrandsBeers } from "../BrandsBeer/Index";
+import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
 
 export function Main() {
   return (
     <div className={styles.main}>
       <div className={styles.arrowBanner}>
-        <img className={styles.arrow} src={Left} alt="" />
+        <ArrowCircleLeft color="#e1dbdb" size={40} />
         <img
           className={styles.banner}
           width="100%"
@@ -37,7 +34,7 @@ export function Main() {
           src={Banner}
           alt=""
         />
-        <img className={styles.arrow} src={Rigth} alt="" />
+        <ArrowCircleRight color="#e1dbdb" size={40} />
       </div>
 
       <div className={styles.msg}>
@@ -45,7 +42,8 @@ export function Main() {
       </div>
       <hr className={styles.line} />
       <div className={styles.brands}>
-        <img className={styles.arrow} src={Left} alt="" />
+        <ArrowCircleLeft color="#e1dbdb" size={40} />
+
         <BrandsBeers img={Goose} />
         <BrandsBeers img={Paulaner} />
         <BrandsBeers img={BlueMoon} />
@@ -53,13 +51,13 @@ export function Main() {
         <BrandsBeers img={Duff} />
         <BrandsBeers img={Hoegaarden} />
         <BrandsBeers img={Tiger} />
-        <img className={styles.arrow} src={Rigth} alt="" />
+        <ArrowCircleRight color="#e1dbdb" size={40} />
       </div>
       <div className={styles.msg}>
         <h2>As Melhores Marcas estão aqui!</h2>
       </div>
       <div className={styles.component}>
-        <img className={styles.arrow} src={Left} alt="" />
+        <ArrowCircleLeft color="#e1dbdb" size={40} />
         <CardProducts
           img={DuffPack}
           title={"Pack com 6 Unidades Duff Beer 350ml"}
@@ -75,13 +73,13 @@ export function Main() {
           title={"Double Pack com 6 Unidades Cada Corona Extra 350ml"}
           description={"R$ 39,90"}
         />
-        <img className={styles.arrow} src={Rigth} alt="" />
+        <ArrowCircleRight color="#e1dbdb" size={40} />
       </div>
       <div className={styles.msg}>
         <h2>Ofertas de Combos!</h2>
       </div>
       <div className={styles.component}>
-        <img className={styles.arrow} src={Left} alt="" />
+        <ArrowCircleLeft color="#e1dbdb" size={40} />
         <CardProducts
           img={KitBeer}
           title={"Kit Happy Hour Beer 6 Unidades Marcas Diversas 355ml"}
@@ -97,7 +95,7 @@ export function Main() {
           title={"Chang Classic Beer 6 Unidades 350ml"}
           description={"R$ 79,90"}
         />
-        <img className={styles.arrow} src={Rigth} alt="" />
+        <ArrowCircleRight color="#e1dbdb" size={40} />
       </div>
       <div className={styles.txtNews}>
         <p>
@@ -111,21 +109,21 @@ export function Main() {
         </div>
       </div>
       <div className={styles.newsLetter}>
-        <img className={styles.arrow} src={Email} alt="" />
-        <label className={styles.labelNews} htmlFor="">
-          CADATRE-SE PARA RECEBER NOSSAS NOVIDADES POR E-MAIL:
-        </label>
+        <p className={styles.labelNews} htmlFor="">
+          <strong>
+            {" "}
+            Cadastre-se para receber nossas novidades por e-mail:
+          </strong>
+        </p>
         <input
           className={styles.inputNews}
           type="email"
           name=""
           id=""
-          placeholder="maria@mail.com"
+          placeholder="maria@gmail.com"
         />
         <a href="/register">
-          <button className={styles.btnSend} type="submit">
-            CADASTRAR
-          </button>
+          <button type="submit">CADASTRAR</button>
         </a>
       </div>
     </div>

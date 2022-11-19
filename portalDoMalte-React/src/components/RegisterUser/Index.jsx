@@ -1,13 +1,13 @@
 import styles from "./register.module.css";
-import Back from "../../assets/elements/undo.svg";
-import Logo from "../../assets/elements/beeramarelo.svg";
+import Logo from "../../assets/elements/beerbranco.svg";
+import { ArrowUUpLeft } from "phosphor-react";
 
 export function RegisterUser() {
   return (
     <div className={styles.colorbg}>
       <div className={styles.left}>
-        <a href="/">
-          <img className={styles.back} src={Back} alt="" />
+        <a className={styles.txt} href="/">
+          <ArrowUUpLeft size={32} />{" "}
         </a>
       </div>
       <div className={styles.row}>
@@ -55,9 +55,7 @@ export function RegisterUser() {
             <input className={styles.input} type="text" />
           </div>
           <div className={styles.btn}>
-            <button className={styles.btnSend} type="submit">
-              CADASTRAR
-            </button>
+            <button type="submit">CADASTRAR</button>
             <span className={styles.txt}>
               Você já tem Login?{" "}
               <a className={styles.txt} href="/login">

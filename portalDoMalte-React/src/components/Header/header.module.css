@@ -1,17 +1,33 @@
 .header {
   background-color: var(--yellow);
   color: var(--black);
-  height: 80px;
+  height: 120px;
   width: 100%;
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid #000;
   box-shadow: 0 0 20px 1px #000;
   transition: color 0.3s;
+  gap: 20px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .header a:hover{
@@ -45,9 +61,6 @@
 
 
 .font {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-decoration: none;
   color: var(--black);
   transition: color 0.3s;
 }
@@ -57,4 +70,9 @@
   flex-direction: row;
   justify-content: space-around;
   gap: 20px;
+}
+
+.inputSearch {
+  padding: 8px 50px;
+  border-radius: 5px;
 }

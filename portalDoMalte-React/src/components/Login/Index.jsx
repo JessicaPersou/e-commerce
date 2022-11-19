@@ -1,14 +1,14 @@
 import styles from "./login.module.css";
-import Back from "../../assets/elements/undo.svg";
-import Logo from "../../assets/elements/beeramarelo.svg";
-import { SignIn } from "phosphor-react";
+
+import Logo from "../../assets/elements/beerbranco.svg";
+import { SignIn, ArrowUUpLeft } from "phosphor-react";
 
 export function LoginUser() {
   return (
     <div className={styles.colorbg}>
       <div className={styles.left}>
-        <a href="/">
-          <img className={styles.back} src={Back} alt="" />
+        <a className={styles.txt} href="/">
+         <ArrowUUpLeft size={32} />
         </a>
       </div>
       <div className={styles.row}>
@@ -37,7 +37,7 @@ export function LoginUser() {
                 Esqueci minha senha
               </a>
             </span>
-            <button className={styles.btnSend} type="submit">
+            <button type="submit">
               <SignIn /> LOGIN
             </button>
             <span className={styles.txt}>

@@ -1,33 +1,24 @@
 .shoppingCart{
-  background-color: var(--background-black);
-  color: var(--white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 50px;
-}
-
-.shoppingCart> h1{
-  text-align: start;
+  gap: 50px;
 }
 
 .infoProduct{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  height: 500px;
-  gap: 20px;
+  gap: 50px;
 }
 
 .cartDetails{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   gap: 20px;
-  border: 1px solid black;
-  width: 80vw;
-  height: 400px;
   padding: 20px;
 }
 
@@ -37,6 +28,24 @@
 }
 
 .imgProduct{
-  height: 100px;
+  height: 200px;
 }
 
+.shipping{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.shippingDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btnPayments{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}

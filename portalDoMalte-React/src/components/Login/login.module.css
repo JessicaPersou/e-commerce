@@ -1,6 +1,6 @@
 .colorbg {
   background-color: var(--background-gray);
-  background-image: url("/src/assets/home/beerEffect.png");
+  /* background-image: url("/src/assets/home/beerEffect.png"); */
   background-size: contain;
   background-repeat: no-repeat; 
 }
@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: var(--yellow);
+  color: var(--white);
 }
 
 .box img {
@@ -60,7 +60,7 @@
 .titleLogin{
   font-weight: 400;
   font-size: 3rem;
-  color: var(--yellow);
+  color: var(--white);
 }
 
 .login {
@@ -97,24 +97,13 @@
   border-style: none;
   border-radius: 5px;
 }
+
 .inputPassword {
   padding: 10px;
   border-style: none;
   border-radius: 5px;
 }
 
-.btnSend {
-  background-color: var(--white);
-  padding: 8px 50px;
-  border-style: none;
-  border-radius: 5px;
-  transition: color 0.3s, background-color 0.3s;
-}
 
-.btnSend:hover {
-  cursor: pointer;
-  background-color: var(--yellow);
-  color: var(--white);
-}
 
 
