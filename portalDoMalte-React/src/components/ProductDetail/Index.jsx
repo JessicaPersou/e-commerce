@@ -26,9 +26,12 @@ export function ProductDetail() {
           <p className={styles.txt}>DESCRIÇÃO DO PRODUTO</p>
           <p className={styles.txt}>6 UNIDADES</p>
           <p className={styles.txt}>R$89,90</p>
-          <button className={styles.btn} type="submit">
+          <a href="#"><button className={styles.btn} type="submit">
             ADICIONAR
-          </button>
+          </button></a>
+          <a href="/shopping-cart"><button className={styles.btn} type="submit">
+            IR PARA CARRINHO
+          </button></a>
           <hr className={styles.line} />
           <div className={styles.zipCode}>
             <label className={styles.details}>CALCULE O VALOR DE FRETE</label>

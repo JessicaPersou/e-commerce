@@ -1,4 +1,5 @@
 import styles from "./cardProducts.module.css";
+import { ShoppingCart } from "phosphor-react";
 
 export function CardProducts({ img, title, description }) {
   return (
@@ -9,7 +10,7 @@ export function CardProducts({ img, title, description }) {
       <footer className={styles.footer}>
         <a href="/product-detail">
           <button className={styles.btn} type="submit">
-            COMPRAR
+            <ShoppingCart /> COMPRAR
           </button>
         </a>
       </footer>

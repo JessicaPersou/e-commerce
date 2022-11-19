@@ -1,6 +1,7 @@
 import styles from "./login.module.css";
 import Back from "../../assets/elements/undo.svg";
 import Logo from "../../assets/elements/beeramarelo.svg";
+import { SignIn } from "phosphor-react";
 
 export function LoginUser() {
   return (
@@ -37,7 +38,7 @@ export function LoginUser() {
               </a>
             </span>
             <button className={styles.btnSend} type="submit">
-              LOGIN
+              <SignIn /> LOGIN
             </button>
             <span className={styles.txt}>
               Você ainda não tem Login?
