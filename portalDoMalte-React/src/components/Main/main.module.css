@@ -1,5 +1,5 @@
 .main {
-  background-color: var(--background-gray);
+  background-color: var(--golden-grass-180);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,8 +22,8 @@
 
 .line {
   width: 100%;
-  border: 0.5px solid #181717;
-  box-shadow: 0px 1px 10px 3px rgba(13, 13, 13, 0.445);
+  border: 0.5px solid var(--golden-grass-120);
+  box-shadow: 0px 1px 10px 3px var(--black);
 }
 
 .bannerTxt {
@@ -41,7 +41,7 @@
 }
 
 .msg {
-  color: var(--white);
+  color: var(--golden-grass-60);
   width: 100%;
   font-weight: 400;
   cursor: pointer;
@@ -102,11 +102,10 @@
   padding: 50px;
   height: 100px;
   width: 90%;
-  border: 1px solid var(--white);
   border-radius: 5px;
-  box-shadow: 0px 1px 10px 3px rgba(13, 13, 13, 0.445);
+  box-shadow: 0px 1px 10px 3px var(--black);
   cursor: pointer;
-  background-color: var(--background-white);
+  background-color: var(--golden-grass-60);
   color: var(--black);
 }
 
@@ -117,4 +116,5 @@
 .inputNews {
   padding: 8px 50px;
   border-radius: 5px;
+
 }

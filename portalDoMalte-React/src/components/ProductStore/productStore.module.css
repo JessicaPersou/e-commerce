@@ -1,17 +1,17 @@
 .main {
-  background-color: var(--background-gray);
+  background-color: var(--golden-grass-180);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 0 100px 0;
 }
 
-.banner{
+.banner {
   width: 900px;
   padding-bottom: 50px;
 }
 
-.bannerTxt{
+.bannerTxt {
   width: 500px;
 }
 
@@ -24,20 +24,19 @@
   padding-top: 100px;
 }
 
-.msg{
-  background-color: var(--yellow);
-  color: var(--black);
+.msg {
+  color: var(--golden-grass-40);
   width: 100%;
   font-weight: 400;
 }
 
-.msg h1{
+.msg h1 {
   padding: 10px 0 10px 0;
   font-size: 5rem;
   text-align: center;
 }
 
-.productsArrow{
+.productsArrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,7 +45,7 @@
   padding: 100px 0 0 0;
 }
 
-.arrow{
+.arrow {
   height: 30px;
   cursor: pointer;
 }

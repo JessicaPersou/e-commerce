@@ -1,8 +1,8 @@
 .colorbg {
-  background-color: var(--background-gray);
+  background-color: var(--golden-grass-180);
   /* background-image: url("/src/assets/home/beerEffect.png"); */
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .left {
@@ -14,7 +14,7 @@
 
 .form {
   color: var(--white);
-  box-shadow: 0 0 30px 0.5px rgba(0, 0, 0, 0.466);
+  box-shadow: 0 0 30px 0.5px var(--black);
   padding: 50px 100px;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@
   font-size: 0.75rem;
 }
 
-.titleLogin{
+.titleLogin {
   font-weight: 400;
   font-size: 3rem;
   color: var(--white);
@@ -85,7 +85,7 @@
 
 .txt a:hover {
   text-decoration: none;
-  color: var(--yellow);
+  color: var(--golden-grass-60);
 }
 
 .inputMail {
@@ -103,7 +103,3 @@
   border-style: none;
   border-radius: 5px;
 }
-
-
-
-

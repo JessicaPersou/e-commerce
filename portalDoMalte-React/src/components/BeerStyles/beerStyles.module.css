@@ -1,16 +1,16 @@
 .main {
-  background-color: var(--background-gray);
+  background-color: var(--golden-grass-180);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 0 100px 0;
 }
 
-.banner{
+.banner {
   width: 900px;
 }
 
-.bannerTxt{
+.bannerTxt {
   width: 500px;
 }
 
@@ -22,15 +22,14 @@
   gap: 50px;
 }
 
-.msg{
-  color: var(--yellow);
+.msg {
+  color: var(--golden-grass-60);
   width: 100%;
   font-weight: 400;
 }
 
-.msg h1{
+.msg h1 {
   padding: 100px 0 100px 0;
   font-size: 5rem;
   text-align: center;
 }
-

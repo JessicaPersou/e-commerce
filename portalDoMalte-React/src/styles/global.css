@@ -2,19 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 :root {
-  --white: #fffafa;
-  --background-white: #fcf8ec;
-  --yellow: #ad8c36;
-  --orange-dark: #8b4513;
-  --brown: #472815;
-  --brown-dark: #261616;
-  --background-gray: #202024;
-  --background-black: #131212;
+  --white: #ffffff;
+  --golden-grass-20: #f8edd2;
+  --golden-grass-40: #f1dba6;
+  --golden-grass-60: #ebc979;
+  --golden-grass-80: #e4b74d;
+  --golden-grass-100: #dda520;
+  --golden-grass-120: #b1841a;
+  --golden-grass-140: #856313;
+  --golden-grass-160: #58420d;
+  --golden-grass-180: #202024;
+  --black: #000000;
 }
 
 h1 {
@@ -40,30 +43,31 @@ h4 {
   font-weight: 500;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-p{
+p {
   font-size: 1rem;
   font-weight: 400;
 }
 
-span{
+span {
   font-size: 1rem;
   font-size: 400;
 }
 
-button{
-  background-color: var(--background-black);
-  color: var(--background-white);
+button {
+  background-color: var(--black);
+  color: var(--white);
   padding: 8px 50px;
   border-style: none;
   border-radius: 5px;
   transition: color 0.3s, background-color 0.3s;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
-  background-color: var(--yellow);
+  background-color: var(--golden-grass-60);
+  color: var(--golden-grass-180);
 }

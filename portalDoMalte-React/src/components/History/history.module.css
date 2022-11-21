@@ -1,31 +1,31 @@
 .main {
-  background-color: var(--background-gray);
+  background-color: var(--golden-grass-180);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.banner{
+.banner {
   padding-top: 50px;
   width: 900px;
   padding-bottom: 50px;
 }
 
-.bannerTxt{
+.bannerTxt {
   width: 500px;
 }
 
-.history{
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
- gap: 20px;
- padding: 50px 100px;
+.history {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 100px;
 }
 
-.section{
+.section {
   color: var(--white);
   display: flex;
   flex-direction: row;
@@ -33,23 +33,23 @@
   gap: 20px;
 }
 
-.txt{
+.txt {
   font-size: 1rem;
   line-height: 25px;
   text-align: justify;
 }
 
-.title{
+.title {
   padding-bottom: 10px;
 }
 
-.msg{
-  color: var(--yellow);
+.msg {
+  color: var(--golden-grass-60);
   width: 100%;
   font-weight: 400;
 }
 
-.msg h1{
+.msg h1 {
   padding: 100px 0 100px 0;
   font-size: 5rem;
   text-align: center;

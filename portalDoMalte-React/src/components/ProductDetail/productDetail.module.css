@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  background-color: var(--background-gray);
+  background-color: var(--golden-grass-180);
   min-height: 100vh;
   color: var(--white);
   padding: 0 0 50px 0;
@@ -22,7 +22,6 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-
 }
 
 .zipCode {
@@ -43,17 +42,17 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: var(--background-black);
+  background-color: var(--golden-grass-180);
   border-top: 1px solid #dda520;
   padding: 20px 0;
 }
 
 .imgProduct {
-  box-shadow: 0 0 30px 0.5px rgba(0, 0, 0, 0.466);
+  box-shadow: 0 0 30px 0.5px var(--black);
   border-radius: 15px;
   height: 500px;
   width: 400px;
-  cursor:pointer;
+  cursor: pointer;
   padding: 20px;
 }
 
@@ -69,27 +68,13 @@
   padding: 10px;
   border-style: none;
   border-radius: 5px;
-  box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.466);
+  box-shadow: 0 0 10px 0.5px var(--black);
 }
 
-.btn {
-  background-color: var(--white);
-  padding: 8px 50px;
-  border-style: none;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.466);
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.btn:hover {
-  cursor: pointer;
-  background-color: var(--yellow);
-  color: var(--white);
-}
 
 /* @keyframes teste {
   from { background-color: var(--white)}
-  to{ background-color: var(--background-gray)}
+  to{ background-color: var(--black-80)}
 }
 
 div {

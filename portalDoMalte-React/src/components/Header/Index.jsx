@@ -43,7 +43,7 @@ export function Header() {
           </a>
         </div>
         <div className={styles.icons}>
-          <a className={styles.font} href="">
+          <a className={styles.font} href="/shopping-cart">
             <ShoppingCart size={32} />
           </a>
           <a className={styles.font} href="/login">

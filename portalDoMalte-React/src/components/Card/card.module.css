@@ -1,4 +1,6 @@
 .card{
+  background-color: var(--golden-grass-180);
+  border: 1px solid var(--golden-grass-80);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +11,7 @@
   width: 350px;
 
   border-radius: 10px;
-  box-shadow: 0 0 30px 10px var(--background-black);
+  box-shadow: 0 0 30px 10px var(--black);
 }
 
 .imgCard{

@@ -22,7 +22,7 @@ export function Cart() {
         </div>
         <div className={styles.product}>
           <p>
-            <XCircle size={40}/>
+            <XCircle size={40} color="#f20707"/>
           </p>
         </div>
       </div>
