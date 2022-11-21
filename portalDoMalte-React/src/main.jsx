@@ -11,6 +11,7 @@ import "./styles/global.css";
 import Products from "./Pages/Products";
 import ProductDetailPage from "../src/Pages/ProductDetailPage";
 import ShoppingCart from "./Pages/ShoppingCart";
+import ContactPage from "./Pages/ContactPage";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/history" element={<History />} />
         <Route path="/styles" element={<Styles />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/product-detail" element={<ProductDetailPage />} />

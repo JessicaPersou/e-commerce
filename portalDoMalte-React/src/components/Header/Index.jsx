@@ -38,7 +38,7 @@ export function Header() {
           <a href="/products" className={styles.font}>
             <p>BEER STORE</p>
           </a>
-          <a href="/products" className={styles.font}>
+          <a href="/contact" className={styles.font}>
             <p>CONTATO</p>
           </a>
         </div>
