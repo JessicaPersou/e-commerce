@@ -5,7 +5,6 @@ import CoronaExtra from "../../assets/home/coronaPack.png";
 import BeerStore from "../../assets/home/brandsStore.png";
 import Barrel from "../../assets/home/basket.png";
 
-import Banner from "../../assets/products/brands.png";
 import ChangClassicBeer from "../../assets/products/changClassicBeer.png";
 import MeiselAndFriends from "../../assets/products/meiselFriends.png";
 import KitBeer from "../../assets/products/kit.png";
@@ -25,25 +24,12 @@ import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
 export function Main() {
   return (
     <div className={styles.main}>
-      <div className={styles.arrowBanner}>
-        <ArrowCircleLeft color="#e1dbdb" size={40} />
-        <img
-          className={styles.banner}
-          width="100%"
-          max-height="50vh"
-          src={Banner}
-          alt=""
-        />
-        <ArrowCircleRight color="#e1dbdb" size={40} />
-      </div>
-
       <div className={styles.msg}>
         <h1>OFERTAS IMPERDÍVEIS!</h1>
       </div>
       <hr className={styles.line} />
       <div className={styles.brands}>
         <ArrowCircleLeft color="#e1dbdb" size={40} />
-
         <BrandsBeers img={Goose} />
         <BrandsBeers img={Paulaner} />
         <BrandsBeers img={BlueMoon} />

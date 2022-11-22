@@ -1,0 +1,8 @@
+.slider{
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}

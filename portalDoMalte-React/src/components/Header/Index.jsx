@@ -1,7 +1,6 @@
 import styles from "./header.module.css";
 import {
   BeerBottle,
-  MagnifyingGlass,
   ShoppingCart,
   SignIn,
 } from "phosphor-react";
@@ -13,7 +12,9 @@ export function Header() {
         <a className={styles.font} href="">
           <BeerBottle size={32} />
         </a>
-        <p>PORTAL DO MALTE</p>
+        <p>
+          <strong>PORTAL DO MALTE</strong>
+        </p>
       </div>
       {/* <div className={styles.search}>
         <input
@@ -27,19 +28,29 @@ export function Header() {
       <div className={styles.menu}>
         <div className={styles.menu}>
           <a href="/" className={styles.font}>
-            <p>HOME</p>
+            <p>
+              <strong>HOME</strong>
+            </p>
           </a>
           <a href="/history" className={styles.font}>
-            <p>HISTÓRIA</p>
+            <p>
+              <strong>HISTÓRIA</strong>
+            </p>
           </a>
           <a href="/styles" className={styles.font}>
-            <p>ESTILOS</p>
+            <p>
+              <strong>ESTILOS</strong>
+            </p>
           </a>
           <a href="/products" className={styles.font}>
-            <p>BEER STORE</p>
+            <p>
+              <strong>BEER STORE</strong>
+            </p>
           </a>
           <a href="/contact" className={styles.font}>
-            <p>CONTATO</p>
+            <p>
+              <strong>CONTATO</strong>
+            </p>
           </a>
         </div>
         <div className={styles.icons}>

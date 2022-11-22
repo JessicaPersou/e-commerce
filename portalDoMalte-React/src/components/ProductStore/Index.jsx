@@ -1,5 +1,4 @@
 import styles from "./productStore.module.css";
-import Banner from "../../assets/Products/brands.png";
 
 import AegisBrewing from "../../assets/products/aegis.png";
 import Arkells from "../../assets/products/arkells.png";
@@ -21,28 +20,17 @@ import Stella from "../../assets/products/stela.png";
 import Tiger from "../../assets/products/tiger.png";
 import YorkBrewery from "../../assets/products/yorkbrewery.png";
 
-import Left from "../../assets/elements/angle-circle-left.svg";
-import Rigth from "../../assets/elements/angle-circle-right.svg";
-
 import { CardProducts } from "../CardProducts";
+import { CaretDoubleLeft, CaretDoubleRight } from "phosphor-react";
 
 export function ProductStore() {
   return (
     <div className={styles.main}>
-      <div>
-        <img
-          className={styles.banner}
-          width="100%"
-          max-height="50vh"
-          src={Banner}
-          alt=""
-        />
-      </div>
       <div className={styles.msg}>
         <h1>Cervejas com preços incríveis</h1>
       </div>
       <div className={styles.component}>
-        <CardProducts 
+        <CardProducts
           img={AegisBrewing}
           title={"Cerveja Aegis Brewing 350ml"}
           description={"R$ 19,90"}
@@ -139,8 +127,8 @@ export function ProductStore() {
         />
       </div>
       <div className={styles.productsArrow}>
-        <img className={styles.arrow} src={Left} alt="" />
-        <img className={styles.arrow} src={Rigth} alt="" />
+        <CaretDoubleLeft size={40} color="#f1dba6" />
+        <CaretDoubleRight size={40} color="#f1dba6" />
       </div>
     </div>
   );
