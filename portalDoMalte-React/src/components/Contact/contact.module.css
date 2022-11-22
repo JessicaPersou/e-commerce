@@ -1,7 +1,57 @@
-.form{
+.boxForm {
   background-color: var(--golden-grass-180);
+  color: var(--white);
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 50px 0;
+}
 
+.boxForm > h1 {
+  text-align: center;
+  color: var(--golden-grass-60);
+}
+
+.form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.boxTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoContact {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.input {
+  padding: 10px 70px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+
+.txtArea {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.txtArea > textarea {
+  border-radius: 5px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
 }
