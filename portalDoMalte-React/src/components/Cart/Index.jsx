@@ -35,7 +35,7 @@ export function Cart() {
               <input className={styles.inputInfo} type="number" />
             </div>
             <div className={styles.product}>
-              <button type="submit">CALCULAR</button>
+              <button className={styles.btnPortal} type="submit">CALCULAR</button>
             </div>
           </div>
           <p>CUPOM DE DESCONTO</p>
@@ -44,7 +44,7 @@ export function Cart() {
               <input className={styles.inputInfo} type="number" />
             </div>
             <div className={styles.product}>
-              <button type="submit">VERIFICAR</button>
+              <button className={styles.btnPortal} type="submit">VERIFICAR</button>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ export function Cart() {
       </div>
       <div>
         <a href="/finished" className={styles.btnPayments}>
-          <button type="submit">FINALIZAR COMPRA</button>
+          <button className={styles.btnPortal} type="submit">FINALIZAR COMPRA</button>
         </a>
       </div>
     </div>

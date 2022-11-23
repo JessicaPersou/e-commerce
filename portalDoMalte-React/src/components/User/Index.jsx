@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
-import "../User/user.css";
+import styles from "../User/user.module.css";
+import { Pencil, Trash } from "phosphor-react";
 
 export function User() {
   const [list, setList] = useState([]);
@@ -16,22 +17,37 @@ export function User() {
     getUsers();
   }, []);
 
+  async function onRemove(item) {
+    await axios.delete(`http://localhost:8080/user/${item.id}`);
+    getUsers();
+  }
+
+  async function update(item) {
+
+    await axios.put(`https://localhost:8080/user/${item.id}`);
+    getUsers();
+  }
+
   return (
-    <div className="table">
-      <table className="table-users">
+    <div className={styles.container}>
+      <h1>USUÁRIOS CADASTRADOS</h1>
+
+      <table className={styles.table}>
         <thead>
-          <tr className="table-head">
+          <tr className={styles.tableTr}>
             <th>ID</th>
             <th>NOME</th>
-            <th>DOCUMENTO</th>
+            <th>CPF</th>
             <th>DATA DE NASCIMENTO</th>
             <th>TELEFONE</th>
             <th>E-MAIL</th>
+            <th>APAGAR</th>
+            <th>EDITAR</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className={styles.tableBody}>
           {list.map((item) => (
-            <tr key={item.id} className="table-body">
+            <tr key={item.id} className={styles.tableTr}>
               <td>{item.id}</td>
               <td>{item.full_name}</td>
               <td>{item.document}</td>
@@ -40,6 +56,16 @@ export function User() {
               </td>
               <td>{item.phone}</td>
               <td>{item.email}</td>
+              <td>
+                <button className={styles.btnUsers} onClick={() => onRemove(item)}>
+                  <Trash size={30} color="#ee1b1b" />
+                </button>
+              </td>
+              <td>
+                <button className={styles.btnUsers} onClick={() => update(item)}>
+                  <Pencil size={30} color="#d4a216" />
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

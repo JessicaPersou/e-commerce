@@ -57,17 +57,3 @@ span {
   font-size: 400;
 }
 
-button {
-  background-color: var(--black);
-  color: var(--white);
-  padding: 8px 50px;
-  border-style: none;
-  border-radius: 5px;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: var(--golden-grass-60);
-  color: var(--golden-grass-180);
-}

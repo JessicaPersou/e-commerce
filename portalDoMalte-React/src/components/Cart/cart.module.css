@@ -63,3 +63,18 @@
   border-radius: 5px;
   box-shadow: 0 0 10px 0.5px var(--black);
 }
+
+.btnPortal {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 8px 50px;
+  border-style: none;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btnPortal:hover {
+  cursor: pointer;
+  background-color: var(--golden-grass-60);
+  color: var(--golden-grass-180);
+}

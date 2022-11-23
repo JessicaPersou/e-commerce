@@ -37,7 +37,7 @@ export function LoginUser() {
                 Esqueci minha senha
               </a>
             </span>
-            <button type="submit">
+            <button className={styles.btnPortal} type="submit">
               <SignIn /> LOGIN
             </button>
             <span className={styles.txt}>

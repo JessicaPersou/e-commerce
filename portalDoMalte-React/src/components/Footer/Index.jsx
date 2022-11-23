@@ -1,13 +1,11 @@
 import styles from "./footer.module.css";
-import insta from "../../assets/elements/instagram.svg";
-import face from "../../assets/elements/facebook.svg";
-import whats from "../../assets/elements/whatsapp.svg";
 import Visa from "../../assets/payments/icon-fast-visa.svg";
 import Master from "../../assets/payments/icon-fast-mastercard.svg";
 import Pix from "../../assets/payments/pix.svg";
 import Boleto from "../../assets/payments/icon-fast-boleto.svg";
 import Android from "../../assets/payments/android.png";
 import Apple from "../../assets/payments/apple.png";
+import { FacebookLogo, InstagramLogo, WhatsappLogo } from "phosphor-react";
 
 export function Footer() {
   return (
@@ -26,13 +24,13 @@ export function Footer() {
         <div className={styles.info}>
           <h4>NOSSAS REDES</h4>
           <a href="https://www.facebook.com/">
-            <img className={styles.icon30} src={face} alt="facebook" />
+            <FacebookLogo size={40} color="#000"/>
           </a>
           <a href="https://www.instagram.com/">
-            <img className={styles.icon30} src={insta} alt="instagram" />
+            <InstagramLogo size={40} color="#000"/>
           </a>
           <a href="https://www.whatsapp.com/?lang=pt_br">
-            <img className={styles.icon30} src={whats} alt="whatsapp" />
+            <WhatsappLogo size={40} color="#000"/>
           </a>
         </div>
         <div className={styles.line2}></div>

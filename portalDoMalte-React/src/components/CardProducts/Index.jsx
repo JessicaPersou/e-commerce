@@ -9,7 +9,7 @@ export function CardProducts({ img, title, description }) {
       <p className={styles.description}>{description}</p>
       <footer className={styles.footer}>
         <a href="/product-detail">
-          <button type="submit">
+          <button className={styles.btnPortal} type="submit">
             <strong>
               <ShoppingCart /> COMPRAR
             </strong>

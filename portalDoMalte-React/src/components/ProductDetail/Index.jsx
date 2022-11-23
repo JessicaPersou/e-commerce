@@ -25,10 +25,10 @@ export function ProductDetail() {
           <p className={styles.txt}>6 UNIDADES</p>
           <p className={styles.txt}>R$89,90</p>
           <a href="#">
-            <button type="submit">ADICIONAR</button>
+            <button className={styles.btnPortal} type="submit">ADICIONAR</button>
           </a>
           <a href="/shopping-cart">
-            <button type="submit">IR PARA CARRINHO</button>
+            <button className={styles.btnPortal} type="submit">IR PARA CARRINHO</button>
           </a>
           <hr className={styles.line} />
           <div className={styles.zipCode}>

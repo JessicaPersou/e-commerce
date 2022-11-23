@@ -30,7 +30,7 @@ export function Contact() {
         </div>
       </div>
       <div className={styles.btn}>
-        <button type="submit">ENVIAR</button>
+        <button  className={styles.btnPortal} type="submit">ENVIAR</button>
       </div>
     </div>
   );

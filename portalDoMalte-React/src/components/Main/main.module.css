@@ -60,15 +60,10 @@
   color: var(--white);
 }
 
-.brands {
+.brandsComponent{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px;
-  padding: 50px 0;
 }
-
 .news {
   display: flex;
   flex-direction: row;
@@ -117,4 +112,19 @@
   padding: 8px 50px;
   border-radius: 5px;
 
+}
+
+.btnPortal {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 8px 50px;
+  border-style: none;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btnPortal:hover {
+  cursor: pointer;
+  background-color: var(--golden-grass-60);
+  color: var(--golden-grass-180);
 }

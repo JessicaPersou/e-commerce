@@ -8,17 +8,8 @@ import Barrel from "../../assets/home/basket.png";
 import ChangClassicBeer from "../../assets/products/changClassicBeer.png";
 import MeiselAndFriends from "../../assets/products/meiselFriends.png";
 import KitBeer from "../../assets/products/kit.png";
-
-import Paulaner from "../../assets/brands/paulaner.png";
-import BlueMoon from "../../assets/brands/blue.png";
-import Corona from "../../assets/brands/corona.png";
-import Duff from "../../assets/brands/duff.png";
-import Hoegaarden from "../../assets/brands/hoegaarden.png";
-import Tiger from "../../assets/brands/tiger.png";
-import Goose from "../../assets/brands/goose.png";
-
 import { CardProducts } from "../CardProducts";
-import { BrandsBeers } from "../BrandsBeer/Index";
+import { BrandsBeer } from "../BrandsBeer/Index";
 import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
 
 export function Main() {
@@ -28,16 +19,8 @@ export function Main() {
         <h1>OFERTAS IMPERDÍVEIS!</h1>
       </div>
       <hr className={styles.line} />
-      <div className={styles.brands}>
-        <ArrowCircleLeft color="#e1dbdb" size={40} />
-        <BrandsBeers img={Goose} />
-        <BrandsBeers img={Paulaner} />
-        <BrandsBeers img={BlueMoon} />
-        <BrandsBeers img={Corona} />
-        <BrandsBeers img={Duff} />
-        <BrandsBeers img={Hoegaarden} />
-        <BrandsBeers img={Tiger} />
-        <ArrowCircleRight color="#e1dbdb" size={40} />
+      <div className={styles.brandsComponent}>
+        <BrandsBeer />
       </div>
       <div className={styles.msg}>
         <h2>As Melhores Marcas estão aqui!</h2>
@@ -109,7 +92,7 @@ export function Main() {
           placeholder="maria@gmail.com"
         />
         <a href="/register">
-          <button type="submit">CADASTRAR</button>
+          <button className={styles.btnPortal} type="submit">CADASTRAR</button>
         </a>
       </div>
     </div>

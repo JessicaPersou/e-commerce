@@ -55,7 +55,7 @@ export function RegisterUser() {
             <input className={styles.input} type="text" />
           </div>
           <div className={styles.btn}>
-            <button type="submit">CADASTRAR</button>
+            <button className={styles.btnPortal} type="submit">CADASTRAR</button>
             <span className={styles.txt}>
               Você já tem Login?{" "}
               <a className={styles.txt} href="/login">

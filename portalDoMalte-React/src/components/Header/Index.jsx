@@ -1,9 +1,6 @@
 import styles from "./header.module.css";
-import {
-  BeerBottle,
-  ShoppingCart,
-  SignIn,
-} from "phosphor-react";
+import { BeerBottle, ShoppingCart, SignIn } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -27,31 +24,31 @@ export function Header() {
       </div> */}
       <div className={styles.menu}>
         <div className={styles.menu}>
-          <a href="/" className={styles.font}>
+          <Link to="/" className={styles.font}>
             <p>
               <strong>HOME</strong>
             </p>
-          </a>
-          <a href="/history" className={styles.font}>
+          </Link>
+          <Link to="/history" className={styles.font}>
             <p>
               <strong>HISTÓRIA</strong>
             </p>
-          </a>
-          <a href="/styles" className={styles.font}>
+          </Link>
+          <Link to="/styles" className={styles.font}>
             <p>
               <strong>ESTILOS</strong>
             </p>
-          </a>
-          <a href="/products" className={styles.font}>
+          </Link>
+          <Link to="/products" className={styles.font}>
             <p>
               <strong>BEER STORE</strong>
             </p>
-          </a>
-          <a href="/contact" className={styles.font}>
+          </Link>
+          <Link to="/contact" className={styles.font}>
             <p>
               <strong>CONTATO</strong>
             </p>
-          </a>
+          </Link>
         </div>
         <div className={styles.icons}>
           <a className={styles.font} href="/shopping-cart">
