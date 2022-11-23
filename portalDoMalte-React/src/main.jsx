@@ -12,7 +12,7 @@ import Products from "./Pages/Products";
 import ProductDetailPage from "../src/Pages/ProductDetailPage";
 import ShoppingCart from "./Pages/ShoppingCart";
 import ContactPage from "./Pages/ContactPage";
-
+import EditUsers from "./Pages/EditUsers";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -28,8 +28,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/product-detail" element={<ProductDetailPage />} />
         <Route path="/shopping-cart" element={<ShoppingCart />} />
         <Route path="/admin/users" element={<AdminUsers />} />
+        <Route path="/admin/users/edit" element={<EditUsers />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
-

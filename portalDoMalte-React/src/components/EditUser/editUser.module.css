@@ -1,0 +1,37 @@
+.container {
+  background-color: var(--golden-grass-180);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tableBody tr td{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.tableTr th {
+  padding: 20px 50px;
+  border: 1px solid;
+}
+
+.tableTr td {
+  padding: 10px ;
+  border: 1px solid;
+}
+
+.btnUsers{
+  text-align: center;
+  cursor: pointer;
+}
+
+.table{
+  font-size: 1.3rem;
+  border: 1px solid;
+}

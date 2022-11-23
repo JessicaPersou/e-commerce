@@ -3,9 +3,11 @@ import axios from "axios";
 import moment from "moment";
 import styles from "../User/user.module.css";
 import { Pencil, Trash } from "phosphor-react";
+import { useNavigate } from "react-router-dom";
 
 export function User() {
   const [list, setList] = useState([]);
+  const navegate = useNavigate();
 
   async function getUsers() {
     const { data } = await axios.get("http://localhost:8080/user");
@@ -22,10 +24,8 @@ export function User() {
     getUsers();
   }
 
-  async function update(item) {
-
-    await axios.put(`https://localhost:8080/user/${item.id}`);
-    getUsers();
+  async function update() {
+    navegate("/admin/users/edit");
   }
 
   return (
@@ -57,12 +57,18 @@ export function User() {
               <td>{item.phone}</td>
               <td>{item.email}</td>
               <td>
-                <button className={styles.btnUsers} onClick={() => onRemove(item)}>
+                <button
+                  className={styles.btnUsers}
+                  onClick={() => onRemove(item)}
+                >
                   <Trash size={30} color="#ee1b1b" />
                 </button>
               </td>
               <td>
-                <button className={styles.btnUsers} onClick={() => update(item)}>
+                <button
+                  className={styles.btnUsers}
+                  onClick={() => update(item.id)}
+                >
                   <Pencil size={30} color="#d4a216" />
                 </button>
               </td>
