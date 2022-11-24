@@ -1,4 +1,4 @@
-import styles from "./main.module.css";
+import styles from "./home.module.css";
 import DuffPack from "../../assets/home/duffPack.png";
 import Heineken from "../../assets/home/heinekens.png";
 import CoronaExtra from "../../assets/home/coronaPack.png";
@@ -11,19 +11,23 @@ import KitBeer from "../../assets/products/kit.png";
 import { CardProducts } from "../CardProducts";
 import { BrandsBeer } from "../BrandsBeer/Index";
 import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
+import { Carousel } from "../Carousel/Index";
 
-export function Main() {
+export function Home() {
   return (
-    <div className={styles.main}>
-      <div className={styles.msg}>
-        <h1>OFERTAS IMPERDÍVEIS!</h1>
+    <div className={styles.home}>
+      <div className={styles.carousel}>
+        <Carousel />
       </div>
       <hr className={styles.line} />
-      <div className={styles.brandsComponent}>
-        <BrandsBeer />
+      {/* <div className={styles.msg}>
+        <h1>OFERTAS IMPERDÍVEIS!</h1>
       </div>
       <div className={styles.msg}>
         <h2>As Melhores Marcas estão aqui!</h2>
+      </div> */}
+      <div className={styles.brandsComponent}>
+        <BrandsBeer />
       </div>
       <div className={styles.component}>
         <ArrowCircleLeft color="#e1dbdb" size={40} />
@@ -43,9 +47,6 @@ export function Main() {
           description={"R$ 39,90"}
         />
         <ArrowCircleRight color="#e1dbdb" size={40} />
-      </div>
-      <div className={styles.msg}>
-        <h2>Ofertas de Combos!</h2>
       </div>
       <div className={styles.component}>
         <ArrowCircleLeft color="#e1dbdb" size={40} />
@@ -67,11 +68,6 @@ export function Main() {
         <ArrowCircleRight color="#e1dbdb" size={40} />
       </div>
       <div className={styles.txtNews}>
-        <p>
-          Nas compras acima de <strong>R$ 300,00</strong>
-          <br /> concorra a uma super cesta com <strong>15 itens</strong>{" "}
-          exclusivos!
-        </p>
         <div className={styles.news}>
           <img className={styles.imgNews} src={BeerStore} alt="" />
           <img className={styles.imgNews} src={Barrel} alt="" />
@@ -92,7 +88,9 @@ export function Main() {
           placeholder="maria@gmail.com"
         />
         <a href="/register">
-          <button className={styles.btnPortal} type="submit">CADASTRAR</button>
+          <button className={styles.btnPortal} type="submit">
+            <strong>CADASTRAR</strong>
+          </button>
         </a>
       </div>
     </div>

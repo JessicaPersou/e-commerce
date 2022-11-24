@@ -1,6 +1,6 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { ProductStore } from "../components/ProductStore/Index";
+import { BeerStore } from "../components/BeerStore/Index";
 import { Carousel } from "../components/Carousel/Index";
 
 
@@ -9,7 +9,7 @@ function Products() {
     <div>
       <Header />
       <Carousel/>
-      <ProductStore />
+      <BeerStore />
       <Footer />
     </div>
   );

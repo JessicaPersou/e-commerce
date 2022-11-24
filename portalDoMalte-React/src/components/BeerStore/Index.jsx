@@ -1,4 +1,4 @@
-import styles from "./productStore.module.css";
+import styles from "./beerStore.module.css";
 
 import AegisBrewing from "../../assets/products/aegis.png";
 import Arkells from "../../assets/products/arkells.png";
@@ -23,9 +23,9 @@ import YorkBrewery from "../../assets/products/yorkbrewery.png";
 import { CardProducts } from "../CardProducts";
 import { CaretDoubleLeft, CaretDoubleRight } from "phosphor-react";
 
-export function ProductStore() {
+export function BeerStore() {
   return (
-    <div className={styles.main}>
+    <div className={styles.store}>
       <div className={styles.msg}>
         <h1>Cervejas com preços incríveis</h1>
       </div>

@@ -4,19 +4,16 @@ import SimpleImageSlider from "react-simple-image-slider";
 export function Carousel() {
   const images = [
     { url: "./src/assets/home/barrel.png" },
-    { url: "./src/assets/home/beerCrafts_.png" },
-    { url: "./src/assets/home/brands-bud_.png" },
-    { url: "./src/assets/home/stock_.png" },
-    { url: "./src/assets/home/beerCraft2.png" },
-    { url: "./src/assets/home/modelo_.png" }
+    { url: "./src/assets/home/stock.png" },
+    { url: "./src/assets/home/tasting.png" },
+    { url: "./src/assets/home/beer.jpg" },
   ];
-
 
   return (
     <div className={styles.carousel}>
       <SimpleImageSlider
-        width={1024}
-        height={527}
+        width={1279}
+        height={769}
         images={images}
         showBullets={true}
         showNavs={true}
@@ -24,4 +21,3 @@ export function Carousel() {
     </div>
   );
 }
-

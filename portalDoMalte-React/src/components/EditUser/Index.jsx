@@ -20,8 +20,11 @@ export function EditUser() {
       <div>
         {list.map((item) => (
           <ul key={item.id}>
-            <li>Nome</li>
             <li>{item.full_name}</li>
+            <li>{item.document}</li>
+            <li>{item.phone}</li>
+            <li>{item.email}</li>
+            <li>{item.birthdate}</li>
           </ul>
         ))}
       </div>
