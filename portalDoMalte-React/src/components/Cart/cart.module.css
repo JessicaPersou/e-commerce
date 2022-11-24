@@ -3,8 +3,8 @@
   color: var(--white);
   display: flex;
   flex-direction: column;
-  padding: 50px;
-  gap: 50px;
+  padding: 5rem;
+  gap: 5rem;
 }
 
 .infoProduct {
@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
 }
 
 .infoProduct p {
@@ -24,16 +24,16 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .product p {
-  padding: 25px;
+  padding: 2rem;
 }
 
 .imgProduct {
-  height: 200px;
+  height: 15rem;
   border-radius: 5px;
 }
 
@@ -41,13 +41,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .shippingDetails {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .btnPayments {
@@ -57,18 +57,17 @@
 }
 
 .inputInfo {
-  padding: 10px;
+  padding: 0.5rem;
   border-style: none;
-  border-radius: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px 0.5px var(--black);
 }
 
+
 .btnPortal {
   background-color: var(--black);
   color: var(--white);
-  padding: 8px 50px;
-  border-style: none;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
   transition: color 0.3s, background-color 0.3s;
 }

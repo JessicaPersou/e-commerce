@@ -7,20 +7,7 @@ import MyBeer from "../../assets/photoPages/barril.jpg";
 export function History() {
   return (
     <div className={styles.main}>
-      <div>
-        <img
-          className={styles.banner}
-          width="100%"
-          max-height="80vh"
-          src={Banner}
-          alt=""
-        />
-      </div>
-      <div className={styles.msg}>
-          <h1>
-            BREVE HISTÓRIA DA CERVEJA ARTESANAL
-          </h1>
-        </div>
+      {/* AQUI VAI A MENSAGEM E O BANNER */}
       <div className={styles.history}>
         <div className={styles.section}>
           <div>

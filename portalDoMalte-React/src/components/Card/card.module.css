@@ -6,17 +6,16 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  width: 350px;
-
+  gap: 1rem;
+  padding: 1rem;
+  width: 25rem;
   border-radius: 10px;
   box-shadow: 0 0 30px 10px var(--black);
 }
 
 .imgCard{
-  width: 200px;
-  height: 250px;
+  width: 10rem;
+  height: 15rem;
 }
 
 .title{
@@ -26,7 +25,7 @@
 
 .description{
   color: var(--white);
-  line-height: 25px;
+  line-height: 1.75rem;
   text-align: center;
   font-size: 400;
 }

@@ -3,7 +3,8 @@ import styles from "./contact.module.css";
 export function Contact() {
   return (
     <div className={styles.boxForm}>
-      <h1>CONTATO</h1>
+      {/* AQUI VAI A MENSAGEM */}
+      {/* AQUI VAI O CONTATO DO LOCAL COM MAPA */}
       <div className={styles.form}>
         <div className={styles.boxTxt}>
           <div className={styles.infoContact}>
@@ -29,6 +30,7 @@ export function Contact() {
           <textarea name="" id="" cols="70" rows="17" />
         </div>
       </div>
+      
       <div className={styles.btn}>
         <button  className={styles.btnPortal} type="submit">ENVIAR</button>
       </div>

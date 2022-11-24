@@ -5,7 +5,7 @@ import { XCircle } from "phosphor-react";
 export function Cart() {
   return (
     <div className={styles.shoppingCart}>
-      <h1>CARRINHO DE COMPRAS</h1>
+      {/* MENSAGEM */}
       <hr />
       <div className={styles.infoProduct}>
         <div className={styles.product}>
@@ -26,7 +26,7 @@ export function Cart() {
           </p>
         </div>
       </div>
-      <h4>ENTREGA</h4>
+      {/* AQUI MENSAGEM DE ENTREGA */}
       <div className={styles.shipping}>
         <div className={styles.shippingDetails}>
           <p>CALCULAR FRETE</p>

@@ -4,37 +4,33 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 5rem 0;
 }
 
-.boxForm > h1 {
-  text-align: center;
-  color: var(--golden-grass-60);
-}
 
 .form {
-  padding-top: 50px;
+  padding-top: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 100px;
+  gap: 5rem;
 }
 
 .boxTxt {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .infoContact {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0.15rem;
 }
 
 .input {
-  padding: 10px 70px;
+  padding: 0.5rem 7rem;
   border-style: none;
   border-radius: 5px;
 }
@@ -43,24 +39,26 @@
 .txtArea {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0.15rem;
 }
+
 .txtArea > textarea {
   border-radius: 5px;
 }
+
 .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 5rem 0;
 }
+
 
 .btnPortal {
   background-color: var(--black);
   color: var(--white);
-  padding: 8px 50px;
-  border-style: none;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
   transition: color 0.3s, background-color 0.3s;
 }

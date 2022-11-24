@@ -26,9 +26,7 @@ import { CaretDoubleLeft, CaretDoubleRight } from "phosphor-react";
 export function BeerStore() {
   return (
     <div className={styles.store}>
-      <div className={styles.msg}>
-        <h1>Cervejas com preços incríveis</h1>
-      </div>
+      {/* AQUI BANNER E MENSAGEM */}
       <div className={styles.component}>
         <CardProducts
           img={AegisBrewing}

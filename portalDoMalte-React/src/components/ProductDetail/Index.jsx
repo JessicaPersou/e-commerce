@@ -45,7 +45,6 @@ export function ProductDetail() {
       <div className={styles.infoAge}>
         <h3 className={styles.title}>ATENÇÃO</h3>
         <p className={styles.txt}>
-        
           Este produto é vendido apenas para maiores de 18 anos.
         </p>
       </div>

@@ -38,7 +38,7 @@ export function LoginUser() {
               </a>
             </span>
             <button className={styles.btnPortal} type="submit">
-              <SignIn /> LOGIN
+              <strong><SignIn />{" "} LOGIN</strong>
             </button>
             <span className={styles.txt}>
               Você ainda não tem Login?
