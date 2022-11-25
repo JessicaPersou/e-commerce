@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/product-detail" element={<ProductDetailPage />} />
         <Route path="/shopping-cart" element={<ShoppingCart />} />
         <Route path="/admin/users" element={<AdminUsers />} />
-        <Route path="/admin/users/edit" element={<EditUsers />} />
+        <Route path="/admin/users/edit/:id" element={<EditUsers />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

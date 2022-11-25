@@ -6,32 +6,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 1rem;
   width: 100vw;
   height: 100vh;
 }
 
 .tableBody tr td{
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .tableTr th {
-  padding: 20px 50px;
-  border: 1px solid;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--black);
 }
 
 .tableTr td {
-  padding: 10px ;
-  border: 1px solid;
+  padding: 1rem;
+  border-bottom: 1px solid var(--black);
 }
 
 .btnUsers{
   text-align: center;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .table{
-  font-size: 1.3rem;
-  border: 1px solid;
+  font-size: 1rem;
+  border: 5px solid var(--black);
+
 }

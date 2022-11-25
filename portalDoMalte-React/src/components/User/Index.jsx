@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 export function User() {
   const [list, setList] = useState([]);
-  const navegate = useNavigate();
+  const navigate = useNavigate();
 
   async function getUsers() {
     const { data } = await axios.get("http://localhost:8080/user");
@@ -21,17 +21,19 @@ export function User() {
 
   async function onRemove(item) {
     await axios.delete(`http://localhost:8080/user/${item.id}`);
+
     getUsers();
   }
 
-  async function update() {
-    navegate("/admin/users/edit");
+  async function update(user) {
+
+    navigate(`/admin/users/edit/${user.id}`);
+
   }
 
   return (
     <div className={styles.container}>
-      <h1>USUÁRIOS CADASTRADOS</h1>
-
+      {/* MENSAGEM AQUI */}
       <table className={styles.table}>
         <thead>
           <tr className={styles.tableTr}>
@@ -67,7 +69,7 @@ export function User() {
               <td>
                 <button
                   className={styles.btnUsers}
-                  onClick={() => update(item.id)}
+                  onClick={() => update(item)}
                 >
                   <Pencil size={30} color="#d4a216" />
                 </button>

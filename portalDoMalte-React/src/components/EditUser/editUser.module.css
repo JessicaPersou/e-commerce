@@ -6,32 +6,58 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  width: 100vw;
+  gap: 5rem;
   height: 100vh;
 }
 
-.tableBody tr td{
+.users {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 20rem;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 20rem;
+}
+
+.inputTxt {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.inputTxt > input {
+  background-color: var(--golden-grass-180);
+  color: var(--white);
+  border-style: none;
+  border-bottom: 1px solid var(--white);
+  padding: 0.6rem 3rem;
+  gap: 1rem;
   text-align: center;
-  font-size: 1.2rem;
 }
 
-.tableTr th {
-  padding: 20px 50px;
-  border: 1px solid;
+.btnPortal {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-.tableTr td {
-  padding: 10px ;
-  border: 1px solid;
-}
-
-.btnUsers{
-  text-align: center;
+.btnPortal:hover {
   cursor: pointer;
-}
-
-.table{
-  font-size: 1.3rem;
-  border: 1px solid;
+  background-color: var(--golden-grass-60);
+  color: var(--golden-grass-180);
 }
