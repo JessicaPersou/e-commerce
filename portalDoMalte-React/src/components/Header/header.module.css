@@ -6,12 +6,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: -1.25rem 0;
-  border-bottom: 1px solid var(--black);
-  box-shadow: 0 0 20px 1px var(--black);
+  padding: 2rem 0;
   transition: color 0.3s;
-  gap: 1.25rem;
+  gap: 0.75rem;
+}
+
+.lineHeader {
+  border: 0.5px solid var(--black);
+  box-shadow: 0px 2px 25px 5px var(--golden-grass-140);
+  width: 100%;
 }
 
 .menu {
@@ -30,17 +33,26 @@
   gap: 1.25rem;
 }
 
-.header a{
-  padding: 1rem 2rem;
-  border-radius: 5px;
+.header p {
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
 }
 
-
-.header h1 {
+.header p {
   transition: color 0.3s;
 }
 
-.header h1:hover {
+.header p:hover {
+  color: var(--white);
+  background-color: var(--golden-grass-160);
+}
+
+.icons p {
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.icons p:hover {
   color: var(--white);
   background-color: var(--golden-grass-160);
 }
@@ -53,7 +65,6 @@
   cursor: pointer;
 }
 
-
 .font {
   color: var(--black);
   transition: color 0.3s;
@@ -63,12 +74,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 1.25rem;
+  gap: 0.5rem;
 }
 
 .inputSearch {
   padding: 0.75rem 2rem;
   border-radius: 5px;
 }
-
-

@@ -18,6 +18,7 @@
   --golden-grass-160: #58420d;
   --golden-grass-180: #202024;
   --black: #000000;
+  --error: #fa3200;
 }
 
 h1 {
@@ -57,23 +58,20 @@ span {
   font-size: 400;
 }
 
-@media screen  and (max-width:767px){
-  header{
+@media screen and (max-width: 767px) {
+  header {
     width: 100vw;
   }
 }
- 
 
-@media screen  and (min-width: 768px) and (max-width:1023px){
-  header{
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
     width: 100vw;
   }
 }
- 
 
-@media screen  and (min-width:1024px){
-  header{
+@media screen and (min-width: 1024px) {
+  header {
     width: 100vw;
   }
 }
- 

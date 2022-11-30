@@ -13,6 +13,7 @@ export function Header() {
           <strong>PORTAL DO MALTE</strong>
         </p>
       </div>
+      <hr className={styles.lineHeader} />
       {/* <div className={styles.search}>
         <input
           className={styles.inputSearch}
@@ -51,12 +52,16 @@ export function Header() {
           </Link>
         </div>
         <div className={styles.icons}>
-          <a className={styles.font} href="/shopping-cart">
-            <ShoppingCart size={32} />
-          </a>
-          <a className={styles.font} href="/login">
-            <SignIn size={32} />
-          </a>
+          <Link className={styles.font} to="/shopping-cart">
+            <p>
+              <ShoppingCart size={26} />
+            </p>
+          </Link>
+          <Link className={styles.font} to="/login">
+            <p>
+              <SignIn size={26} />
+            </p>
+          </Link>
         </div>
       </div>
     </header>
