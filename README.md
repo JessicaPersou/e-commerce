@@ -1,16 +1,16 @@
 # Portal Do Malte
 
-It's a beer e-commerce.
-I always wanted to create a project by myself, based on the content acquired in courses,
-as Portal do Malte I am putting Front-end and Back-end concepts into practice, in addition to the Database concept and good programming practices.
+<p>It's a beer e-commerce.</p><br />
+<p>I always wanted to create a project by myself, based on the content acquired in courses,</br></p>
+<p>as Portal do Malte I am putting Front-end and Back-end concepts into practice, in addition to the Database concept and good programming practices.</p>
 
 ## Technologies Used
 
- > Front-end ---> React.
- > Back-End ---> Java & Spring boot.
- > Banco de Dados ---> MySQL.
-
-### Pages
+ > <p>Front-end ---> React<br /></p>
+ > <p>Back-End ---> Java & Spring boot<br /></p>
+ > <p>Banco de Dados ---> MySQL<br /></p>
+</br>
+> Pages
  - Home
  - Create user
  - Login
@@ -20,13 +20,12 @@ as Portal do Malte I am putting Front-end and Back-end concepts into practice, i
  - Shopping cart
  - Shipping cart
  
- ### Crud
- 
+> Crud
  - Create user
  - Read data of users
  - Update
  - Delete
  
- ### Future Implementations
+> Future Implementations
  - JWT
  - Verification of age to access home page
