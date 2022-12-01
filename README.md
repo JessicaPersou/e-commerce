@@ -1,4 +1,4 @@
-#<h1> Portal Do Malte</h1>
+<h1> Portal Do Malte</h1>
 
 <p>It's a beer e-commerce.</p>
 <p>I always wanted to create a project by myself, based on the content acquired in courses,</br>
@@ -6,10 +6,10 @@ as Portal do Malte I am putting Front-end and Back-end concepts into practice, i
 
 >## Technologies Used
 
- > <p>Front-end ---> React<br /></p>
- > <p>Back-End ---> Java & Spring boot<br /></p>
- > <p>Banco de Dados ---> MySQL<br /></p>
-</br>
+ - Front-end ---> React
+ - Back-End ---> Java & Spring boot
+ - Banco de Dados ---> MySQL
+
 
 >## Pages
  - Home
