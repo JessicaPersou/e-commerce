@@ -1,11 +1,12 @@
 import styles from "./register.module.css";
 import Logo from "../../assets/elements/beerbranco.svg";
 import { ArrowUUpLeft } from "phosphor-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 const SchemaRegister = Yup.object().shape({
   full_name: Yup.string()
@@ -26,13 +27,13 @@ const SchemaRegister = Yup.object().shape({
     .max(
       new Date(Date.now() - 567648000000),
       "*Você deve ter 18 anos no mínimo!"
-    )
-    .required("*Campo Obrigatório"),
+    ),
+  // .required("*Campo Obrigatório"),
   phone: Yup.number()
     .positive()
     .integer()
-    .min(11, "*Campo muito Curto")
-    .max(12, "*Quantidade de caracteres inválida!"),
+    .min(10, "*Campo muito Curto")
+    .max(11, "*Quantidade de caracteres inválida!"),
   email: Yup.string()
     .email("*E-mail inválido!")
     .max(100, "*Quantidade de caracteres inválida!")
@@ -43,7 +44,21 @@ const SchemaRegister = Yup.object().shape({
 });
 
 export function RegisterUser() {
-  const notify = () => toast("Usuário Cadastrado com Sucesso!");
+  // const notify = () => toast("Usuário Cadastrado com Sucesso!");
+  const navigate = useNavigate();
+
+  async function createUser() {
+    await axios.post("http://localhost:9001/user", {
+      full_name: "full_name",
+      document: "document",
+      birthdate: "birthdate",
+      phone: "phone",
+      email: "email",
+      password: "password",
+    });
+    console.log("Deu certo!");
+  }
+
   return (
     <div className={styles.colorbg}>
       <div className={styles.left}>
@@ -71,6 +86,7 @@ export function RegisterUser() {
               }}
               validationSchema={SchemaRegister}
               onSubmit={(values) => {
+                createUser(values);
                 console.log(values);
               }}
             >
@@ -155,7 +171,24 @@ export function RegisterUser() {
             </Formik>
 
             <div className={styles.btn}>
-              <button className={styles.btnPortal} type="submit">
+              <button
+                // onClick={notify}
+                onClick={createUser}
+                className={styles.btnPortal}
+                type="submit"
+              >
+                {/* <ToastContainer
+                  position="top-center"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="dark"
+                /> */}
                 <strong>CADASTRAR</strong>
               </button>
               <span className={styles.txt}>

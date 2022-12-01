@@ -9,7 +9,7 @@ export function EditUser() {
 
   async function onLoad() {
     console.log(id);
-    const { data } = await axios.get(`http://localhost:8080/user/${id}`);
+    const { data } = await axios.get(`http://localhost:9001/user/${id}`);
     setUser(data);
   }
 
@@ -18,7 +18,7 @@ export function EditUser() {
   }
 
   async function onSave() {
-    await axios.put(`http://localhost:8080/user/${id}`, user);
+    await axios.put(`http://localhost:9001/user/${id}`, user);
   }
 
   useEffect(() => {

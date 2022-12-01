@@ -10,7 +10,7 @@ export function User() {
   const navigate = useNavigate();
 
   async function getUsers() {
-    const { data } = await axios.get("http://localhost:8080/user");
+    const { data } = await axios.get("http://localhost:9001/user");
     console.log(data);
     setList(data);
   }
@@ -20,15 +20,13 @@ export function User() {
   }, []);
 
   async function onRemove(item) {
-    await axios.delete(`http://localhost:8080/user/${item.id}`);
+    await axios.delete(`http://localhost:9001/user/${item.id}`);
 
     getUsers();
   }
 
   async function update(user) {
-
     navigate(`/admin/users/edit/${user.id}`);
-
   }
 
   return (
