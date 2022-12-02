@@ -1,4 +1,4 @@
-># <h1>Portal Do Malte</h1>
+># <h1>PORTAL DO MALTE</h1>
 
 <p>It's a beer e-commerce.</p>
 <p>I always wanted to create a project by myself, based on the content acquired in courses,</br>
@@ -6,14 +6,14 @@ as Portal do Malte I am putting Front-end and Back-end concepts into practice, i
 </br>
 </br>
 
->## Technologies Used
+>## TECNOLOGIES USED
 
  - Front-end ---> React
  - Back-End ---> Java & Spring boot
  - Banco de Dados ---> MySQL
 </br>
 
->## Pages
+>## PAGES
  - Home
  - Create user
  - Login
@@ -24,13 +24,13 @@ as Portal do Malte I am putting Front-end and Back-end concepts into practice, i
  - Shipping cart
  </br>
 
->## Crud
+>## CRUD
  - Create user
  - Read data of users
  - Update
  - Delete
  </br>
 
->## Future Implementations
+>## FUTURE IMPLEMENTATIONS
  - JWT
  - Verification of age to access home page
