@@ -1,11 +1,9 @@
 import styles from "./register.module.css";
 import Logo from "../../assets/elements/beerbranco.svg";
 import { ArrowUUpLeft } from "phosphor-react";
-import { Link, useNavigate } from "react-router-dom";
+import { json, Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 const SchemaRegister = Yup.object().shape({
@@ -44,19 +42,22 @@ const SchemaRegister = Yup.object().shape({
 });
 
 export function RegisterUser() {
-  // const notify = () => toast("Usuário Cadastrado com Sucesso!");
   const navigate = useNavigate();
 
-  async function createUser() {
-    await axios.post("http://localhost:9001/user", {
-      full_name: "full_name",
-      document: "document",
-      birthdate: "birthdate",
-      phone: "phone",
-      email: "email",
-      password: "password",
-    });
-    console.log("Deu certo!");
+  async function createUser(user) {
+    await axios.post(
+      "http://localhost:9001/user",
+
+      {
+        full_name: user.full_name,
+        document: user.document,
+        birthdate: user.birthdate,
+        phone: user.phone,
+        email: user.email,
+        password: user.password,
+      }
+    );
+    console.log("Clicou aqui!");
   }
 
   return (
@@ -76,6 +77,7 @@ export function RegisterUser() {
           <h2 className={styles.title}>CADASTRO</h2>
           <div className={styles.loginForm}>
             <Formik
+              validationSchema={SchemaRegister}
               initialValues={{
                 full_name: "",
                 document: "",
@@ -84,11 +86,7 @@ export function RegisterUser() {
                 email: "",
                 password: "",
               }}
-              validationSchema={SchemaRegister}
-              onSubmit={(values) => {
-                createUser(values);
-                console.log(values);
-              }}
+              onSubmit={(values) => createUser(values)}
             >
               {({ errors, touched }) => (
                 <Form>
@@ -172,23 +170,10 @@ export function RegisterUser() {
 
             <div className={styles.btn}>
               <button
-                // onClick={notify}
-                onClick={createUser}
                 className={styles.btnPortal}
+                onClick={createUser}
                 type="submit"
               >
-                {/* <ToastContainer
-                  position="top-center"
-                  autoClose={5000}
-                  hideProgressBar={false}
-                  newestOnTop={false}
-                  closeOnClick
-                  rtl={false}
-                  pauseOnFocusLoss
-                  draggable
-                  pauseOnHover
-                  theme="dark"
-                /> */}
                 <strong>CADASTRAR</strong>
               </button>
               <span className={styles.txt}>
