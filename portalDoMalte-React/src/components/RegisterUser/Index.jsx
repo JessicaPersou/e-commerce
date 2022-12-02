@@ -1,10 +1,11 @@
-import styles from "./register.module.css";
-import Logo from "../../assets/elements/beerbranco.svg";
-import { ArrowUUpLeft } from "phosphor-react";
-import { json, Link, useNavigate } from "react-router-dom";
-import { Formik, Form, Field } from "formik";
+// import styles from "./register.module.css";
+// import Logo from "../../assets/elements/beerbranco.svg";
+// import { ArrowUUpLeft } from "phosphor-react";
+import { useNavigate } from "react-router-dom";
+import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import { TextField } from "@mui/material";
 
 const SchemaRegister = Yup.object().shape({
   full_name: Yup.string()
@@ -45,147 +46,85 @@ export function RegisterUser() {
   const navigate = useNavigate();
 
   async function createUser(user) {
-    await axios.post(
-      "http://localhost:9001/user",
-
-      {
-        full_name: user.full_name,
-        document: user.document,
-        birthdate: user.birthdate,
-        phone: user.phone,
-        email: user.email,
-        password: user.password,
-      }
-    );
-    console.log("Clicou aqui!");
+    await axios.post("http://localhost:9001/user", user);
+    console.log("Clicou, vamos ver user:!", user);
   }
 
-  return (
-    <div className={styles.colorbg}>
-      <div className={styles.left}>
-        <a className={styles.txt} href="/">
-          <ArrowUUpLeft size={32} />{" "}
-        </a>
-      </div>
-      <div className={styles.row}>
-        <div className={styles.box}>
-          <img src={Logo} alt="" />
-          <h1>PORTAL DO MALTE</h1>
-          <strong>VARIEDADE DE ESTILOS, INFINIDADE DE SABORES</strong>
-        </div>
-        <div className={styles.form}>
-          <h2 className={styles.title}>CADASTRO</h2>
-          <div className={styles.loginForm}>
-            <Formik
-              validationSchema={SchemaRegister}
-              initialValues={{
-                full_name: "",
-                document: "",
-                birthdate: "",
-                phone: "",
-                email: "",
-                password: "",
-              }}
-              onSubmit={(values) => createUser(values)}
-            >
-              {({ errors, touched }) => (
-                <Form>
-                  <div className={styles.login}>
-                    <label className={styles.txt} htmlFor="">
-                      Nome
-                    </label>
-                    <Field
-                      className={styles.input}
-                      name="full_name"
-                      type="text"
-                    />
-                    {errors.full_name && touched.full_name ? (
-                      <div className={styles.error}>{errors.full_name}</div>
-                    ) : null}
-                  </div>
-                  <div className={styles.login}>
-                    <label className={styles.txt} htmlFor="">
-                      CPF
-                    </label>
-                    <Field
-                      className={styles.input}
-                      name="document"
-                      type="number"
-                    />
-                    {errors.document && touched.document ? (
-                      <div className={styles.error}>{errors.document}</div>
-                    ) : null}
-                  </div>
-                  <div className={styles.login}>
-                    <label className={styles.txt} htmlFor="">
-                      Data de Nascimento
-                    </label>
-                    <Field
-                      className={styles.input}
-                      name="birthdate"
-                      type="date"
-                    />
-                    {errors.birthdate && touched.birthdate ? (
-                      <div className={styles.error}>{errors.birthdate}</div>
-                    ) : null}
-                  </div>
-                  <div className={styles.login}>
-                    <label className={styles.txt} htmlFor="">
-                      Telefone
-                    </label>
-                    <Field
-                      className={styles.input}
-                      name="phone"
-                      type="number"
-                    />
-                    {errors.phone && touched.phone ? (
-                      <div className={styles.error}>{errors.phone}</div>
-                    ) : null}
-                  </div>
-                  <div className={styles.login}>
-                    <label className={styles.txt} htmlFor="">
-                      E-mail
-                    </label>
-                    <Field className={styles.input} name="email" type="email" />
-                    {errors.email && touched.email ? (
-                      <div className={styles.error}>{errors.email}</div>
-                    ) : null}{" "}
-                  </div>
-                  <div className={styles.login}>
-                    <label className={styles.txt} htmlFor="">
-                      Senha
-                    </label>
-                    <Field
-                      className={styles.input}
-                      name="password"
-                      type="password"
-                    />
-                    {errors.password && touched.password ? (
-                      <div className={styles.error}>{errors.password}</div>
-                    ) : null}{" "}
-                  </div>
-                </Form>
-              )}
-            </Formik>
+  const formik = useFormik({
+    initialValues: {
+      full_name: "",
+      document: "",
+      birthdate: "",
+      phone: "",
+      email: "",
+      password: "",
+    },
+    validationSchema: SchemaRegister,
+    onSubmit: (values) => createUser(values),
+  });
 
-            <div className={styles.btn}>
-              <button
-                className={styles.btnPortal}
-                onClick={createUser}
-                type="submit"
-              >
-                <strong>CADASTRAR</strong>
-              </button>
-              <span className={styles.txt}>
-                Você já tem Login?{" "}
-                <Link className={styles.txt} to="/login">
-                  Entre Aqui.{" "}
-                </Link>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+  return (
+    <div>
+      <form onSubmit={formik.handleSubmit}>
+        <TextField
+          id="full_name"
+          name="full_name"
+          label="Nome"
+          value={formik.values.full_name}
+          onChange={formik.handleChange}
+          error={formik.touched.full_name && Boolean(formik.errors.full_name)}
+          helperText={formik.touched.full_name && formik.errors.full_name}
+        />
+        <TextField
+          id="document"
+          name="document"
+          label="CPF"
+          value={formik.values.document}
+          onChange={formik.handleChange}
+          error={formik.touched.document && Boolean(formik.errors.document)}
+          helperText={formik.touched.document && formik.errors.document}
+        />
+        <TextField
+          id="birthdate"
+          name="birthdate"
+          label="Data de Nascimento"
+          value={formik.values.birthdate}
+          onChange={formik.handleChange}
+          error={formik.touched.birthdate && Boolean(formik.errors.birthdate)}
+          helperText={formik.touched.birthdate && formik.errors.birthdate}
+        />
+        <TextField
+          id="phone"
+          name="phone"
+          label="Telefone"
+          value={formik.values.phone}
+          onChange={formik.handleChange}
+          error={formik.touched.phone && Boolean(formik.errors.phone)}
+          helperText={formik.touched.phone && formik.errors.phone}
+        />
+        <TextField
+          id="email"
+          name="email"
+          label="Email"
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          error={formik.touched.email && Boolean(formik.errors.email)}
+          helperText={formik.touched.email && formik.errors.email}
+        />
+        <TextField
+          id="password"
+          name="password"
+          label="Password"
+          type="password"
+          value={formik.values.password}
+          onChange={formik.handleChange}
+          error={formik.touched.password && Boolean(formik.errors.password)}
+          helperText={formik.touched.password && formik.errors.password}
+        />
+        <button color="primary" variant="contained" fullWidth type="submit">
+          Cadastrar
+        </button>
+      </form>
     </div>
   );
 }
