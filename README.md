@@ -2,7 +2,6 @@
 
 <p>It's a beer e-commerce. I always wanted to create a project by myself, based on the content acquired in courses,as Portal do Malte I am putting Front-end and Back-end concepts into practice, in addition to the Database concept and good programming practices.</p>
 </br>
-</br>
 
 >## TECNOLOGIES USED
 
