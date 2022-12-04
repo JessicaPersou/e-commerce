@@ -1,11 +1,10 @@
-// import styles from "./register.module.css";
+import styles from "./register.module.css";
 // import Logo from "../../assets/elements/beerbranco.svg";
 // import { ArrowUUpLeft } from "phosphor-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import { TextField } from "@mui/material";
 
 const SchemaRegister = Yup.object().shape({
   full_name: Yup.string()
@@ -64,66 +63,80 @@ export function RegisterUser() {
   });
 
   return (
-    <div>
-      <form onSubmit={formik.handleSubmit}>
-        <TextField
-          id="full_name"
-          name="full_name"
-          label="Nome"
-          value={formik.values.full_name}
-          onChange={formik.handleChange}
-          error={formik.touched.full_name && Boolean(formik.errors.full_name)}
-          helperText={formik.touched.full_name && formik.errors.full_name}
-        />
-        <TextField
-          id="document"
-          name="document"
-          label="CPF"
-          value={formik.values.document}
-          onChange={formik.handleChange}
-          error={formik.touched.document && Boolean(formik.errors.document)}
-          helperText={formik.touched.document && formik.errors.document}
-        />
-        <TextField
-          id="birthdate"
-          name="birthdate"
-          label="Data de Nascimento"
-          value={formik.values.birthdate}
-          onChange={formik.handleChange}
-          error={formik.touched.birthdate && Boolean(formik.errors.birthdate)}
-          helperText={formik.touched.birthdate && formik.errors.birthdate}
-        />
-        <TextField
-          id="phone"
-          name="phone"
-          label="Telefone"
-          value={formik.values.phone}
-          onChange={formik.handleChange}
-          error={formik.touched.phone && Boolean(formik.errors.phone)}
-          helperText={formik.touched.phone && formik.errors.phone}
-        />
-        <TextField
-          id="email"
-          name="email"
-          label="Email"
-          value={formik.values.email}
-          onChange={formik.handleChange}
-          error={formik.touched.email && Boolean(formik.errors.email)}
-          helperText={formik.touched.email && formik.errors.email}
-        />
-        <TextField
-          id="password"
-          name="password"
-          label="Password"
-          type="password"
-          value={formik.values.password}
-          onChange={formik.handleChange}
-          error={formik.touched.password && Boolean(formik.errors.password)}
-          helperText={formik.touched.password && formik.errors.password}
-        />
-        <button color="primary" variant="contained" fullWidth type="submit">
-          Cadastrar
-        </button>
+    <div className={styles.container}>
+      <form className={styles.form} onSubmit={formik.handleSubmit}>
+        <div className={styles.formInfos}>
+          <label>Nome</label>
+          <input
+            className={styles.customInput}
+            id="full_name"
+            name="full_name"
+            label="Nome"
+            value={formik.values.full_name}
+            onChange={formik.handleChange}
+            error={formik.touched.full_name && Boolean(formik.errors.full_name)}
+          />
+          <label>CPF</label>
+          <input
+            className={styles.customInput}
+            id="document"
+            name="document"
+            label="CPF"
+            value={formik.values.document}
+            onChange={formik.handleChange}
+            error={formik.touched.document && Boolean(formik.errors.document)}
+          />
+          <label>Data de Nascimento</label>
+          <input
+            className={styles.customInput}
+            id="birthdate"
+            name="birthdate"
+            label="Data de Nascimento"
+            value={formik.values.birthdate}
+            onChange={formik.handleChange}
+            error={formik.touched.birthdate && Boolean(formik.errors.birthdate)}
+          />
+          <label>Telefone</label>
+          <input
+            className={styles.customInput}
+            id="phone"
+            name="phone"
+            label="Telefone"
+            value={formik.values.phone}
+            onChange={formik.handleChange}
+            error={formik.touched.phone && Boolean(formik.errors.phone)}
+          />
+          <label>E-mail</label>
+          <input
+            className={styles.customInput}
+            id="email"
+            name="email"
+            label="Email"
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            error={formik.touched.email && Boolean(formik.errors.email)}
+          />
+          <label>Senha</label>
+          <input
+            className={styles.customInput}
+            id="password"
+            name="password"
+            label="Password"
+            type="password"
+            value={formik.values.password}
+            onChange={formik.handleChange}
+            error={formik.touched.password && Boolean(formik.errors.password)}
+          />
+        </div>
+        <div>
+          <button color="primary" variant="contained" fullWidth type="submit">
+            Cadastrar
+          </button>
+        </div>
+        <span>
+          Você já tem cadastro?
+          <Link to="/login"> Faça seu Login.</Link>
+        </span>
       </form>
     </div>
   );
