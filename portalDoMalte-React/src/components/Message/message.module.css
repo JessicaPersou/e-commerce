@@ -1,0 +1,10 @@
+.msg{
+  text-align: center;
+  padding: 2rem;
+}
+
+.title{
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--white);
+}

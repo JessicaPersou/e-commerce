@@ -17,6 +17,8 @@ export function Carousel() {
         images={images}
         showBullets={true}
         showNavs={true}
+        slideDuration={1.5}
+        autoPlay={true}
       />
     </div>
   );

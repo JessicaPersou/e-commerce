@@ -1,5 +1,6 @@
 import styles from "./cardProducts.module.css";
 import { ShoppingCart } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 export function CardProducts({ img, title, description }) {
   return (
@@ -8,13 +9,13 @@ export function CardProducts({ img, title, description }) {
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <footer className={styles.footer}>
-        <a href="/product-detail">
+        <Link to="/product-detail">
           <button className={styles.btnPortal} type="submit">
             <strong>
               <ShoppingCart /> COMPRAR
             </strong>
           </button>
-        </a>
+        </Link>
       </footer>
     </div>
   );

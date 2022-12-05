@@ -1,6 +1,7 @@
 import styles from "./cart.module.css";
 import Product from "../../assets/products/aegis.png";
 import { XCircle } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 export function Cart() {
   return (
@@ -58,9 +59,9 @@ export function Cart() {
         </div>
       </div>
       <div>
-        <a href="/finished" className={styles.btnPayments}>
+        <Link to="/finished" className={styles.btnPayments}>
           <button className={styles.btnPortal} type="submit">FINALIZAR COMPRA</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ import { CardProducts } from "../CardProducts";
 import { BrandsBeer } from "../BrandsBeer/Index";
 import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
 import { Carousel } from "../Carousel/Index";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -88,11 +89,11 @@ export function Home() {
             id=""
             placeholder="maria@gmail.com"
           />
-          <a href="/register">
+          <Link to="/register">
             <button className={styles.btnPortal} type="submit">
               <strong>CADASTRAR</strong>
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
