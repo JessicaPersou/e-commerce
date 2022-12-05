@@ -6,9 +6,9 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <a className={styles.font} href="">
+        <Link className={styles.font} href="">
           <BeerBottle size={32} />
-        </a>
+        </Link>
         <p>
           <strong>PORTAL DO MALTE</strong>
         </p>

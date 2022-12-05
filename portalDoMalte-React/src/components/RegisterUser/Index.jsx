@@ -5,6 +5,8 @@ import * as Yup from "yup";
 import axios from "axios";
 import Logo from "../../assets/logo/amarelo.png";
 import { ArrowLeft } from "phosphor-react";
+import { useEffect } from "react";
+import create from "prompt-sync";
 
 const SchemaRegister = Yup.object().shape({
   full_name: Yup.string()
@@ -44,6 +46,12 @@ const SchemaRegister = Yup.object().shape({
 export function RegisterUser() {
   const navigate = useNavigate();
 
+// useEffect(()=>{
+// if(createUser){
+//   navigate("/register")
+// }
+// },[])
+  
   async function createUser(user) {
     await axios.post("http://localhost:9001/user", user);
     console.log("Clicou, vamos ver user:!", user);
@@ -163,7 +171,6 @@ export function RegisterUser() {
               className={styles.btnPortal}
               color="primary"
               variant="contained"
-              fullWidth
               type="submit"
             >
               <strong>Cadastrar</strong>
