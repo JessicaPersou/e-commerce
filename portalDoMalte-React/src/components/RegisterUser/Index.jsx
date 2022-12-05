@@ -1,10 +1,10 @@
 import styles from "./register.module.css";
-// import Logo from "../../assets/elements/beerbranco.svg";
-// import { ArrowUUpLeft } from "phosphor-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import Logo from "../../assets/logo/amarelo.png";
+import { ArrowLeft } from "phosphor-react";
 
 const SchemaRegister = Yup.object().shape({
   full_name: Yup.string()
@@ -64,80 +64,113 @@ export function RegisterUser() {
 
   return (
     <div className={styles.container}>
-      <form className={styles.form} onSubmit={formik.handleSubmit}>
-        <div className={styles.formInfos}>
-          <label>Nome</label>
-          <input
-            className={styles.customInput}
-            id="full_name"
-            name="full_name"
-            label="Nome"
-            value={formik.values.full_name}
-            onChange={formik.handleChange}
-            error={formik.touched.full_name && Boolean(formik.errors.full_name)}
-          />
-          <label>CPF</label>
-          <input
-            className={styles.customInput}
-            id="document"
-            name="document"
-            label="CPF"
-            value={formik.values.document}
-            onChange={formik.handleChange}
-            error={formik.touched.document && Boolean(formik.errors.document)}
-          />
-          <label>Data de Nascimento</label>
-          <input
-            className={styles.customInput}
-            id="birthdate"
-            name="birthdate"
-            label="Data de Nascimento"
-            value={formik.values.birthdate}
-            onChange={formik.handleChange}
-            error={formik.touched.birthdate && Boolean(formik.errors.birthdate)}
-          />
-          <label>Telefone</label>
-          <input
-            className={styles.customInput}
-            id="phone"
-            name="phone"
-            label="Telefone"
-            value={formik.values.phone}
-            onChange={formik.handleChange}
-            error={formik.touched.phone && Boolean(formik.errors.phone)}
-          />
-          <label>E-mail</label>
-          <input
-            className={styles.customInput}
-            id="email"
-            name="email"
-            label="Email"
-            value={formik.values.email}
-            onChange={formik.handleChange}
-            error={formik.touched.email && Boolean(formik.errors.email)}
-          />
-          <label>Senha</label>
-          <input
-            className={styles.customInput}
-            id="password"
-            name="password"
-            label="Password"
-            type="password"
-            value={formik.values.password}
-            onChange={formik.handleChange}
-            error={formik.touched.password && Boolean(formik.errors.password)}
-          />
+      <div className={styles.colorbackground}>
+        <div className={styles.form1}>
+          <div>
+            <img className={styles.imgLogo} src={Logo} />
+          </div>
+          <h2>Não deixe para amanhã a cerveja que você pode comprar hoje!</h2>
+          <h3>
+            Cadastre-se agora mesmo e conheça um departamento cheio de cervejas
+            com preços especiais e exclusivos.
+            <br />
+          </h3>
+          <Link className={styles.link} to="/login">
+            <ArrowLeft size={28} /> Volte para o Login.
+          </Link>
         </div>
-        <div>
-          <button color="primary" variant="contained" fullWidth type="submit">
-            Cadastrar
-          </button>
-        </div>
-        <span>
-          Você já tem cadastro?
-          <Link to="/login"> Faça seu Login.</Link>
-        </span>
-      </form>
+
+        <form className={styles.form2} onSubmit={formik.handleSubmit}>
+          <div className={styles.formInfos}>
+            <div className={styles.custom}>
+              <label className={styles.customLabel}>Nome</label>
+              <input
+                className={styles.customInput}
+                id="full_name"
+                name="full_name"
+                value={formik.values.full_name}
+                onChange={formik.handleChange}
+                error={
+                  formik.touched.full_name && Boolean(formik.errors.full_name)
+                }
+              />
+            </div>
+            <div className={styles.custom}>
+              <label className={styles.customLabel}>CPF</label>
+              <input
+                className={styles.customInput}
+                id="document"
+                name="document"
+                value={formik.values.document}
+                onChange={formik.handleChange}
+                error={
+                  formik.touched.document && Boolean(formik.errors.document)
+                }
+              />
+            </div>
+            <div className={styles.custom}>
+              <label className={styles.customLabel}>Data de Nascimento</label>
+              <input
+                className={styles.customInput}
+                id="birthdate"
+                name="birthdate"
+                value={formik.values.birthdate}
+                onChange={formik.handleChange}
+                error={
+                  formik.touched.birthdate && Boolean(formik.errors.birthdate)
+                }
+              />
+            </div>
+            <div className={styles.custom}>
+              <label className={styles.customLabel}>Telefone</label>
+              <input
+                className={styles.customInput}
+                id="phone"
+                name="phone"
+                value={formik.values.phone}
+                onChange={formik.handleChange}
+                error={formik.touched.phone && Boolean(formik.errors.phone)}
+              />
+            </div>
+            <div className={styles.custom}>
+              <label className={styles.customLabel}>E-mail</label>
+              <input
+                className={styles.customInput}
+                id="email"
+                name="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                error={formik.touched.email && Boolean(formik.errors.email)}
+              />
+            </div>
+            <div className={styles.custom}>
+              <label className={styles.customLabel}>Senha</label>
+              <input
+                className={styles.customInput}
+                id="password"
+                name="password"
+                type="password"
+                value={formik.values.password}
+                onChange={formik.handleChange}
+                error={
+                  formik.touched.password && Boolean(formik.errors.password)
+                }
+              />
+            </div>
+          </div>
+          <div className={styles.btn}>
+            <button
+              className={styles.btnPortal}
+              color="primary"
+              variant="contained"
+              fullWidth
+              type="submit"
+            >
+              <strong>Cadastrar</strong>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

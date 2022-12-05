@@ -1,52 +1,46 @@
 import styles from "./login.module.css";
-
-import Logo from "../../assets/elements/beerbranco.svg";
-import { SignIn, ArrowUUpLeft } from "phosphor-react";
+import Logo from "../../assets/logo/amarelo.png";
+import { ArrowLeft } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 export function LoginUser() {
   return (
-    <div className={styles.colorbg}>
-      <div className={styles.left}>
-        <a className={styles.txt} href="/">
-         <ArrowUUpLeft size={32} />
-        </a>
-      </div>
-      <div className={styles.row}>
-        <div className={styles.box}>
-          <img src={Logo} alt="" />
-          <h1>PORTAL DO MALTE</h1>
-          <strong>VARIEDADE DE ESTILOS, INFINIDADE DE SABORES</strong>
-        </div>
-        <div className={styles.form}>
-          <h2 className={styles.titleLogin}>LOGIN</h2>
-          <div className={styles.login}>
-            <label className={styles.txt} htmlFor="">
-              E-MAIL
-            </label>
-            <input className={styles.inputMail} type="text" />
+    <div className={styles.container}>
+      <div className={styles.colorbackground}>
+        <div className={styles.form1}>
+          <div>
+            <img className={styles.imgLogo} src={Logo} />
           </div>
-          <div className={styles.login}>
-            <label className={styles.txt} htmlFor="">
-              SENHA
-            </label>
-            <input className={styles.inputPassword} type="password" />
+          <h2>Não deixe para amanhã a cerveja que você pode comprar hoje!</h2>
+          <h3>
+            Faça seu Login e aproveite ofertas exclusivos e cupons de descontos.
+            Para Aproveitar nossos beneficíos
+            <br />
+          </h3>
+          <Link className={styles.link} to="/register">
+            <ArrowLeft size={28} />
+            Cadastre-se Aqui .
+          </Link>
+        </div>
+
+        <div className={styles.form2}>
+          <div className={styles.custom}>
+            <label className={styles.customLabel}>E-mail</label>
+            <input className={styles.customInput} id="email" name="email" />
+          </div>
+          <div className={styles.custom}>
+            <label className={styles.customLabel}>Senha</label>
+            <input
+              className={styles.customInput}
+              id="password"
+              name="password"
+              type="password"
+            />
           </div>
           <div className={styles.btn}>
-            <span className={styles.txt}>
-              <a className={styles.txt} href="#">
-                Esqueci minha senha
-              </a>
-            </span>
             <button className={styles.btnPortal} type="submit">
-              <strong><SignIn />{" "} LOGIN</strong>
+              <strong>Entrar</strong>
             </button>
-            <span className={styles.txt}>
-              Você ainda não tem Login?
-              <a className={styles.txt} href="/register">
-                {" "}
-                Registre-se Aqui.
-              </a>
-            </span>
           </div>
         </div>
       </div>
