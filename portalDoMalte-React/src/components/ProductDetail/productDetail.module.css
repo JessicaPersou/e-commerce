@@ -1,3 +1,7 @@
+.container{
+  padding-top: 10rem;
+}
+
 .productsDetails {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,7 @@
   background-color: var(--golden-grass-180);
   min-height: 100vh;
   color: var(--white);
-  padding: 0 0 5rem 0;
+  padding: 10rem 0;
 }
 
 .main {

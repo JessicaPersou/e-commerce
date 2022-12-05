@@ -11,6 +11,7 @@ import { Card } from "../Card";
 
 export function BeerStyles() {
   return (
+    <div className={styles.container}>
     <div className={styles.beerStyle}>
       {/* AQUI VAI O BANNER E A MENSAGEM */}
       <div className={styles.component}>
@@ -64,6 +65,6 @@ export function BeerStyles() {
           }
         />
       </div>
-    </div>
+    </div></div>
   );
 }

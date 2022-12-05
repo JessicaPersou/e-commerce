@@ -1,5 +1,15 @@
+.container {
+  background-image: url("../../assets/home/beerEffect.png");
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 5rem 0 0 0;  
+}
+
 .boxForm {
-  background-color: var(--golden-grass-180);
+  background-color: var(--background-transparent);
   color: var(--white);
   height: 100vh;
   display: flex;

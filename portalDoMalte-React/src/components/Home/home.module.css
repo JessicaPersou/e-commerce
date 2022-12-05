@@ -1,9 +1,9 @@
-.colorbackground {
+.container {
   background-image: url("../../assets/home/beerEffect.png");
   background-color: var(--black);
   background-repeat: no-repeat;
-  background-size: cover; 
-
+  background-size: cover;
+  background-position: center;
   color: var(--white);
 }
 
@@ -13,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .carousel {

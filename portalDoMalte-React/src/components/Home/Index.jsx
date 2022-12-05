@@ -15,7 +15,7 @@ import { Carousel } from "../Carousel/Index";
 
 export function Home() {
   return (
-    <div className={styles.colorBackground}>
+    <div className={styles.container}>
       <div className={styles.home}>
         <div className={styles.carousel}>
           <Carousel />

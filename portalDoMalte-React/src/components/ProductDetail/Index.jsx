@@ -5,6 +5,8 @@ import { Star, Truck } from "phosphor-react";
 // { img, title, price, installment }
 export function ProductDetail() {
   return (
+
+    <div className={styles.container}>
     <div className={styles.productsDetails}>
       <div className={styles.main}>
         <div>
@@ -48,6 +50,7 @@ export function ProductDetail() {
           Este produto é vendido apenas para maiores de 18 anos.
         </p>
       </div>
+    </div>
     </div>
   );
 }
