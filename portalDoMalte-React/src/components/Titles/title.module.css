@@ -1,9 +1,9 @@
 .msg{
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-.title{
+.titleMain{
   font-size: 3rem;
   font-weight: 500;
   color: var(--white);

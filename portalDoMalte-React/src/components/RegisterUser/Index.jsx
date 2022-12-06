@@ -7,13 +7,18 @@ import Logo from "../../assets/logo/amarelo.png";
 import { ArrowLeft } from "phosphor-react";
 import { useEffect } from "react";
 import create from "prompt-sync";
+import { Titles } from "../Titles/Index";
 
 const SchemaRegister = Yup.object().shape({
-  full_name: Yup.string()
+  first_name: Yup.string()
     .min(3, "*Campo muito Curto")
     .max(100, "*Quantidade de caracteres inválida!")
     .required("*Campo Obrigatório"),
-  document: Yup.number()
+  last_name: Yup.string()
+    .min(3, "*Campo muito Curto")
+    .max(100, "*Quantidade de caracteres inválida!")
+    .required("*Campo Obrigatório"),
+  cpf: Yup.number()
     .test("len", "*O Campo CPF deve ter 11 dígitos!", (val) => {
       if (val === undefined) {
         return true;
@@ -27,8 +32,7 @@ const SchemaRegister = Yup.object().shape({
     .max(
       new Date(Date.now() - 567648000000),
       "*Você deve ter 18 anos no mínimo!"
-    ),
-  // .required("*Campo Obrigatório"),
+    ).required("*Campo Obrigatório"),
   phone: Yup.number()
     .positive()
     .integer()
@@ -46,12 +50,12 @@ const SchemaRegister = Yup.object().shape({
 export function RegisterUser() {
   const navigate = useNavigate();
 
-// useEffect(()=>{
-// if(createUser){
-//   navigate("/register")
-// }
-// },[])
-  
+  // useEffect(()=>{
+  // if(createUser){
+  //   navigate("/register")
+  // }
+  // },[])
+
   async function createUser(user) {
     await axios.post("http://localhost:9001/user", user);
     console.log("Clicou, vamos ver user:!", user);
@@ -59,8 +63,9 @@ export function RegisterUser() {
 
   const formik = useFormik({
     initialValues: {
-      full_name: "",
-      document: "",
+      first_name: "",
+      last_name: "",
+      cpf: "",
       birthdate: "",
       phone: "",
       email: "",
@@ -84,36 +89,41 @@ export function RegisterUser() {
             <br />
           </h3>
           <Link className={styles.link} to="/login">
-            <ArrowLeft size={28} /> Volte para o Login.
+            <ArrowLeft size={24} /> Volte para o Login.
           </Link>
         </div>
 
         <form className={styles.form2} onSubmit={formik.handleSubmit}>
           <div className={styles.formInfos}>
+            <Titles title={"Cadastre-se"} />
             <div className={styles.custom}>
               <label className={styles.customLabel}>Nome</label>
               <input
                 className={styles.customInput}
-                id="full_name"
-                name="full_name"
-                value={formik.values.full_name}
+                id="first_name"
+                name="first_name"
+                value={formik.values.first_name}
                 onChange={formik.handleChange}
-                error={
-                  formik.touched.full_name && Boolean(formik.errors.full_name)
-                }
+              />
+            </div>
+            <div className={styles.custom}>
+              <label className={styles.customLabel}>Sobrenome</label>
+              <input
+                className={styles.customInput}
+                id="last_name"
+                name="last_name"
+                value={formik.values.last_name}
+                onChange={formik.handleChange}
               />
             </div>
             <div className={styles.custom}>
               <label className={styles.customLabel}>CPF</label>
               <input
                 className={styles.customInput}
-                id="document"
-                name="document"
-                value={formik.values.document}
+                id="cpf"
+                name="cpf"
+                value={formik.values.cpf}
                 onChange={formik.handleChange}
-                error={
-                  formik.touched.document && Boolean(formik.errors.document)
-                }
               />
             </div>
             <div className={styles.custom}>
@@ -124,9 +134,6 @@ export function RegisterUser() {
                 name="birthdate"
                 value={formik.values.birthdate}
                 onChange={formik.handleChange}
-                error={
-                  formik.touched.birthdate && Boolean(formik.errors.birthdate)
-                }
               />
             </div>
             <div className={styles.custom}>
@@ -137,7 +144,6 @@ export function RegisterUser() {
                 name="phone"
                 value={formik.values.phone}
                 onChange={formik.handleChange}
-                error={formik.touched.phone && Boolean(formik.errors.phone)}
               />
             </div>
             <div className={styles.custom}>
@@ -148,7 +154,6 @@ export function RegisterUser() {
                 name="email"
                 value={formik.values.email}
                 onChange={formik.handleChange}
-                error={formik.touched.email && Boolean(formik.errors.email)}
               />
             </div>
             <div className={styles.custom}>
@@ -160,9 +165,6 @@ export function RegisterUser() {
                 type="password"
                 value={formik.values.password}
                 onChange={formik.handleChange}
-                error={
-                  formik.touched.password && Boolean(formik.errors.password)
-                }
               />
             </div>
           </div>

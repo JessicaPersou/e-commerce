@@ -36,23 +36,25 @@ export function User() {
         <thead>
           <tr className={styles.tableTr}>
             <th>ID</th>
-            <th>NOME</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
             <th>CPF</th>
-            <th>DATA DE NASCIMENTO</th>
-            <th>TELEFONE</th>
-            <th>E-MAIL</th>
-            <th>APAGAR</th>
-            <th>EDITAR</th>
+            <th>Data de Nascimento</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+            <th>Apagar</th>
+            <th>Editar</th>
           </tr>
         </thead>
         <tbody className={styles.tableBody}>
           {list.map((item) => (
             <tr key={item.id} className={styles.tableTr}>
               <td>{item.id}</td>
-              <td>{item.full_name}</td>
-              <td>{item.document}</td>
+              <td>{item.fisrt_name}</td>
+              <td>{item.last_name}</td>
+              <td>{item.cpf}</td>
               <td>
-                {item.birthdate && moment(item.birthdate).format("DD/MM/YYYY")}
+                {item.birthdate && moment(item.birthdate).format("DD-MM-YYYY")}
               </td>
               <td>{item.phone}</td>
               <td>{item.email}</td>

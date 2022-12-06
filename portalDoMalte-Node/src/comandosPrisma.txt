@@ -1,3 +1,0 @@
-yarn ts-node-dev src/create.ts - > depois que inseri os dados, rodar no terminal para criar no banco
-yarn prisma migrate dev - > quando faz alterações nas tabelas, cria migrações
-yarn prisma format - > formatar os campos inseridos

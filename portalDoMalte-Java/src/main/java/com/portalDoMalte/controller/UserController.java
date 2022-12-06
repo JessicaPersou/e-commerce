@@ -40,9 +40,10 @@ public class UserController {
         return userRepository.findById(id)
                 .map( save -> {
 
-                    save.setFull_name(user.getFull_name());
+                    save.setFirstName(user.getFirstName());
+                    save.setLastName(user.getLastName());
                     save.setBirthdate(user.getBirthdate());
-                    save.setDocument(user.getDocument());
+                    save.setCpf(user.getCpf());
                     save.setEmail(user.getEmail());
                     save.setPhone(user.getPhone());
                     save.setPassword(user.getPassword());

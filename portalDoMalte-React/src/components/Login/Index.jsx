@@ -18,7 +18,7 @@ export function LoginUser() {
             <br />
           </h3>
           <Link className={styles.link} to="/register">
-            <ArrowLeft size={28} />
+            <ArrowLeft size={24} />
             Cadastre-se Aqui .
           </Link>
         </div>

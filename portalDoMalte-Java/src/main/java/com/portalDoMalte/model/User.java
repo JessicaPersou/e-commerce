@@ -3,11 +3,11 @@ package com.portalDoMalte.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import javax.persistence.*;
-import java.sql.Date;
-import java.util.ArrayList;
-import java.util.List;
 
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -20,16 +20,26 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String full_name;
+    @Column
+    private String firstName;
 
-    private String document;
+    @Column
+    private String lastName;
 
+    @Column
+    private String cpf;
+
+    @Column
+    @Temporal(TemporalType.DATE)
     private Date birthdate;
 
+    @Column
     private String phone;
 
+    @Column
     private String email;
 
+    @Column
     private String password;
 
     @JsonIgnore
