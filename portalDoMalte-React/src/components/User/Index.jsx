@@ -4,6 +4,7 @@ import moment from "moment";
 import styles from "../User/user.module.css";
 import { Pencil, Trash } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
+import { Titles } from "../Titles/Index";
 
 export function User() {
   const [list, setList] = useState([]);
@@ -31,7 +32,7 @@ export function User() {
 
   return (
     <div className={styles.container}>
-      {/* MENSAGEM AQUI */}
+      <Titles title={"Usuários Cadastrados"} />
       <table className={styles.table}>
         <thead>
           <tr className={styles.tableTr}>

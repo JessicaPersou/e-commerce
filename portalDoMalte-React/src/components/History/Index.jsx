@@ -2,12 +2,15 @@ import styles from "./history.module.css";
 import About from "../../assets/photoPages/beer.png";
 import Tasting from "../../assets/photoPages/tasting.png";
 import MyBeer from "../../assets/photoPages/barril.jpg";
+import { Titles } from "../Titles/Index";
 
 export function History() {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
-        {/* AQUI VAI A MENSAGEM E O BANNER */}
+        <div className={styles.title}>
+          <Titles title={"Breve História da Cerveja"} />
+        </div>
         <div className={styles.history}>
           <div className={styles.section}>
             <div>

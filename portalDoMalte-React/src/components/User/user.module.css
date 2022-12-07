@@ -1,14 +1,14 @@
 .container {
   background-color: var(--golden-grass-180);
   color: var(--white);
-
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .tableBody tr td{

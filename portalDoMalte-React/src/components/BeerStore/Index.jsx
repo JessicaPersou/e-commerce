@@ -19,7 +19,8 @@ import Peroni from "../../assets/products/peroni.png";
 import Stella from "../../assets/products/stela.png";
 import Tiger from "../../assets/products/tiger.png";
 import YorkBrewery from "../../assets/products/yorkbrewery.png";
-
+import { Titles } from "../Titles/Index";
+import { BrandsBeer } from "../BrandsBeer/Index";
 import { CardProducts } from "../CardProducts";
 import { CaretDoubleLeft, CaretDoubleRight } from "phosphor-react";
 
@@ -27,7 +28,11 @@ export function BeerStore() {
   return (
     <div className={styles.container}>
       <div className={styles.store}>
-        {/* AQUI BANNER E MENSAGEM */}
+      <Titles title={"As Princípais Marcas"} />
+      <div>
+        <BrandsBeer/>
+      </div>
+      <Titles title={"As Melhores Ofertas"} />
         <div className={styles.component}>
           <CardProducts
             img={AegisBrewing}

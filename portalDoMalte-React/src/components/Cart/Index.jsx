@@ -2,11 +2,14 @@ import styles from "./cart.module.css";
 import Product from "../../assets/products/aegis.png";
 import { XCircle } from "phosphor-react";
 import { Link } from "react-router-dom";
+import { Titles } from "../Titles/Index";
 
 export function Cart() {
   return (
     <div className={styles.shoppingCart}>
-      {/* MENSAGEM */}
+    <div className={styles.title}>
+        <Titles title={"Detalhes da Compra"} />
+      </div>
       <hr />
       <div className={styles.infoProduct}>
         <div className={styles.product}>
@@ -23,7 +26,7 @@ export function Cart() {
         </div>
         <div className={styles.product}>
           <p>
-            <XCircle size={40} color="#f20707"/>
+            <XCircle size={40} color="#f20707" />
           </p>
         </div>
       </div>
@@ -36,7 +39,9 @@ export function Cart() {
               <input className={styles.inputInfo} type="number" />
             </div>
             <div className={styles.product}>
-              <button className={styles.btnPortal} type="submit">CALCULAR</button>
+              <button className={styles.btnPortal} type="submit">
+                CALCULAR
+              </button>
             </div>
           </div>
           <p>CUPOM DE DESCONTO</p>
@@ -45,7 +50,9 @@ export function Cart() {
               <input className={styles.inputInfo} type="number" />
             </div>
             <div className={styles.product}>
-              <button className={styles.btnPortal} type="submit">VERIFICAR</button>
+              <button className={styles.btnPortal} type="submit">
+                VERIFICAR
+              </button>
             </div>
           </div>
         </div>
@@ -60,7 +67,9 @@ export function Cart() {
       </div>
       <div>
         <Link to="/finished" className={styles.btnPayments}>
-          <button className={styles.btnPortal} type="submit">FINALIZAR COMPRA</button>
+          <button className={styles.btnPortal} type="submit">
+            FINALIZAR COMPRA
+          </button>
         </Link>
       </div>
     </div>

@@ -5,7 +5,11 @@
   background-size: cover;
   background-position: center;
   color: var(--white);
-  padding: 5rem 0 0 0;  
+  padding: 5rem 0 5rem 0;  
+}
+
+.title{
+  padding-top: 5rem;
 }
 
 .main {

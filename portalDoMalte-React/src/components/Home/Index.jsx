@@ -13,6 +13,7 @@ import { BrandsBeer } from "../BrandsBeer/Index";
 import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
 import { Carousel } from "../Carousel/Index";
 import { Link } from "react-router-dom";
+import { Titles } from "../Titles/Index";
 
 export function Home() {
   return (
@@ -22,15 +23,11 @@ export function Home() {
           <Carousel />
         </div>
         <hr className={styles.line} />
-        {/* <div className={styles.msg}>
-        <h1>OFERTAS IMPERDÍVEIS!</h1>
-      </div>
-      <div className={styles.msg}>
-        <h2>As Melhores Marcas estão aqui!</h2>
-      </div> */}
+        <Titles title={"As Melhores Marcas"} />
         <div className={styles.brandsComponent}>
           <BrandsBeer />
         </div>
+        <Titles title={"CONFIRA ALGUMAS OFERTAS"} />
         <div className={styles.component}>
           <ArrowCircleLeft color="#e1dbdb" size={40} />
           <CardProducts
@@ -69,6 +66,7 @@ export function Home() {
           />
           <ArrowCircleRight color="#e1dbdb" size={40} />
         </div>
+        <Titles title={"Participe da nossa promoção"} />
         <div className={styles.txtNews}>
           <div className={styles.news}>
             <img className={styles.imgNews} src={BeerStore} alt="" />

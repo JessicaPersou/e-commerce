@@ -37,7 +37,7 @@ export function RegisterUser() {
       .min(10, "*Campo muito Curto")
       .max(14, "*Quantidade de caracteres inválida!")
       .required("*Obrigatório"),
-    birthdate: Yup.date()
+    birthdate: Yup.string()
       // .test("date", "O formato da data deve ser DD/MM/YYYY", function (value) {
       //   return dayjs(value, "DD/MM/YYYY").isValid();
       // })
