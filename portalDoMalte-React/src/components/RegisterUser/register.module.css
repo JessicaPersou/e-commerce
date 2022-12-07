@@ -93,3 +93,10 @@
   background-color: var(--golden-grass-100);
   color: var(--golden-grass-180);
 }
+
+.error{
+  padding-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--error);
+  text-align: center;
+}
