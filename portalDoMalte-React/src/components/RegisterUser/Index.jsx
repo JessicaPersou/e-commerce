@@ -1,15 +1,13 @@
-import styles from "./register.module.css";
-import { Link, useNavigate } from "react-router-dom";
-import { useFormik } from "formik";
-import * as Yup from "yup";
 import axios from "axios";
+import { useFormik } from "formik";
+import { Link, useNavigate } from "react-router-dom";
+import { Titles } from "../Titles/Index";
+import styles from "./register.module.css";
 import Logo from "../../assets/logo/amarelo.png";
 import { ArrowLeft } from "phosphor-react";
-import { useEffect } from "react";
-import create from "prompt-sync";
-import { Titles } from "../Titles/Index";
+import * as Yup from "yup";
 
-const SchemaRegister = Yup.object().shape({
+const registerValidation = Yup.object().shape({
   first_name: Yup.string()
     .min(3, "*Campo muito Curto")
     .max(100, "*Quantidade de caracteres inválida!")
@@ -32,7 +30,8 @@ const SchemaRegister = Yup.object().shape({
     .max(
       new Date(Date.now() - 567648000000),
       "*Você deve ter 18 anos no mínimo!"
-    ).required("*Campo Obrigatório"),
+    ),
+  // .required("*Campo Obrigatório"),
   phone: Yup.number()
     .positive()
     .integer()
@@ -50,15 +49,10 @@ const SchemaRegister = Yup.object().shape({
 export function RegisterUser() {
   const navigate = useNavigate();
 
-  // useEffect(()=>{
-  // if(createUser){
-  //   navigate("/register")
-  // }
-  // },[])
-
   async function createUser(user) {
     await axios.post("http://localhost:9001/user", user);
     console.log("Clicou, vamos ver user:!", user);
+    navigate("/");
   }
 
   const formik = useFormik({
@@ -71,15 +65,17 @@ export function RegisterUser() {
       email: "",
       password: "",
     },
-    validationSchema: SchemaRegister,
-    onSubmit: (values) => createUser(values),
+    onSubmit: (values) => {
+      createUser(values);
+      alert(JSON.stringify("Usuário Cadastrado com Sucesso!", values, null, 2));
+    },
   });
 
   return (
-    <div className={styles.container}>
-      <div className={styles.colorbackground}>
+    <div className={styles.background}>
+      <div className={styles.container}>
         <div className={styles.form1}>
-          <div>
+          <div className={styles.custom}>
             <img className={styles.imgLogo} src={Logo} />
           </div>
           <h2>Não deixe para amanhã a cerveja que você pode comprar hoje!</h2>
@@ -89,96 +85,110 @@ export function RegisterUser() {
             <br />
           </h3>
           <Link className={styles.link} to="/login">
-            <ArrowLeft size={24} /> Volte para o Login.
+            <ArrowLeft size={28} /> Volte para o Login.
           </Link>
         </div>
-
-        <form className={styles.form2} onSubmit={formik.handleSubmit}>
-          <div className={styles.formInfos}>
-            <Titles title={"Cadastre-se"} />
+        <div className={styles.form2}>
+          <Titles title={"Cadastre-se"} />
+          <form onSubmit={formik.handleSubmit}>
             <div className={styles.custom}>
-              <label className={styles.customLabel}>Nome</label>
+              <label className={styles.customLabel} htmlFor="first_name">
+                Nome
+              </label>
               <input
                 className={styles.customInput}
                 id="first_name"
                 name="first_name"
-                value={formik.values.first_name}
+                type="text"
                 onChange={formik.handleChange}
+                value={formik.values.first_name}
               />
             </div>
             <div className={styles.custom}>
-              <label className={styles.customLabel}>Sobrenome</label>
+              <label className={styles.customLabel} htmlFor="last_name">
+                Sobrenome
+              </label>
               <input
                 className={styles.customInput}
                 id="last_name"
                 name="last_name"
-                value={formik.values.last_name}
+                type="text"
                 onChange={formik.handleChange}
+                value={formik.values.last_name}
               />
             </div>
             <div className={styles.custom}>
-              <label className={styles.customLabel}>CPF</label>
+              <label className={styles.customLabel} htmlFor="cpf">
+                CPF
+              </label>
               <input
                 className={styles.customInput}
                 id="cpf"
                 name="cpf"
-                value={formik.values.cpf}
+                type="cpf"
                 onChange={formik.handleChange}
+                value={formik.values.cpf}
               />
             </div>
             <div className={styles.custom}>
-              <label className={styles.customLabel}>Data de Nascimento</label>
+              <label className={styles.customLabel} htmlFor="birthdate">
+                Data de Nascimento
+              </label>
               <input
                 className={styles.customInput}
                 id="birthdate"
                 name="birthdate"
-                value={formik.values.birthdate}
+                type="birthdate"
                 onChange={formik.handleChange}
+                value={formik.values.birthdate}
               />
             </div>
             <div className={styles.custom}>
-              <label className={styles.customLabel}>Telefone</label>
+              <label className={styles.customLabel} htmlFor="phone">
+                Phone
+              </label>
               <input
                 className={styles.customInput}
                 id="phone"
                 name="phone"
-                value={formik.values.phone}
+                type="phone"
                 onChange={formik.handleChange}
+                value={formik.values.phone}
               />
             </div>
             <div className={styles.custom}>
-              <label className={styles.customLabel}>E-mail</label>
+              <label className={styles.customLabel} htmlFor="email">
+                E-mail
+              </label>
               <input
                 className={styles.customInput}
                 id="email"
                 name="email"
-                value={formik.values.email}
+                type="email"
                 onChange={formik.handleChange}
+                value={formik.values.email}
               />
             </div>
             <div className={styles.custom}>
-              <label className={styles.customLabel}>Senha</label>
+              <label className={styles.customLabel} htmlFor="password">
+                Senha
+              </label>
               <input
                 className={styles.customInput}
                 id="password"
                 name="password"
                 type="password"
-                value={formik.values.password}
                 onChange={formik.handleChange}
+                value={formik.values.password}
               />
             </div>
-          </div>
-          <div className={styles.btn}>
-            <button
-              className={styles.btnPortal}
-              color="primary"
-              variant="contained"
-              type="submit"
-            >
-              <strong>Cadastrar</strong>
-            </button>
-          </div>
-        </form>
+            <div className={styles.btn}>
+              <button className={styles.btnPortal} type="submit">
+                Cadastrar
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

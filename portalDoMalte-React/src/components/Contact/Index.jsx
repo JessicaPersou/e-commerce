@@ -9,25 +9,29 @@ export function Contact() {
       <div className={styles.form}>
         <div className={styles.boxTxt}>
           <div className={styles.infoContact}>
-            <label htmlFor="">NOME</label>
+            <label htmlFor="">Nome</label>
             <input className={styles.input} type="text" name="name" id="" />
           </div>
           <div className={styles.infoContact}>
-            <label htmlFor="">DOCUMENTO</label>
+            <label htmlFor="">Sobrenome</label>
             <input className={styles.input} type="text" name="name" id="" />
           </div>
           <div className={styles.infoContact}>
-            <label htmlFor="">E-MAIL</label>
+            <label htmlFor="">CPF</label>
             <input className={styles.input} type="text" name="name" id="" />
           </div>
           <div className={styles.infoContact}>
-            <label htmlFor="">NÚMERO DO PEDIDO</label>
+            <label htmlFor="">E-mail</label>
+            <input className={styles.input} type="text" name="name" id="" />
+          </div>
+          <div className={styles.infoContact}>
+            <label htmlFor="">Número do Pedido</label>
             <input className={styles.input} type="text" name="name" id="" />
           </div>
         </div>
 
         <div className={styles.txtArea}>
-          <label htmlFor="">MENSAGEM</label>
+          <label htmlFor="">Mensagem</label>
           <textarea name="" id="" cols="70" rows="17" />
         </div>
       </div>

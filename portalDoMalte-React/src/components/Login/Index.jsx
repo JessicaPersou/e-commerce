@@ -3,7 +3,7 @@ import Logo from "../../assets/logo/amarelo.png";
 import { ArrowLeft } from "phosphor-react";
 import { Link } from "react-router-dom";
 
-export function LoginUser() {
+export function LoginUser() { 
   return (
     <div className={styles.container}>
       <div className={styles.colorbackground}>

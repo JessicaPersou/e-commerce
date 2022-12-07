@@ -50,7 +50,7 @@ export function User() {
           {list.map((item) => (
             <tr key={item.id} className={styles.tableTr}>
               <td>{item.id}</td>
-              <td>{item.fisrt_name}</td>
+              <td>{item.first_name}</td>
               <td>{item.last_name}</td>
               <td>{item.cpf}</td>
               <td>

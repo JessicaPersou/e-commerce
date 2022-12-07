@@ -1,10 +1,12 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import styles from "../EditUser/editUser.module.css";
-import { useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useToast } from "react-toastify";
 
 export function EditUser() {
   const [user, setUser] = useState({});
+  const navigate = useNavigate();
   const { id } = useParams();
 
   async function onLoad() {
@@ -19,6 +21,8 @@ export function EditUser() {
 
   async function onSave() {
     await axios.put(`http://localhost:9001/user/${id}`, user);
+    alert("Usuário atualizado!")
+    navigate("/");
   }
 
   useEffect(() => {
@@ -34,8 +38,16 @@ export function EditUser() {
             <label htmlFor="">Nome </label>{" "}
             <input
               type="text"
-              onChange={(e) => onChange(e.target.value, "full_name")}
-              value={user.full_name}
+              onChange={(e) => onChange(e.target.value, "first_name")}
+              value={user.first_name}
+            />
+          </div>
+          <div className={styles.inputTxt}>
+            <label htmlFor="">Sobrenome</label>{" "}
+            <input
+              type="text"
+              onChange={(e) => onChange(e.target.value, "last_name")}
+              value={user.last_name}
             />
           </div>
 
@@ -43,8 +55,8 @@ export function EditUser() {
             <label>CPF</label>
             <input
               type="text"
-              onChange={(e) => onChange(e.target.value, "document")}
-              value={user.document}
+              onChange={(e) => onChange(e.target.value, "cpf")}
+              value={user.cpf}
             />
           </div>
 

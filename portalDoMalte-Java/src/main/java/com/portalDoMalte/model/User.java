@@ -6,7 +6,6 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Data
@@ -20,26 +19,18 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column
-    private String firstName;
+    private String first_name;
 
-    @Column
-    private String lastName;
+    private String last_name;
 
-    @Column
     private String cpf;
 
-    @Column
-    @Temporal(TemporalType.DATE)
-    private Date birthdate;
+    private String birthdate;
 
-    @Column
     private String phone;
 
-    @Column
     private String email;
 
-    @Column
     private String password;
 
     @JsonIgnore
