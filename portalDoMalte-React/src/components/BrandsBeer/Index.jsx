@@ -1,6 +1,4 @@
 import styles from "./brandsBeer.module.css";
-import { motion } from "framer-motion";
-
 import Paulaner from "../../assets/brands/paulaner.png";
 import BlueMoon from "../../assets/brands/blue.png";
 import Corona from "../../assets/brands/corona.png";

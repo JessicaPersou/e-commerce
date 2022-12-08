@@ -1,66 +1,42 @@
 import styles from "./header.module.css";
-import { BeerBottle, ShoppingCart, SignIn } from "phosphor-react";
+import { MagnifyingGlass, ShoppingCart, SignIn } from "phosphor-react";
 import { Link } from "react-router-dom";
+import { LogoHeader } from "../Logo/Index";
 
 export function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link className={styles.font} href="">
-          <BeerBottle size={32} />
-        </Link>
-        <p>
-          <strong>PORTAL DO MALTE</strong>
-        </p>
+      <div className={styles.headerLogo}>
+        <LogoHeader />
       </div>
-      <hr className={styles.lineHeader} />
-      {/* <div className={styles.search}>
-        <input
-          className={styles.inputSearch}
-          type="button"
-          value=""
-          placeholder="Busque pela marca, estilo ou sabor"
-        />
-        <button type="submit">Pesquisar</button>
-      </div> */}
       <div className={styles.menu}>
-        <div className={styles.menu}>
+        <div className={styles.nav}>
           <Link to="/" className={styles.font}>
-            <p>
-              <strong>HOME</strong>
-            </p>
+            <strong>HOME</strong>
           </Link>
           <Link to="/history" className={styles.font}>
-            <p>
-              <strong>HISTÓRIA</strong>
-            </p>
+            <strong>HISTÓRIA</strong>
           </Link>
           <Link to="/styles" className={styles.font}>
-            <p>
-              <strong>ESTILOS</strong>
-            </p>
+            <strong>ESTILOS</strong>
           </Link>
           <Link to="/products" className={styles.font}>
-            <p>
-              <strong>BEER STORE</strong>
-            </p>
+            <strong>STORE</strong>
           </Link>
           <Link to="/contact" className={styles.font}>
-            <p>
-              <strong>CONTATO</strong>
-            </p>
+            <strong>CONTATO</strong>
           </Link>
+        </div>
+        <div className={styles.inputSearch}>
+          <input type="text" placeholder="Pesquise"/>{" "}
+          <MagnifyingGlass size={24} />
         </div>
         <div className={styles.icons}>
           <Link className={styles.font} to="/shopping-cart">
-            <p>
-              <ShoppingCart size={26} />
-            </p>
+            <ShoppingCart size={24} />
           </Link>
           <Link className={styles.font} to="/login">
-            <p>
-              <SignIn size={26} />
-            </p>
+            <SignIn size={24} />
           </Link>
         </div>
       </div>
