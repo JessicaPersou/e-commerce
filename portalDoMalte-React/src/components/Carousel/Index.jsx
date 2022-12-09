@@ -1,25 +1,33 @@
 import styles from "./carousel.module.css";
-import SimpleImageSlider from "react-simple-image-slider";
+import Stock from "../../assets/home/stock.png";
+import Tasting from "../../assets/home/tasting.png";
+import Beer from "../../assets/home/beer.jpg";
+import { useEffect } from "react";
 
 export function Carousel() {
-  const images = [
-    { url: "./src/assets/home/barrel.png" },
-    { url: "./src/assets/home/stock.png" },
-    { url: "./src/assets/home/tasting.png" },
-    { url: "./src/assets/home/beer.jpg" },
-  ];
+  useEffect(() => {
+    setTimeout(() => {
+      const bannerCarousel = document.getElementById("carousel2");
+      bannerCarousel.style.animation = "updown 5s";
+    }, 70000);
 
-  return (
-    <div className={styles.carousel}>
-      <SimpleImageSlider
-        width={1279}
-        height={769}
-        images={images}
-        showBullets={true}
-        showNavs={true}
-        slideDuration={1.5}
-        autoPlay={true}
-      />
-    </div>
-  );
+    let count = 1;
+    const backgroundImages = [Stock, Tasting, Beer];
+
+    setInterval(() => {
+      const banner = document.getElementById("carousel2");
+
+      if (banner) {
+        banner.style.backgroundPosition = "center";
+        banner.style.backgroundRepeat = "no-repeat";
+        banner.style.backgroundSize = "cover";
+        banner.style.backgroundImage = `linear-gradient(#000000 , #ffffff00 50%), url(${backgroundImages[count]})`;
+      }
+      if (count == backgroundImages.length) {
+        count = 0;
+      } else count++;
+    }, 7000);
+  }, []);
+
+  return <div className={styles.carousel2} id="carousel2"></div>;
 }
