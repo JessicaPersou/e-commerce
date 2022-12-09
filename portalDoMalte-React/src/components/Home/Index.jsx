@@ -22,7 +22,6 @@ export function Home() {
         <div className={styles.carousel}>
           <Carousel />
         </div>
-        <hr className={styles.line} />
         <Titles title={"As Melhores Marcas"} />
         <div className={styles.brandsComponent}>
           <BrandsBeer />

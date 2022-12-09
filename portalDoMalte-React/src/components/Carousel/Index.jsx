@@ -9,7 +9,7 @@ export function Carousel() {
   useEffect(() => {
     setTimeout(() => {
       const bannerCarousel = document.getElementById("carousel2");
-      bannerCarousel.style.animation = "updown 5s";
+      // bannerCarousel.style.animation = "updown 7s";
     }, []);
 
     let count = 1;
@@ -22,7 +22,7 @@ export function Carousel() {
         banner.style.backgroundPosition = "center";
         banner.style.backgroundRepeat = "no-repeat";
         banner.style.backgroundSize = "cover";
-        banner.style.backgroundImage = `linear-gradient(#000000 , #ffffff00 50%), url(${backgroundImages[count]})`;
+        banner.style.backgroundImage = `url(${backgroundImages[count]})`;
       }
       if (count == backgroundImages.length) {
         count = 0;
