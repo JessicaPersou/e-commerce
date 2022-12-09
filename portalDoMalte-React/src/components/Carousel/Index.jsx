@@ -1,7 +1,8 @@
 import styles from "./carousel.module.css";
-import Stock from "../../assets/home/stock.png";
-import Tasting from "../../assets/home/tasting.png";
-import Beer from "../../assets/home/beer.jpg";
+import Craft from "../../assets/home/beerCrafts.png";
+import BudIce from "../../assets/home/brands-bud.png";
+import Brands from "../../assets/home/brands.png";
+import Modelo from "../../assets/home/modelo.png";
 import { useEffect } from "react";
 
 export function Carousel() {
@@ -9,10 +10,10 @@ export function Carousel() {
     setTimeout(() => {
       const bannerCarousel = document.getElementById("carousel2");
       bannerCarousel.style.animation = "updown 5s";
-    }, 70000);
+    }, []);
 
     let count = 1;
-    const backgroundImages = [Stock, Tasting, Beer];
+    const backgroundImages = [Craft, BudIce, Brands, Modelo];
 
     setInterval(() => {
       const banner = document.getElementById("carousel2");
@@ -29,5 +30,9 @@ export function Carousel() {
     }, 7000);
   }, []);
 
-  return <div className={styles.carousel2} id="carousel2"></div>;
+  return (
+    <div>
+      <div className={styles.carousel2} id="carousel2"></div>;
+    </div>
+  );
 }
