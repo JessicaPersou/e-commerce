@@ -11,6 +11,7 @@
 </br>
 
 >## PAGES
+ - Verification to age >=18
  - Home
  - Create user
  - Login
@@ -18,14 +19,13 @@
  - Detail of products
  - History of beer
  - Shopping cart
- - Shipping cart
+ - Shipping Address
+ - Responsivite
  </br>
 
 >## CRUD
- - Create user
- - Read data of users
- - Update
- - Delete
+ - CRUD users
+ - CRUD products
  </br>
 
 >## FUTURE IMPLEMENTATIONS
