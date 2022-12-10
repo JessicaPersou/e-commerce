@@ -36,15 +36,15 @@ export function BrandsBeer() {
   const carousel = useRef();
 
   useEffect(() => {
+    console.log(carousel.current.scrollWidth); 
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
   return (
-    <div>
       <motion.div className={styles.carousel} whileTap={{ cursor: "grabbing" }}>
         <motion.div
           drag="x"
-          dragConstraints={{ rigth: 0, left: -width }}
+          dragConstraints={{ rigth: 0 , left: -width }}
           className={styles.innerCarousel}
         >
           {images.map((image) => {
@@ -56,6 +56,5 @@ export function BrandsBeer() {
           })}
         </motion.div>
       </motion.div>
-    </div>
   );
 }

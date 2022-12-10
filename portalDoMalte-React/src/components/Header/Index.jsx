@@ -10,6 +10,9 @@ export function Header() {
         <LogoHeader />
       </div>
       <div className={styles.menu}>
+        <div>
+          <Link to="/" className={styles.font}><strong>PORTAL DO MALTE</strong></Link>
+        </div>
         <div className={styles.nav}>
           <Link to="/" className={styles.font}>
             <strong>HOME</strong>
