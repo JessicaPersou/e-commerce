@@ -2,7 +2,7 @@ import styles from "./cardProducts.module.css";
 import { ShoppingCart } from "phosphor-react";
 import { Link } from "react-router-dom";
 
-export function SearchProducts({ img, title, description }) {
+export function CardProducts({ img, title, description }) {
 
 
   return (

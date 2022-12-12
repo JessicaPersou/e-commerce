@@ -21,7 +21,7 @@ import Tiger from "../../assets/products/tiger.png";
 import YorkBrewery from "../../assets/products/yorkbrewery.png";
 import { Titles } from "../Titles/Index";
 import { BrandsBeer } from "../BrandsBeer/Index";
-import { CardProducts } from "../CardProducts";
+import { CardProducts } from "../CardProducts/Index";
 import { CaretDoubleLeft, CaretDoubleRight } from "phosphor-react";
 
 export function BeerStore() {
