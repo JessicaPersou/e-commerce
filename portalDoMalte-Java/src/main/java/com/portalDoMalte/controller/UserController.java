@@ -42,10 +42,10 @@ public class UserController {
 
                     save.setFirst_name(user.getFirst_name());
                     save.setLast_name(user.getLast_name());
-                    save.setBirthdate(user.getBirthdate());
                     save.setCpf(user.getCpf());
-                    save.setEmail(user.getEmail());
+                    save.setBirthdate(user.getBirthdate());
                     save.setPhone(user.getPhone());
+                    save.setEmail(user.getEmail());
                     save.setPassword(user.getPassword());
 
                     User update = userRepository.save(save);

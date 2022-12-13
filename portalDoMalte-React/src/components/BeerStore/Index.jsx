@@ -22,33 +22,30 @@ import YorkBrewery from "../../assets/products/yorkbrewery.png";
 import { Titles } from "../Titles/Index";
 import { BrandsBeer } from "../BrandsBeer/Index";
 import { CardProducts } from "../CardProducts/Index";
-import { CaretDoubleLeft, CaretDoubleRight, MagnifyingGlass } from "phosphor-react";
-import { useState } from "react";
-import { useEffect } from "react";
-import axios from "axios";
+import {
+  CaretDoubleLeft,
+  CaretDoubleRight,
+  MagnifyingGlass,
+} from "phosphor-react";
 
 export function BeerStore() {
-
-
   return (
     <div className={styles.container}>
       <div className={styles.store}>
-      <Titles title={"As Princípais Marcas"} />
-      <div>
-        <BrandsBeer/>
-      </div>
-      <Titles title={"As Melhores Ofertas"} />
-      <div className={styles.navSearch}>
-        <input className={styles.inputSearch} type="text" />
-        <button className={styles.btn}><MagnifyingGlass size={32} color="#000000" /></button>
-      </div>
+        <Titles title={"As Princípais Marcas"} />
+        <div>
+          <BrandsBeer />
+        </div>
+        <Titles title={"As Melhores Ofertas"} />
+        <div className={styles.navSearch}>
+          <input className={styles.inputSearch} type="text" />
+          <button className={styles.btn}>
+            <MagnifyingGlass size={32} color="#000000" />
+          </button>
+        </div>
         <div className={styles.component}>
-          <CardProducts
-              img={AegisBrewing}
-              title={"Cerveja Aegis Brewing 350ml"}
-              description={"R$ 19,90"}
-          />
-          <CardProducts
+          <CardProducts />
+          {/* <CardProducts
             img={Arkells}
             title={"Cerveja Arkell's 500ml"}
             description={"R$ 11,90"}
@@ -137,7 +134,7 @@ export function BeerStore() {
             img={YorkBrewery}
             title={"Cerveja York Brewery"}
             description={"R$ 15,90"}
-          />
+          /> */}
         </div>
         <div className={styles.productsArrow}>
           <CaretDoubleLeft size={40} color="#f1dba6" />
