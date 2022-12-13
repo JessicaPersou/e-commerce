@@ -1,6 +1,6 @@
 import styles from "./card.module.css";
 
-export function ListProducts({ img, title, description }) {
+export function Card({ img, title, description }) {
   const [listProducts, setListProducts] = useState([]);
   const navigate = useNavigate();
   
@@ -12,6 +12,10 @@ export function ListProducts({ img, title, description }) {
   useEffect(() => {
     getProducts();
   },[]);
+
+  
+  
+
   return (
     <div className={styles.card}>
       {listProducts.map((item) => (
@@ -22,7 +26,6 @@ export function ListProducts({ img, title, description }) {
         description={item.amount}
       />
       ))}
-      
     </div>
   );
 }

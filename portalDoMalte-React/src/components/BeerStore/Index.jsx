@@ -22,9 +22,14 @@ import YorkBrewery from "../../assets/products/yorkbrewery.png";
 import { Titles } from "../Titles/Index";
 import { BrandsBeer } from "../BrandsBeer/Index";
 import { CardProducts } from "../CardProducts/Index";
-import { CaretDoubleLeft, CaretDoubleRight } from "phosphor-react";
+import { CaretDoubleLeft, CaretDoubleRight, MagnifyingGlass } from "phosphor-react";
+import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 
 export function BeerStore() {
+
+
   return (
     <div className={styles.container}>
       <div className={styles.store}>
@@ -33,11 +38,15 @@ export function BeerStore() {
         <BrandsBeer/>
       </div>
       <Titles title={"As Melhores Ofertas"} />
+      <div className={styles.navSearch}>
+        <input className={styles.inputSearch} type="text" />
+        <button className={styles.btn}><MagnifyingGlass size={32} color="#000000" /></button>
+      </div>
         <div className={styles.component}>
           <CardProducts
-            img={AegisBrewing}
-            title={"Cerveja Aegis Brewing 350ml"}
-            description={"R$ 19,90"}
+              img={AegisBrewing}
+              title={"Cerveja Aegis Brewing 350ml"}
+              description={"R$ 19,90"}
           />
           <CardProducts
             img={Arkells}

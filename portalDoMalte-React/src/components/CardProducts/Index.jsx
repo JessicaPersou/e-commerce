@@ -1,24 +1,35 @@
-import styles from "./cardProducts.module.css";
-import { ShoppingCart } from "phosphor-react";
-import { Link } from "react-router-dom";
+// import styles from "./cardProducts.module.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import {CardProductsTest} from "./Index1";
 
-export function SearchProducts({ img, title, description }) {
 
+export function CardProducts({ name, amount }) {
+    const [product, setProducts] = useState([]);
+
+    useEffect(() => {
+      buildPage();
+    },[]);
+  
+    async function buildPage(){
+      try{
+        const buildProducts = await axios.get("http://localhost:9001/products");
+        setProducts(buildProducts.data);
+      }catch(e){
+        console.error(e);
+      }
+    } 
 
   return (
-    <div className={styles.card}>
-    <img className={styles.imgCard} src={img} alt="" />
-    <h3 className={styles.title}>{title}</h3>
-    <p className={styles.description}>{description}</p>
-    <footer className={styles.footer}>
-      <Link to="/product-detail">
-        <button className={styles.btnPortal} type="submit">
-          <strong>
-            <ShoppingCart /> COMPRAR
-          </strong>
-        </button>
-      </Link>
-    </footer>
-  </div>
+    <div>
+      {product.map((item) => (
+      <CardProductsTest              
+        key={item.id}
+        title={item.name}
+        description={item.amount}
+      />
+      ))}
+    </div>
+    
   );
 }

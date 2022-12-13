@@ -25,5 +25,26 @@
   padding: 5rem 0;
 }
 
+.navSearch{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid var(--golden-grass-100);
+    border-radius: 7px;
+  background-color: var(--white);
+}
 
+.inputSearch{
+  width: 40rem;
+  height: 2rem;
+  padding: 0.5rem;
+  outline: 0;
+  border-style: none;
+}
 
+.btn{
+  border: none;
+  background-color: var(--white);
+  border-radius: 7px;
+  cursor: pointer;
+}
