@@ -1,3 +1,5 @@
+/* GENERAL CONFIGURATION */
+
 .container {
   background-image: url("../../assets/home/beerEffect.png");
   background-color: var(--black);
@@ -6,8 +8,9 @@
   background-position: center;
   color: var(--white);
   padding: 5rem 0 0 0;  
-
 }
+
+/* SCREEN CRAFT BEER STYLE */
 
 .beerStyle {
   background-color: var(--background-transparent);
@@ -25,3 +28,4 @@
   gap: 5rem;
   padding-top: 5rem;
 }
+

@@ -23,6 +23,7 @@
   flex-wrap: wrap;
   gap: 5rem;
   padding: 5rem 0;
+  margin-bottom: 5rem;
 }
 
 .navSearch{

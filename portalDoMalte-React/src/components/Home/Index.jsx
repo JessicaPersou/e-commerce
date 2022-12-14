@@ -8,7 +8,6 @@ import Barrel from "../../assets/home/basket.png";
 import ChangClassicBeer from "../../assets/products/changClassicBeer.png";
 import MeiselAndFriends from "../../assets/products/meiselFriends.png";
 import KitBeer from "../../assets/products/kit.png";
-import { CardProducts } from "../CardProducts";
 import { BrandsBeer } from "../BrandsBeer/Index";
 import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
 import { Carousel } from "../Carousel/Index";
@@ -27,7 +26,7 @@ export function Home() {
           <BrandsBeer />
         </div>
         <Titles title={"CONFIRA ALGUMAS OFERTAS"} />
-        <div className={styles.component}>
+        {/* <div className={styles.component}>
           <ArrowCircleLeft color="#e1dbdb" size={40} />
           <CardProducts
             img={DuffPack}
@@ -64,7 +63,7 @@ export function Home() {
             description={"R$ 79,90"}
           />
           <ArrowCircleRight color="#e1dbdb" size={40} />
-        </div>
+        </div> */}
         <Titles title={"Participe da nossa promoção"} />
         <div className={styles.txtNews}>
           <div className={styles.news}>

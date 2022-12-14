@@ -1,13 +1,13 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { BeerStyles } from "../components/BeerStyles/Index";
+import { CraftBeerStyle } from "../components/CraftBeerStyle";
 
 
 function Styles() {
   return (
     <div>
       <Header />
-      <BeerStyles />
+      <CraftBeerStyle />
       <Footer />
     </div>
   );

@@ -40,7 +40,7 @@ public class ProductController {
         return productRepository.findById(id)
                 .map( save -> {
 
-                    save.setImage(product.getImage());
+//                    save.setImage(product.getImage());
                     save.setProduct_name(product.getProduct_name());
                     save.setProduct_name(product.getProduct_name());
 
