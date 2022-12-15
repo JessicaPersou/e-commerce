@@ -21,14 +21,12 @@ import Tiger from "../../assets/products/tiger.png";
 import YorkBrewery from "../../assets/products/yorkbrewery.png";
 import { Titles } from "../Titles/Index";
 import { BrandsBeer } from "../BrandsBeer/Index";
-// import { CardProducts } from "../CardProducts/Index";
 import {
   CaretDoubleLeft,
   CaretDoubleRight,
   MagnifyingGlass,
 } from "phosphor-react";
 import { ProductBeer } from "../ProductBeer/Index";
-import { GetProduct } from "../ProductBeer/GetProduct";
 
 export function BeerStore() {
   return (
@@ -46,7 +44,7 @@ export function BeerStore() {
           </button>
         </div>
         <div className={styles.component}>
-          <GetProduct/>
+          <ProductBeer/>
         </div>       
         <div className={styles.productsArrow}>
           <CaretDoubleLeft size={40} color="#f1dba6" />

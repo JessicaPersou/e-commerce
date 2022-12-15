@@ -29,6 +29,7 @@ export function GetProduct({ product_name, value }) {
                 product_name={item.product_name}
                 value={item.value}
             />
+            
             ))}
         </div>
     )
