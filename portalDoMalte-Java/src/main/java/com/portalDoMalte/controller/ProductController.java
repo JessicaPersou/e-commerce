@@ -1,16 +1,13 @@
 package com.portalDoMalte.controller;
 
 import com.portalDoMalte.model.Product;
-import com.portalDoMalte.model.User;
 import com.portalDoMalte.repository.ProductRepository;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
@@ -37,7 +34,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity<Product> create(@RequestBody Product product, HttpServletResponse response){
+    public ResponseEntity<Product> create(@Valid @RequestBody Product product, HttpServletResponse response){
         Product saveProduct = productRepository.save((product));
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{id}")
