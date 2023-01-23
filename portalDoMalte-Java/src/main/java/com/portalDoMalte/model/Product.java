@@ -16,9 +16,10 @@ public class Product {
     private long id;
 
 //    private String image;
-
+//    @Column(name="product_name")
     private String product_name;
 
     private String value;
+
 
 }
