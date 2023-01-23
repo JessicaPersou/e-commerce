@@ -1,5 +1,6 @@
 package com.portalDoMalte.model;
 
+import com.sun.istack.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import javax.persistence.*;
@@ -17,9 +18,9 @@ public class Product {
 
 //    private String image;
 //    @Column(name="product_name")
+    @NotNull
     private String product_name;
 
     private String value;
-
 
 }
