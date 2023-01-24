@@ -1,16 +1,18 @@
 package com.portalDoMalte.controller;
 
+import com.portalDoMalte.event.ResourceCreateEvent;
 import com.portalDoMalte.model.User;
 import com.portalDoMalte.repository.UserRepository;
-
+import com.portalDoMalte.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
-
+import java.util.Optional;
 
 @CrossOrigin
 @RestController
@@ -18,7 +20,11 @@ import java.util.List;
 public class UserController {
 
     @Autowired
+    private UserService userService;
+    @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private ApplicationEventPublisher publisher;
 
     @GetMapping()
     public List<User> findAll(){
@@ -26,45 +32,30 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> findById(@PathVariable long id) {
-        return userRepository.findById(id)
-                .map(save -> ResponseEntity.ok().body(save))
-                .orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<Optional<User>> findById(@PathVariable long id) {
+        Optional<User> user = userRepository.findById(id);
+        return user.isPresent() ? ResponseEntity.ok(user) : ResponseEntity.notFound().build();
     }
 
     @PostMapping
-    public ResponseEntity<User> create(@RequestBody User user) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(userRepository.save(user));
+    public ResponseEntity<User> create(@Validated @RequestBody User user, HttpServletResponse response) {
+        User userSave = userRepository.save(user);
+        publisher.publishEvent(new ResourceCreateEvent(this, response, userSave.getId()));
+        return ResponseEntity.status(HttpStatus.CREATED).body(userSave);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<User> update(@PathVariable long id, @RequestBody User user){
-        return userRepository.findById(id)
-                .map( save -> {
-
-                    save.setFirst_name(user.getFirst_name());
-                    save.setLast_name(user.getLast_name());
-                    save.setCpf(user.getCpf());
-                    save.setBirthdate(user.getBirthdate());
-                    save.setPhone(user.getPhone());
-                    save.setEmail(user.getEmail());
-                    save.setPassword(user.getPassword());
-
-                    User update = userRepository.save(save);
-                    return ResponseEntity.ok().body(update);
-
-                }).orElse(ResponseEntity.notFound().build());
-
+    public ResponseEntity<User> update(@PathVariable long id, @Validated @RequestBody User user){
+        User userSave = userService.update(id, user);
+        return ResponseEntity.ok(userSave);
     }
+
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteById(@PathVariable long id){
-        return userRepository.findById(id)
-                .map(save -> {
-                    userRepository.deleteById(id);
-                    return ResponseEntity.ok().build();
-                }).orElse(ResponseEntity.notFound().build());
-
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteById(@PathVariable Long id){
+        userRepository.deleteById(id);
     }
+
 
 }
