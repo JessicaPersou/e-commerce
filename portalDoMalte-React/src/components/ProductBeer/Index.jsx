@@ -9,7 +9,7 @@ import AegisBrewing from "../../assets/products/aegis.png";
 
 export function ProductBeer({ image, product_name, value }) {
     const [product, setProduct] = useState([]);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     useEffect(() => {
         buildPage();
@@ -42,7 +42,6 @@ export function ProductBeer({ image, product_name, value }) {
                 </div>
                 <div className={styles.btnSale}>
                     <button className={styles.btn}>
-                        onClick={() =>(getOneProduct(item.product_name))}
                         <strong className={styles.txt}>COMPRAR AGORA</strong>
                     </button>
                     <button className={styles.btn}>

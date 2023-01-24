@@ -40,7 +40,7 @@ export function BeerStore() {
         <div className={styles.navSearch}>
           <input className={styles.inputSearch} type="text" />
           <button className={styles.btn}>
-            <MagnifyingGlass size={32} color="#000000" />
+            <MagnifyingGlass size={28} color="#000000" />
           </button>
         </div>
         <div className={styles.component}>
