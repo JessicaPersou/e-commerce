@@ -23,16 +23,22 @@ public class User {
     @NotNull
     private String first_name;
 
+    @NotNull
     private String last_name;
 
-    private String cpf;
+    @NotNull
+    @Column(name="cpf")
+    private String document;
 
+    @NotNull
     private String birthdate;
 
     private String phone;
 
+    @NotNull
     private String email;
 
+    @NotNull
     private String password;
 
     @JsonIgnore

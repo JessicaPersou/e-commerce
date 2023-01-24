@@ -1,5 +1,5 @@
 package com.portalDoMalte.model;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.sun.istack.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,10 +15,13 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String cep;
+    @NotNull
+    @Column(name = "cep")
+    private String zipCode;
 
     private String street;
 
+    @NotNull
     private String number;
 
     private String district;

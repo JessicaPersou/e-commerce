@@ -32,9 +32,9 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Optional<User>> findById(@PathVariable long id) {
-        Optional<User> user = userRepository.findById(id);
-        return user.isPresent() ? ResponseEntity.ok(user) : ResponseEntity.notFound().build();
+    public ResponseEntity<User> findById(@PathVariable long id) {
+        Optional<User> user = this.userRepository.findById(id);
+        return user.isPresent() ? ResponseEntity.ok(user.get()) : ResponseEntity.notFound().build();
     }
 
     @PostMapping
