@@ -3,8 +3,8 @@ package com.portaldomalte.controller;
 import com.portaldomalte.model.User;
 import com.portaldomalte.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
@@ -16,8 +16,11 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    public UserController(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @GetMapping()
     public List<User> findAll(){
