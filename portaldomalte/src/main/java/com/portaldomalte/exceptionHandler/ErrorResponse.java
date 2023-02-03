@@ -2,6 +2,10 @@ package com.portaldomalte.exceptionHandler;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.springframework.format.annotation.DateTimeFormat;
+
+
+import java.sql.Timestamp;
 
 @Data
 @EqualsAndHashCode
@@ -9,10 +13,6 @@ public class ErrorResponse {
 
     private int statusCode;
     private String message;
-    private String error;
-    private String path;
-    private String timestamp;
-    private int errorCode;
-
+    private Timestamp timestamp;
 
 }

@@ -26,15 +26,20 @@ public class UserController {
     @Autowired
     private ApplicationEventPublisher publisher;
 
+    public UserController(UserRepository userRepository){
+        this.userRepository = userRepository;
+    }
+
     @GetMapping()
     public List<User> findAll(){
         return userRepository.findAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> findById(@PathVariable long id) {
-        Optional<User> user = this.userRepository.findById(id);
-        return user.isPresent() ? ResponseEntity.ok(user.get()) : ResponseEntity.notFound().build();
+    public User findById(@PathVariable long id) {
+//        Optional<User> user = this.userRepository.findById(id);
+//        return user.isPresent() ? ResponseEntity.ok(user.get()) : ResponseEntity.notFound().build();
+        return userRepository.findById(id).orElseThrow(RuntimeException::new);
     }
 
     @PostMapping

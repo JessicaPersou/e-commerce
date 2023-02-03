@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -37,14 +38,14 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity<Product> create(@RequestBody Product product, HttpServletResponse response){
+    public ResponseEntity<Product> create(@Validated @RequestBody Product product, HttpServletResponse response){
         Product productSave = productRepository.save((product));
         publisher.publishEvent(new ResourceCreateEvent(this,response, productSave.getId()));
         return ResponseEntity.status(HttpStatus.CREATED).body(productSave);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Product> update(@PathVariable Long id, @RequestBody Product product){
+    public ResponseEntity<Product> update(@PathVariable Long id,@Validated @RequestBody Product product){
         Product productSave = productService.update(id, product);
         return ResponseEntity.ok(productSave);
     }

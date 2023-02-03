@@ -45,7 +45,6 @@ public class UserController {
                 .orElseThrow(() -> new RuntimeException("Não existe usuario com o id: " + id));
             userUpdate.setFirst_name(user.getFirst_name());
             userUpdate.setLast_name(user.getLast_name());
-            userUpdate.setDocument(user.getDocument());
             userUpdate.setBirthdate(user.getBirthdate());
             userUpdate.setPhone(user.getPhone());
             userUpdate.setEmail(user.getEmail());
