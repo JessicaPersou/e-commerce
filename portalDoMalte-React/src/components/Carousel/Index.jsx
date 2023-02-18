@@ -5,7 +5,7 @@ import Brands from "../../assets/home/brands.png";
 import Modelo from "../../assets/home/modelo.png";
 import { useEffect } from "react";
 
-export function Carousel() {
+export function CarouselCriado() {
   useEffect(() => {
     setTimeout(() => {
       const bannerCarousel = document.getElementById("carousel2");
