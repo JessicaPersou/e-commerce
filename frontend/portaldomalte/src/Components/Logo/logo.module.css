@@ -1,0 +1,9 @@
+.logoMain{
+  background-color: var(--golden-grass-100);
+  height: 10rem;
+}
+.logoImg{
+  cursor: pointer;
+  height: 4rem;
+  width: 10rem;
+}

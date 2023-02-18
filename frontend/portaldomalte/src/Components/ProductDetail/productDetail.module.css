@@ -1,0 +1,98 @@
+.container {
+  padding-top: 10rem;
+}
+
+.productsDetails {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--golden-grass-180);
+  min-height: 100vh;
+  color: var(--white);
+  padding: 10rem 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.zipCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.line {
+  width: 100%;
+}
+
+.infoAge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--golden-grass-180);
+  border-top: 1px solid #dda520;
+  padding: 2rem 0;
+}
+
+.imgProduct {
+  box-shadow: 0 0 30px 0.5px var(--black);
+  border-radius: 15px;
+  height: 30rem;
+  width: 25em;
+  cursor: pointer;
+  padding: 5rem;
+}
+
+.input {
+  padding: 0.6rem 2rem;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0.5px var(--black);
+}
+
+/* @keyframes teste {
+  from { background-color: var(--white)}
+  to{ background-color: var(--black-80)}
+}
+
+div {
+  animation-name: teste;
+  transition: ease-in;
+  animation-duration: 5s;
+} */
+
+.inputInfo {
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+.btnPortal {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+  border: 1px solid var(--golden-grass-100);
+}
+.btnPortal:hover {
+  cursor: pointer;
+  background-color: var(--golden-grass-60);
+  color: var(--golden-grass-180);
+}

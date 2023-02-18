@@ -4,22 +4,28 @@ import Heineken from "../../assets/home/heinekens.png";
 import CoronaExtra from "../../assets/home/coronaPack.png";
 import BeerStore from "../../assets/home/brandsStore.png";
 import Barrel from "../../assets/home/basket.png";
-
 import ChangClassicBeer from "../../assets/products/changClassicBeer.png";
 import MeiselAndFriends from "../../assets/products/meiselFriends.png";
 import KitBeer from "../../assets/products/kit.png";
 import { BrandsBeer } from "../BrandsBeer/Index";
 import { ArrowCircleLeft, ArrowCircleRight } from "phosphor-react";
-import { Carousel } from "../Carousel/Index";
+// import { Carousel } from "../Carousel/Index";
 import { Link } from "react-router-dom";
 import { Titles } from "../Titles/Index";
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/swiper-bundle.css';
+
 
 export function Home() {
+
   return (
     <div className={styles.container}>
       <div className={styles.home}>
         <div className={styles.carousel}>
-          <Carousel />
+          {/* <Carousel /> */}
+          
         </div>
         <Titles title={"As Melhores Marcas"} />
         <div className={styles.brandsComponent}>
