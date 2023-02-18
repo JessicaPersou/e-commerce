@@ -1,0 +1,48 @@
+import styles from "./contact.module.css";
+import { Titles } from "../Titles/Index";
+
+export function Contact() {
+  return (
+    <div className={styles.container}>
+      <div className={styles.boxForm}>
+        <Titles title={"Formulário de Contato"} />
+        {/* AQUI VAI O CONTATO DO LOCAL COM MAPA */}
+        <div className={styles.form}>
+          <div className={styles.boxTxt}>
+            <div className={styles.infoContact}>
+              <label htmlFor="">Nome</label>
+              <input className={styles.input} type="text" name="name" id="" />
+            </div>
+            <div className={styles.infoContact}>
+              <label htmlFor="">Sobrenome</label>
+              <input className={styles.input} type="text" name="name" id="" />
+            </div>
+            <div className={styles.infoContact}>
+              <label htmlFor="">CPF</label>
+              <input className={styles.input} type="text" name="name" id="" />
+            </div>
+            <div className={styles.infoContact}>
+              <label htmlFor="">E-mail</label>
+              <input className={styles.input} type="text" name="name" id="" />
+            </div>
+            <div className={styles.infoContact}>
+              <label htmlFor="">Número do Pedido</label>
+              <input className={styles.input} type="text" name="name" id="" />
+            </div>
+          </div>
+
+          <div className={styles.txtArea}>
+            <label htmlFor="">Mensagem</label>
+            <textarea name="" id="" />
+          </div>
+        </div>
+
+        <div className={styles.btn}>
+          <button className={styles.btnPortal} type="submit">
+            ENVIAR
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

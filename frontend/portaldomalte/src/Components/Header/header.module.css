@@ -1,0 +1,93 @@
+.headerLogo{
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background-color: var(--golden-grass-100);
+  color: var(--black);
+  height: 10rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+  gap: 1rem;
+  position: fixed;
+  z-index: 1;
+  transition: color 0.3s;
+  margin: 0 0 5rem 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+div > .font > strong {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.font > strong:hover {
+  background-color: var(--golden-grass-180);
+  color: var(--white);
+}
+
+.font {
+  color: var(--black);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.icons > .font {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.icons > .font:hover {
+  background-color: var(--golden-grass-180);
+  color: var(--white);
+}
+
+.inputSearch{
+  display: flex;
+  align-items: center;
+  gap: 1rem
+}
+
+.inputSearch> input{
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  height: 1.5rem;
+  border-style: none;
+}
+
+
+@media (max-width: 480px){
+  .header{
+    height: 13rem;
+  }
+}
+
+@media (max-width: 760px){
+  .header{
+    height: 13rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .header{
+    height: 13rem;
+  }
+}

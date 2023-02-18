@@ -1,0 +1,40 @@
+.container {
+  background-color: var(--golden-grass-180);
+  color: var(--white);
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100vw;
+  height: 100%;
+}
+
+.tableBody tr td{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.tableTr th {
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--black);
+}
+
+.tableTr td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--black);
+}
+
+.btnUsers{
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.table{
+  font-size: 1rem;
+  border: 5px solid var(--black);
+
+}

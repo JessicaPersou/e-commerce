@@ -1,0 +1,78 @@
+[
+  {
+     "product_name":"Cerveja Aegis Brewing 350ml",
+     "value":"R$ 17,90"
+  },
+  {
+     "product_name":"Cerveja Arkell's 500ml",
+     "value":"R$ 15,90"
+  },
+  {
+     "product_name":"Cerveja Brewdog 330ml",
+     "value":"R$ 11,90"
+  },
+  {
+     "product_name":"Cerveja Budweiser 330ml",
+     "value":"R$ 5,90"
+  },
+  {
+     "product_name":"Cerveja Corona Premier 330ml",
+     "value":"R$ 7,90"
+  },
+  {
+     "product_name":"Cerveja Deschutes Brewery 355ml",
+     "value":"R$ 15,90"
+  },
+  {
+     "product_name":"Cerveja Flysian Dayglow IPA 600ml",
+     "value":"R$ 12,90"
+  },
+  {
+     "product_name":"Cerveja Duff Beer 355ml",
+     "value":"R$ 10,90"
+  },
+  {
+     "product_name":"Cerveja Ginger Beer 250ml",
+     "value":"R$ 19,90"
+  },
+  {
+     "product_name":"Cerveja Great Lakes Brewing Co 355ml",
+     "value":"R$ 18,90"
+  },
+  {
+     "product_name":"Cerveja Heineken 355ml",
+     "value":"R$ 17,90"
+  },
+  {
+     "product_name":"Cerveja Hoegaarden 750ml",
+     "value":"R$ 9,90"
+  },
+  {
+     "product_name":"Cerveja Lagunitas IPA 330ml",
+     "value":"R$ 7,90"
+  },
+  {
+     "product_name":"Cerveja Miller Lite 473ml",
+     "value":"R$ 11,90"
+  },
+  {
+     "product_name":"Cerveja Miller 330ml",
+     "value":"R$ 12,90"
+  },
+  {
+     "product_name":"Cerveja Peroni 300ml",
+     "value":"R$ 13,90"
+  },
+  {
+     "product_name":"Cerveja Stella Artois 269ml",
+     "value":"R$ 8,90"
+  },
+  {
+     "product_name":"Cerveja Tiger Crystal",
+     "value":"R$ 13,90"
+  },
+  {
+     "product_name":"Cerveja York Brewery",
+     "value":"R$ 21,90"
+  }
+]

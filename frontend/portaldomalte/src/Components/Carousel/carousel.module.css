@@ -1,0 +1,19 @@
+.carousel2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("../../assets/home/buschBeer.png") no-repeat center; 
+  background-size: cover;
+  height: 100vh;
+  width: 100VW;
+  margin: 10rem 0 0 0;
+  scroll-behavior: smooth;
+  transition: background .7s ease-in-out;
+}
+
+
+.imgCard {
+  width: 40rem;
+  height: 50rem;
+}

@@ -1,0 +1,83 @@
+.shoppingCart {
+  background-color: var(--golden-grass-180);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+.infoProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
+
+.infoProduct p {
+  cursor: pointer;
+}
+
+.cartDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product p {
+  padding: 2rem;
+}
+
+.imgProduct {
+  height: 15rem;
+  border-radius: 5px;
+}
+
+.shipping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.shippingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.btnPayments {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.inputInfo {
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0.5px var(--black);
+}
+
+.title{
+  padding-top: 5rem;
+}
+
+.btnPortal {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+  border: 1px solid var(--golden-grass-100);
+}
+
+.btnPortal:hover {
+  cursor: pointer;
+  background-color: var(--golden-grass-60);
+  color: var(--golden-grass-180);
+}

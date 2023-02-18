@@ -1,0 +1,58 @@
+.container {
+  background-image: url("../../assets/home/beerEffect.png");
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 5rem 0 0 0;  
+}
+
+.store {
+  background-color: var(--background-transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 5rem;
+}
+
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+.navSearch{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid var(--golden-grass-100);
+  border-radius: 7px;
+  background-color: var(--white);
+  padding: 0.2rem 0.5rem;
+}
+
+.inputSearch{
+  width: 40rem;
+  height: 2rem;
+  padding: 0.5rem;
+  outline: 0;
+  border-style: none;
+}
+
+.btn{
+  border: none;
+  background-color: var(--white);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.imgCard {
+  width: 10rem;
+  height: 12rem;
+  border-radius: 5px;
+}
