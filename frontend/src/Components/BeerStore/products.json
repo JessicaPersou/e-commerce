@@ -1,78 +1,135 @@
 [
-  {
-     "product_name":"Cerveja Aegis Brewing 350ml",
-     "value":"R$ 17,90"
-  },
-  {
-     "product_name":"Cerveja Arkell's 500ml",
-     "value":"R$ 15,90"
-  },
-  {
-     "product_name":"Cerveja Brewdog 330ml",
-     "value":"R$ 11,90"
-  },
-  {
-     "product_name":"Cerveja Budweiser 330ml",
-     "value":"R$ 5,90"
-  },
-  {
-     "product_name":"Cerveja Corona Premier 330ml",
-     "value":"R$ 7,90"
-  },
-  {
-     "product_name":"Cerveja Deschutes Brewery 355ml",
-     "value":"R$ 15,90"
-  },
-  {
-     "product_name":"Cerveja Flysian Dayglow IPA 600ml",
-     "value":"R$ 12,90"
-  },
-  {
-     "product_name":"Cerveja Duff Beer 355ml",
-     "value":"R$ 10,90"
-  },
-  {
-     "product_name":"Cerveja Ginger Beer 250ml",
-     "value":"R$ 19,90"
-  },
-  {
-     "product_name":"Cerveja Great Lakes Brewing Co 355ml",
-     "value":"R$ 18,90"
-  },
-  {
-     "product_name":"Cerveja Heineken 355ml",
-     "value":"R$ 17,90"
-  },
-  {
-     "product_name":"Cerveja Hoegaarden 750ml",
-     "value":"R$ 9,90"
-  },
-  {
-     "product_name":"Cerveja Lagunitas IPA 330ml",
-     "value":"R$ 7,90"
-  },
-  {
-     "product_name":"Cerveja Miller Lite 473ml",
-     "value":"R$ 11,90"
-  },
-  {
-     "product_name":"Cerveja Miller 330ml",
-     "value":"R$ 12,90"
-  },
-  {
-     "product_name":"Cerveja Peroni 300ml",
-     "value":"R$ 13,90"
-  },
-  {
-     "product_name":"Cerveja Stella Artois 269ml",
-     "value":"R$ 8,90"
-  },
-  {
-     "product_name":"Cerveja Tiger Crystal",
-     "value":"R$ 13,90"
-  },
-  {
-     "product_name":"Cerveja York Brewery",
-     "value":"R$ 21,90"
-  }
+   {
+      "name": "Cerveja Aegis Brewing",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "350ml",
+      "price": "17.90"
+   },
+   {
+      "name": "Cerveja Arkell's 500ml",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "500ml",
+      "price": "15.90"
+   },
+   {
+      "name": "Cerveja Brewdog",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "330ml",
+      "price": "11.90"
+   },
+   {
+      "name": "Cerveja Budweiser",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "330ml",
+      "price": "5.90"
+   },
+   {
+      "name": "Cerveja Corona Premier",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "330ml",
+      "price": "7.90"
+   },
+   {
+      "name": "Cerveja Deschutes Brewery",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "355ml",
+      "price": "15.90"
+   },
+   {
+      "name": "Cerveja Flysian Dayglow IPA",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "600ml",
+      "price": "12.90"
+   },
+   {
+      "name": "Cerveja Duff Beer",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "355ml",
+      "price": "10.90"
+   },
+   {
+      "name": "Cerveja Ginger Beer",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "250ml",
+      "price": "19.90"
+   },
+   {
+      "name": "Cerveja Great Lakes Brewing Co",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "355ml",
+      "price": "18.90"
+   },
+   {
+      "name": "Cerveja Heineken",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "355ml",
+      "price": "17.90"
+   },
+   {
+      "name": "Cerveja Hoegaarden",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "750ml",
+      "price": "9.90"
+   },
+   {
+      "name": "Cerveja Lagunitas IPA 330ml",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "330ml",
+      "price": "7.90"
+   },
+   {
+      "name": "Cerveja Miller Lite",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "473ml",
+      "price": "11.90"
+   },
+   {
+      "name": "Cerveja Miller",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "330ml",
+      "price": "12.90"
+   },
+   {
+      "name": "Cerveja Peroni",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "300ml",
+      "price": "13.90"
+   },
+   {
+      "name": "Cerveja Stella Artois",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "269ml",
+      "price": "8.90"
+   },
+   {
+      "name": "Cerveja Tiger Crystal",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "330ml",
+      "price": "13.90"
+   },
+   {
+      "name": "Cerveja York Brewery",
+      "description": "Cerveja Artesanal de alta qualidad",
+      "image": "../../assets/products/aegis.png",
+      "quantity": "330ml",
+      "price": "21.90"
+   }
 ]

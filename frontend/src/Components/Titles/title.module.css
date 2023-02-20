@@ -5,6 +5,6 @@
 
 .titleMain{
   font-size: 3rem;
-  font-weight: 500;
+  /* font-weight: 500; */
   color: var(--black);
 }

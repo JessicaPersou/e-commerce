@@ -5,11 +5,40 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .carousel {
-  background-color: var(--black);
-  width: 100%;
+  /* background-image: url("../../assets/home/beers.jpg"); */
+  /* background-image: url("../../assets/home/duffPack.png"); */
+  background-repeat: no-repeat;
+  background-size: contain; 
+  /* position: center; */
+  gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 10rem;
+}
+
+.img{
+  height: 50rem;
+}
+
+.msgBanner{
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  gap: 1rem;
+}
+
+.msgBanner2{
+  color: var(--golden-grass-100);
+}
+
+.imgBanner{
+  height: 30rem;
 }
 
 .line {
@@ -18,9 +47,14 @@
   box-shadow: 0px 1px 10px 3px var(--black);
 }
 
+.circle{
+  display: flex;
+  gap: 1rem;
+}
+
 .component {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -35,6 +69,10 @@
   align-items: center;
   gap: 1.25rem;
   cursor: pointer;
+}
+
+.productsHome{
+  padding: 5rem;
 }
 
 .imgNews {
@@ -79,4 +117,12 @@
   cursor: pointer;
   background-color: var(--golden-grass-60);
   color: var(--golden-grass-180);
+}
+
+.brandsComponent{
+  padding: 5rem;
+}
+
+.txt{
+  text-align: center;
 }

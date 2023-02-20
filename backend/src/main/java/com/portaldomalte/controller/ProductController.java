@@ -45,8 +45,9 @@ public class ProductController {
                 .orElseThrow(() -> new RuntimeException("Não existe produto com o id: " + id));
             update.setName(product.getName());
             update.setDescription(product.getDescription());
+            update.setImage(product.getImage());
             update.setQuantity(product.getQuantity());
-            update.setValue(product.getValue());
+            update.setPrice(product.getPrice());
             productRepository.save(update);
         return ResponseEntity.ok(update);
     }

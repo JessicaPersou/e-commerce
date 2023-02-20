@@ -18,14 +18,14 @@
   --golden-grass-160: #58420d;
   --golden-grass-180: #202024;
   --black: #000000;
-  --background-transparent: #bdbdbd;
+  --background-transparent: #ece6e6;
   --input-transparent: #2020241c;
   --error: #fa3200;
 }
 
 h1 {
   font-size: 3rem;
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 h2 {
