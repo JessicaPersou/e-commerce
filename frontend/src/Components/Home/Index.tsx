@@ -13,22 +13,16 @@ import { Carousel } from "../Carousel/Index";
 import { Link } from "react-router-dom";
 import { Titles } from "../Titles/Index";
 import { ProductBeer } from "../ProductBeer/Index";
+import { GetProduct } from "../ProductBeer/GetProduct";
+import BeerLogo from "../../assets/logo/1.png";
+import Malte from "../../assets/home/malte.jpg";
+import Lupulo from "../../assets/home/lupulo.jpg";
+import Cevada from "../../assets/home/cevada.jpg";
 
 export function Home() {
   return (
     <div className={styles.home}>
-      <div className={styles.carousel}>
-        <img className={styles.img} src={Beer} alt="" />
-        <div className={styles.msgBanner}>
-          <p className={styles.msgBanner2}>
-            <strong>VISITE NOSSA LOJA</strong>
-          </p>
-          <h1>A Cerveja que Combina com Você</h1>
-          <Link to={"/products"}>
-            <button className={styles.btnPortal}>COMPRAR AGORA</button>
-          </Link>
-        </div>
-      </div>
+      <Carousel />
       <div className={styles.circle}>
         <Circle size={16} color="#2e2e2e" />
         <Circle size={16} color="#2e2e2e" />
@@ -52,11 +46,47 @@ export function Home() {
         <Circle size={16} color="#2e2e2e" />
         <Circle size={16} color="#2e2e2e" />
       </div>
-      {/* <div className={styles.productsHome}>
+      <div className={styles.productsHome}>
         <ProductBeer />
-      </div> */}
+      </div>
+      <div className={styles.circle}>
+        <Circle size={16} color="#2e2e2e" />
+        <Circle size={16} color="#2e2e2e" />
+        <Circle size={16} color="#2e2e2e" />
+      </div>
       <div className={styles.more}>
-
+        <Titles title={"Craft Beer Lover`s"} />
+        <div className={styles.craft}>
+          <img className={styles.imgLover} src={Malte} alt="" />
+          <p className={styles.txtCraft}>
+          &ldquo;O malte é um cereal germinado e torrado. Para obtê-lo, são feitos
+            vários processos industriais,<br /> a começar pelo teste do poder de
+            germinação do cereal, que pode ser o trigo, centeio ou milho, por
+            exemplo.&rdquo;
+          </p>
+        </div>
+        <div className={styles.craft}>
+          <img className={styles.imgLover} src={Lupulo} alt="" />
+          <p className={styles.txtCraft}>
+          &ldquo;O lúpulo é uma flor da família das canabidáceas, a mesma da maconha,
+            mas sem seu efeito entorpecente.
+            <br />A única função dessa planta é dar sabor e aroma à cerveja e
+            chopp.&rdquo;
+          </p>
+        </div>
+        <div className={styles.craft}>
+          <img className={styles.imgLover} src={Cevada} alt="" />
+          <p className={styles.txtCraft}>
+          &ldquo;A cevada é um cereal utilizado no processo de produção do malte.<br />
+            Trata-se de um dos cereais mais usados pela indústria cervejeira,
+            porque oferece ótimo custo-benefício.&rdquo;
+          </p>
+        </div>
+      </div>
+      <div className={styles.circle}>
+        <Circle size={16} color="#2e2e2e" />
+        <Circle size={16} color="#2e2e2e" />
+        <Circle size={16} color="#2e2e2e" />
       </div>
       <div className={styles.newsLetter}>
         <p className={styles.labelNews}>

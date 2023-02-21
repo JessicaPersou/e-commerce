@@ -5,7 +5,7 @@ import { ProductBeer } from "./Index";
 import AegisBrewing from "../../assets/products/aegis.png";
 import styles from "./productBeer.module.css";
 
-export function GetProduct({ product_name, value }) {
+export function GetProduct({ name, image, description, price }) {
 
     const [product, setProduct] = useState([]);
 
@@ -25,11 +25,11 @@ export function GetProduct({ product_name, value }) {
         <div className={styles.product}>
             {product.map((item) => (
             <ProductBeer
-                image={AegisBrewing}
-                product_name={item.product_name}
-                value={item.value}
+                image={item.image}
+                name={item.name}
+                description={item.description}
+                price={item.price}
             />
-            
             ))}
         </div>
     )

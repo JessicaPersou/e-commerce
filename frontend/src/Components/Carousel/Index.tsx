@@ -4,6 +4,9 @@ import BudIce from "../../assets/home/brands-bud.png";
 import Brands from "../../assets/home/brands.png";
 import Modelo from "../../assets/home/modelo.png";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import Beer from "../../assets/home/beers.jpg";
+
 
 export function Carousel() {
   // useEffect(() => {
@@ -31,8 +34,17 @@ export function Carousel() {
   // }, []);
 
   return (
-    <div className={styles.carouselDiv}>
-      <div className={styles.carousel2} id="carousel2"></div>;
-    </div>
+    <div className={styles.carousel}>
+        <img className={styles.img} src={Beer} alt="" />
+        <div className={styles.msgBanner}>
+          <p className={styles.msgBanner2}>
+            <strong>VISITE NOSSA LOJA</strong>
+          </p>
+          <h1>A Cerveja que Combina com Você</h1>
+          <Link to={"/products"}>
+            <button className={styles.btnPortal}>COMPRAR AGORA</button>
+          </Link>
+        </div>
+      </div>
   );
 }

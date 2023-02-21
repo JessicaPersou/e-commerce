@@ -1,16 +1,47 @@
-.carouselDiv {
+
+.carousel {
+  /* background-image: url("../../assets/home/beers.jpg"); */
+  /* background-image: url("../../assets/home/duffPack.png"); */
+  background-repeat: no-repeat;
+  background-size: contain; 
+  /* position: center; */
+  gap: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 5rem 10rem;
 }
 
-.carousel2{
-  background-color: var(--white);
-  height: 40rem;
-  width: 50rem;
-}
-
-.imgCard {
-  width: 40rem;
+.img{
   height: 50rem;
+}
+
+.msgBanner{
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  gap: 1rem;
+}
+
+.msgBanner2{
+  color: var(--golden-grass-100);
+}
+
+.imgBanner{
+  height: 30rem;
+}
+
+.btnPortal {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btnPortal:hover {
+  cursor: pointer;
+  background-color: var(--golden-grass-60);
+  color: var(--golden-grass-180);
 }

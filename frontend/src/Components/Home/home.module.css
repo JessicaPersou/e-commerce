@@ -8,38 +8,6 @@
   padding-top: 2rem;
 }
 
-.carousel {
-  /* background-image: url("../../assets/home/beers.jpg"); */
-  /* background-image: url("../../assets/home/duffPack.png"); */
-  background-repeat: no-repeat;
-  background-size: contain; 
-  /* position: center; */
-  gap: 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5rem 10rem;
-}
-
-.img{
-  height: 50rem;
-}
-
-.msgBanner{
-  color: var(--black);
-  display: flex;
-  flex-direction: column;
-  font-weight: 800;
-  gap: 1rem;
-}
-
-.msgBanner2{
-  color: var(--golden-grass-100);
-}
-
-.imgBanner{
-  height: 30rem;
-}
 
 .line {
   width: 100%;
@@ -50,6 +18,7 @@
 .circle{
   display: flex;
   gap: 1rem;
+  padding: 2rem;
 }
 
 .component {
@@ -72,13 +41,10 @@
 }
 
 .productsHome{
-  padding: 5rem;
+  padding: 2rem;
 }
 
-.imgNews {
-  height: 45rem;
-  padding: 5rem 0;
-}
+
 
 .newsLetter {
   display: flex;
@@ -120,9 +86,40 @@
 }
 
 .brandsComponent{
-  padding: 5rem;
+  padding: 1rem;
 }
 
 .txt{
   text-align: center;
+  padding: 2rem;
+}
+
+.imgLover {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 180px;
+}
+
+div> img > p{
+  display: flex;
+  flex-direction: row;
+}
+
+.more{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+.craft{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.txtCraft{
+  text-align: center;
+  font-size: 1rem;
 }
