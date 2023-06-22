@@ -29,7 +29,7 @@ Siga as etapas abaixo para configurar o projeto em seu ambiente local:
 3. Importe o projeto em sua IDE de preferência (por exemplo, Eclipse ou IntelliJ).
 4. Configure as credenciais do banco de dados no arquivo `application.properties`.
 5. Execute as migrações do banco de dados usando as ferramentas de migração do Spring Boot, como o Flyway ou Liquibase.
-6. Execute o aplicativo e acesse-o localmente em `http://localhost:8080`.
+6. Execute o aplicativo e acesse-o localmente em `http://localhost:5001`.
 
 ## Documentação da API
 
