@@ -1,6 +1,6 @@
-# Cervejaria - Sistema de E-commerce
+# O Web-Store é uma API de e-commerce
 
-Este é um sistema de e-commerce para uma cervejaria, permitindo que os clientes comprem produtos de cerveja online. O sistema possui recursos para gerenciar compradores, endereços, produtos, categorias e vendas.
+Este é um sistema de e-commerce que pode ser usado para qualquer loja virtual, permitindo que os clientes comprem produtos online. O sistema possui recursos para gerenciar compradores, endereços, produtos, categorias e vendas.
 
 ## Tecnologias Utilizadas
 
