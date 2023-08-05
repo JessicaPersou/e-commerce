@@ -4,264 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42c11bb3-3dac-413f-871e-9f9716918413" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/AddressBusiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/BuyerBusiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/CategoryBusiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/ProductBusiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/SaleBusiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/impl/AddressBusinessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/impl/BuyerBusinessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/impl/CategoryBusinessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/impl/ProductBusinessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/business/impl/SaleBusinessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/controller/BuyerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/controller/SaleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/dto/AddressDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/dto/BuyerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/dto/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/dto/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/dto/SaleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/enums/AddressType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/enums/PaymentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/enums/ProfileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/enums/SaleStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/model/Buyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/model/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/repository/AddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/repository/BuyerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/repository/SaleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/DadosYourBeer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/cervejaria/database-cervejaria.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/cervejaria/inserts-cervejaria.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/cervejaria/queries-cervejaria.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/portaldomalte.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/products.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/user-address.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/user-address.mwb.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/user.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DER/user_address.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/PortaldomalteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/WebStoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/exceptionHandler/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/exceptionHandler/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/exceptionHandler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/exceptionHandler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/repository/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/portaldomalte/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/webstore/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/portaldomalte/PortaldomalteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/webstore/PortaldomalteApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/frontend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/beer-icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/BeerStore/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/BeerStore/beerStore.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/BeerStore/products.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/BrandsBeer/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/BrandsBeer/brandsBeer.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Carousel/Index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Carousel/carousel.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Cart/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Cart/cart.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/ComponentCraftStyle/ComponentCraftStyle.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/ComponentCraftStyle/componentCraftStyle.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Contact/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Contact/contact.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/CraftBeerStyle/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/CraftBeerStyle/craftBeerStyles.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/EditUser/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/EditUser/editUser.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Footer/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Footer/footer.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Header/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Header/header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/History/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/History/history.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Home/Index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Home/home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Login/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Login/login.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Logo/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Logo/logo.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/ProductBeer/GetProduct.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/ProductBeer/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/ProductBeer/productBeer.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/ProductDetail/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/ProductDetail/productDetail.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/RegisterUser/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/RegisterUser/register.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/SearchProducts/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/SearchProducts/cardProducts.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Titles/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/Titles/title.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/User/Index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Components/User/user.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Models/product.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Models/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/AdminUsers.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/BeerStore.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/ContactPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/EditUsers.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/History.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/HomePage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/Login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/ProductDetailPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/Register.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/ShoppingCart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/Pages/Styles.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/budweiser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/busch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/chang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/corona.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/duff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/goose.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/hoegaarden.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/k.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/modelo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/paulaner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/stella.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/brands/tiger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/angle-circle-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/angle-circle-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/beeramarelo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/beerblack.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/beerbranco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/carrinho-de-compras.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/cart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/coracao.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/do-utilizador.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/do-utilizador.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/envelope-plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/envelope.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/lock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/paper-plane.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/procurar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/redo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/starFull.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/truck-moving.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/undo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/elements/whatsapp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/Web/icons8-clinking-beer-mugs-emoji-16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/Web/icons8-clinking-beer-mugs-emoji-32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/Web/icons8-clinking-beer-mugs-emoji-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/barrel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/basket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/beer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/beerCraft2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/beerCrafts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/beerEffect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/beers.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/brands-bud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/brands.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/brandsStore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/buschBeer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/cevada.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/coronaPack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/duffPack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/heinekens.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/lupulo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/malte.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/modelo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/stock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/home/tasting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/Desktop-PDP-6272x2432 (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/Desktop-PDP-6272x2432.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/RevelColdOp2-SITE.6272x2432.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/amarelo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/branco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/portalDoMalte-Icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/logo/preto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/android.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/icon-card-amex.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/icon-card-elo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/icon-fast-boleto.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/icon-fast-diners.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/icon-fast-mastercard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/icon-fast-visa.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/img_1928.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/payments/pix.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/barril.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/beer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/craft-beer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/cup-beer.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/jouwen-wang-uur6tpuzpLw-unsplash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/mybeer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/tasting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/tastingBeer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/photoPages/viking.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/BudGelo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/aegis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/arkells.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/brewdog.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/bud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/changClassicBeer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/corona.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/dayglow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/deschutes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/duff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/eiliv-sonas-aceron-Iu9whQlcnxE-unsplash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/gingerBeer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/greatLakes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/he.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/ho.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/kit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/lagunitas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/lite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/meiselFriends.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/mi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/peroni.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/stela.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/tiger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/products/yorkbrewery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/stylesBeer/ipa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/stylesBeer/lager.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/stylesBeer/pilsen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/stylesBeer/porter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/stylesBeer/stout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/stylesBeer/tripel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/stylesBeer/weizenbier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/tsconfig.json" beforeDir="false" />
+    <list default="true" id="7b77e572-5659-454b-a717-90cd3db7a459" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,90 +14,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="JpbToolWindowState">
-    <option name="isToolWindowVisible" value="false" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2RZ0n8eIgTzNxFAxjTwrCrOB83E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2TaEivTwe79qTIBj8wXnlFARy57" />
   <component name="ProjectViewState">
-    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jessica.sousa/Desktop/portaldomalte/backend"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="webstore" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="webstore" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ACTIVE_PROFILES" />
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="webstore" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.webstore.WebStoreApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="42c11bb3-3dac-413f-871e-9f9716918413" name="Changes" comment="" />
-      <created>1687442460166</created>
+      <changelist id="7b77e572-5659-454b-a717-90cd3db7a459" name="Changes" comment="" />
+      <created>1691272923298</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1687442460166</updated>
-      <workItem from="1687442461400" duration="1072000" />
+      <updated>1691272923298</updated>
+      <workItem from="1691272924950" duration="592000" />
+      <workItem from="1691274226334" duration="258000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
